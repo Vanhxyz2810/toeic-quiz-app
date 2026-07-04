@@ -1,0 +1,2183 @@
+{
+  "meta": {
+    "totalQuestions": 69,
+    "totalGroups": 23,
+    "parts": [
+      "PART 3",
+      "PART 4"
+    ],
+    "generatedFrom": "data.txt"
+  },
+  "groups": [
+    {
+      "id": "q-32-34",
+      "part": "PART 3",
+      "title": "Questions 32-34",
+      "range": [
+        32,
+        34
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 32,
+          "questionText": "What does the woman plan to do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Send the report by mail"
+            },
+            {
+              "key": "B",
+              "text": "Finish the report later"
+            },
+            {
+              "key": "C",
+              "text": "E-mail the report soon"
+            },
+            {
+              "key": "D",
+              "text": "Analyze the data again"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 33,
+          "questionText": "What does the man imply?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The report is overdue."
+            },
+            {
+              "key": "B",
+              "text": "The report is not detailed enough."
+            },
+            {
+              "key": "C",
+              "text": "He is not happy with the results."
+            },
+            {
+              "key": "D",
+              "text": "He no longer requires any help."
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 34,
+          "questionText": "When will the man receive the report?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Later that afternoon"
+            },
+            {
+              "key": "B",
+              "text": "Early the next morning"
+            },
+            {
+              "key": "C",
+              "text": "By midday the following day"
+            },
+            {
+              "key": "D",
+              "text": "Before the end of the week"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-35-37",
+      "part": "PART 3",
+      "title": "Questions 35-37",
+      "range": [
+        35,
+        37
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 35,
+          "questionText": "What is the purpose of Annie's call to Rob?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To inform him of a client's arrival"
+            },
+            {
+              "key": "B",
+              "text": "To thank him for helping her"
+            },
+            {
+              "key": "C",
+              "text": "To tell him to go to the bank"
+            },
+            {
+              "key": "D",
+              "text": "To ask him for assistance"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 36,
+          "questionText": "How soon will Rob go to the reception area?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Immediately"
+            },
+            {
+              "key": "B",
+              "text": "In a few minutes"
+            },
+            {
+              "key": "C",
+              "text": "In half an hour"
+            },
+            {
+              "key": "D",
+              "text": "Within an hour"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 37,
+          "questionText": "What will Rob do when he gets to reception?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Prepare some documents"
+            },
+            {
+              "key": "B",
+              "text": "Make some calls"
+            },
+            {
+              "key": "C",
+              "text": "Pack some boxes"
+            },
+            {
+              "key": "D",
+              "text": "Answer some queries"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-38-40",
+      "part": "PART 3",
+      "title": "Questions 38-40",
+      "range": [
+        38,
+        40
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 38,
+          "questionText": "What are the speakers mainly talking about?",
+          "options": [
+            {
+              "key": "A",
+              "text": "An office party"
+            },
+            {
+              "key": "B",
+              "text": "A retirement gift"
+            },
+            {
+              "key": "C",
+              "text": "A vacation"
+            },
+            {
+              "key": "D",
+              "text": "A staff bonus"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 39,
+          "questionText": "What does the woman think of the man's first suggestion?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It is unimaginative."
+            },
+            {
+              "key": "B",
+              "text": "It is expensive."
+            },
+            {
+              "key": "C",
+              "text": "It is complicated."
+            },
+            {
+              "key": "D",
+              "text": "It is time-consuming."
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 40,
+          "questionText": "Who most likely is Angela Adams?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A local florist"
+            },
+            {
+              "key": "B",
+              "text": "A long-serving employee"
+            },
+            {
+              "key": "C",
+              "text": "An accountant"
+            },
+            {
+              "key": "D",
+              "text": "A trade advisor"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-41-43",
+      "part": "PART 3",
+      "title": "Questions 41-43",
+      "range": [
+        41,
+        43
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 41,
+          "questionText": "What does the man ask the woman to do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Wait a few days"
+            },
+            {
+              "key": "B",
+              "text": "Apply for a grant"
+            },
+            {
+              "key": "C",
+              "text": "Put an item on sale"
+            },
+            {
+              "key": "D",
+              "text": "Weigh a package"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 42,
+          "questionText": "Why does the woman say, \"It'll have to be\"?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She has to leave."
+            },
+            {
+              "key": "B",
+              "text": "She does not agree."
+            },
+            {
+              "key": "C",
+              "text": "She has no choice."
+            },
+            {
+              "key": "D",
+              "text": "She trusts the man."
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 43,
+          "questionText": "How will the woman pay?",
+          "options": [
+            {
+              "key": "A",
+              "text": "By cash"
+            },
+            {
+              "key": "B",
+              "text": "By credit card"
+            },
+            {
+              "key": "C",
+              "text": "By check"
+            },
+            {
+              "key": "D",
+              "text": "By money order"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-44-45",
+      "part": "PART 3",
+      "title": "Questions 44-45",
+      "range": [
+        44,
+        45
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 44,
+          "questionText": "Where are the speakers?",
+          "options": [
+            {
+              "key": "A",
+              "text": "In a plane"
+            },
+            {
+              "key": "B",
+              "text": "In a train"
+            },
+            {
+              "key": "C",
+              "text": "In a bus"
+            },
+            {
+              "key": "D",
+              "text": "In a car"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 45,
+          "questionText": "What is the woman doing?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Looking at a map"
+            },
+            {
+              "key": "B",
+              "text": "Admiring the mountains"
+            },
+            {
+              "key": "C",
+              "text": "Trying to make a call"
+            },
+            {
+              "key": "D",
+              "text": "Typing on a computer"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-46-49",
+      "part": "PART 3",
+      "title": "Questions 46-49",
+      "range": [
+        46,
+        49
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 46,
+          "questionText": "When does this conversation take place?",
+          "options": [
+            {
+              "key": "A",
+              "text": "In the morning"
+            },
+            {
+              "key": "B",
+              "text": "In the afternoon"
+            },
+            {
+              "key": "C",
+              "text": "In the evening"
+            },
+            {
+              "key": "D",
+              "text": "At night"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 47,
+          "questionText": "Who is the woman talking to?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A real estate agent"
+            },
+            {
+              "key": "B",
+              "text": "A property developer"
+            },
+            {
+              "key": "C",
+              "text": "A bank manager"
+            },
+            {
+              "key": "D",
+              "text": "A company accountant"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 48,
+          "questionText": "What is the problem with the property?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It is in a bad location."
+            },
+            {
+              "key": "B",
+              "text": "It is not available yet."
+            },
+            {
+              "key": "C",
+              "text": "It is not big enough."
+            },
+            {
+              "key": "D",
+              "text": "It is too expensive."
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 49,
+          "questionText": "What does the man suggest?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Moving to a different location"
+            },
+            {
+              "key": "B",
+              "text": "Taking out a bank loan"
+            },
+            {
+              "key": "C",
+              "text": "Offering a lower price"
+            },
+            {
+              "key": "D",
+              "text": "Changing the contract"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-50-52",
+      "part": "PART 3",
+      "title": "Questions 50-52",
+      "range": [
+        50,
+        52
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 50,
+          "questionText": "What is the man's problem?",
+          "options": [
+            {
+              "key": "A",
+              "text": "He is late for an appointment."
+            },
+            {
+              "key": "B",
+              "text": "He cannot find his coworkers."
+            },
+            {
+              "key": "C",
+              "text": "He needs directions."
+            },
+            {
+              "key": "D",
+              "text": "He cannot see clearly."
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 51,
+          "questionText": "What does the woman offer to do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Advise HSC Dental of the man's arrival"
+            },
+            {
+              "key": "B",
+              "text": "Call the man a taxi on his way out"
+            },
+            {
+              "key": "C",
+              "text": "Take the man to the company's offices"
+            },
+            {
+              "key": "D",
+              "text": "Ask a coworker to help"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 52,
+          "questionText": "What will the man probably do next?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Sit down and wait"
+            },
+            {
+              "key": "B",
+              "text": "Leave the building"
+            },
+            {
+              "key": "C",
+              "text": "Call a friend"
+            },
+            {
+              "key": "D",
+              "text": "Take the elevator"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-53-55",
+      "part": "PART 3",
+      "title": "Questions 53-55",
+      "range": [
+        53,
+        55
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 53,
+          "questionText": "What are the speakers discussing?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A tax demand"
+            },
+            {
+              "key": "B",
+              "text": "Computer problems"
+            },
+            {
+              "key": "C",
+              "text": "Communication difficulties"
+            },
+            {
+              "key": "D",
+              "text": "Contract details"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 54,
+          "questionText": "What do the men suggest the woman do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Send a fax"
+            },
+            {
+              "key": "B",
+              "text": "E-mail a client"
+            },
+            {
+              "key": "C",
+              "text": "Contact Telco Phone Systems"
+            },
+            {
+              "key": "D",
+              "text": "Buy some new equipment"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 55,
+          "questionText": "How does the woman probably feel about the situation?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Bored"
+            },
+            {
+              "key": "B",
+              "text": "Frustrated"
+            },
+            {
+              "key": "C",
+              "text": "Offended"
+            },
+            {
+              "key": "D",
+              "text": "Surprised"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-56-58",
+      "part": "PART 3",
+      "title": "Questions 56-58",
+      "range": [
+        56,
+        58
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 56,
+          "questionText": "Where does this conversation take place?",
+          "options": [
+            {
+              "key": "A",
+              "text": "At a train station"
+            },
+            {
+              "key": "B",
+              "text": "At a bus station"
+            },
+            {
+              "key": "C",
+              "text": "At an airport"
+            },
+            {
+              "key": "D",
+              "text": "At a taxi company"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 57,
+          "questionText": "What time will the man arrive in Boston?",
+          "options": [
+            {
+              "key": "A",
+              "text": "9:05 A.M."
+            },
+            {
+              "key": "B",
+              "text": "11:35 A.M."
+            },
+            {
+              "key": "C",
+              "text": "5:40 P.M."
+            },
+            {
+              "key": "D",
+              "text": "8:10 P.M."
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 58,
+          "questionText": "How much will the man's round trip ticket to Boston cost?",
+          "options": [
+            {
+              "key": "A",
+              "text": "$8"
+            },
+            {
+              "key": "B",
+              "text": "$19"
+            },
+            {
+              "key": "C",
+              "text": "$27"
+            },
+            {
+              "key": "D",
+              "text": "$54"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-59-60",
+      "part": "PART 3",
+      "title": "Questions 59-60",
+      "range": [
+        59,
+        60
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 59,
+          "questionText": "Who is the woman most likely speaking to?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A store assistant"
+            },
+            {
+              "key": "B",
+              "text": "A cleaner"
+            },
+            {
+              "key": "C",
+              "text": "Her manager"
+            },
+            {
+              "key": "D",
+              "text": "Her husband"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 60,
+          "questionText": "What does the man mean when he says, \"This is it, I'm afraid\"?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It is the only suitable shirt."
+            },
+            {
+              "key": "B",
+              "text": "There is no time to get changed."
+            },
+            {
+              "key": "C",
+              "text": "He prefers to wear this shirt."
+            },
+            {
+              "key": "D",
+              "text": "He will not change his mind."
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-61-64",
+      "part": "PART 3",
+      "title": "Questions 61-64",
+      "range": [
+        61,
+        64
+      ],
+      "hasGraphic": true,
+      "graphicData": {
+        "type": "table",
+        "title": "Bảng thông tin chuyến bay (Flight Information)",
+        "table": {
+          "headers": [
+            "Flight",
+            "Destination"
+          ],
+          "rows": [
+            [
+              "RV326",
+              "Moscow"
+            ],
+            [
+              "JK672",
+              "Istanbul"
+            ],
+            [
+              "JV917",
+              "Tokyo"
+            ],
+            [
+              "LU458",
+              "Warsaw"
+            ]
+          ]
+        },
+        "raw": [
+          "Bảng thông tin chuyến bay (Flight Information):",
+          "RV326 | Moscow",
+          "JK672 | Istanbul",
+          "JV917 | Tokyo",
+          "LU458 | Warsaw"
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 61,
+          "questionText": "What will the man probably do next?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Call a taxi"
+            },
+            {
+              "key": "B",
+              "text": "Go to the mall"
+            },
+            {
+              "key": "C",
+              "text": "Wait for twenty minutes"
+            },
+            {
+              "key": "D",
+              "text": "Get dressed"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": true,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 62,
+          "questionText": "Why does the woman have to wait?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Her flight has been delayed."
+            },
+            {
+              "key": "B",
+              "text": "There is a long line at security."
+            },
+            {
+              "key": "C",
+              "text": "Check-in has not yet begun."
+            },
+            {
+              "key": "D",
+              "text": "She does not know the gate number."
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": true,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 63,
+          "questionText": "Look at the graphic. Which flight is the man catching?",
+          "options": [
+            {
+              "key": "A",
+              "text": "RV326"
+            },
+            {
+              "key": "B",
+              "text": "JK672"
+            },
+            {
+              "key": "C",
+              "text": "JV917"
+            },
+            {
+              "key": "D",
+              "text": "LU458"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": true,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 64,
+          "questionText": "What will the man do now?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Go to the departure gate."
+            },
+            {
+              "key": "B",
+              "text": "Buy something to read."
+            },
+            {
+              "key": "C",
+              "text": "Check the display screen."
+            },
+            {
+              "key": "D",
+              "text": "Go through security."
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": true,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-65-67",
+      "part": "PART 3",
+      "title": "Questions 65-67",
+      "range": [
+        65,
+        67
+      ],
+      "hasGraphic": true,
+      "graphicData": {
+        "type": "table",
+        "title": "Bảng thông tin tại Westgate Clinic (WESTGATE CLINIC)",
+        "table": {
+          "headers": [
+            "Time of appointment",
+            "Patient"
+          ],
+          "rows": [
+            [
+              "1:45 P.M.",
+              "Mr. James"
+            ],
+            [
+              "2:15 P.M.",
+              "Mr. Armstrong"
+            ],
+            [
+              "2:30 P.M.",
+              "Mr. Fernandez"
+            ],
+            [
+              "2:50 P.M.",
+              "Mr. Kasparov"
+            ]
+          ]
+        },
+        "raw": [
+          "Bảng thông tin tại Westgate Clinic (WESTGATE CLINIC):",
+          "| Time of appointment | Patient |",
+          "| :--- | :--- |",
+          "| 1:45 P.M. | Mr. James |",
+          "| 2:15 P.M. | Mr. Armstrong |",
+          "| 2:30 P.M. | Mr. Fernandez |",
+          "| 2:50 P.M. | Mr. Kasparov |"
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 65,
+          "questionText": "Look at the graphic. What is the man's name?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Mr. James"
+            },
+            {
+              "key": "B",
+              "text": "Mr. Armstrong"
+            },
+            {
+              "key": "C",
+              "text": "Mr. Fernandez"
+            },
+            {
+              "key": "D",
+              "text": "Mr. Kasparov"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": true,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 66,
+          "questionText": "What does the woman imply?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It is usually difficult to get a parking space."
+            },
+            {
+              "key": "B",
+              "text": "The man was lucky to get an appointment."
+            },
+            {
+              "key": "C",
+              "text": "Most people arrive earlier than expected."
+            },
+            {
+              "key": "D",
+              "text": "Seat availability can be very limited."
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": true,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 67,
+          "questionText": "What does the woman say she will do next?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Take a seat"
+            },
+            {
+              "key": "B",
+              "text": "Pour some coffee"
+            },
+            {
+              "key": "C",
+              "text": "Make a phone call"
+            },
+            {
+              "key": "D",
+              "text": "Speak to her assistant"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": true,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-68-70",
+      "part": "PART 3",
+      "title": "Questions 68-70",
+      "range": [
+        68,
+        70
+      ],
+      "hasGraphic": true,
+      "graphicData": {
+        "type": "table",
+        "title": "Bảng giờ khởi hành (EASTERN TRAINS Departures)",
+        "table": {
+          "headers": [
+            "Departure",
+            "Destination"
+          ],
+          "rows": [
+            [
+              "10:00 A.M.",
+              "Cambridge"
+            ],
+            [
+              "10:15 A.M.",
+              "Peterborough"
+            ],
+            [
+              "10:20 A.M.",
+              "Stansted"
+            ],
+            [
+              "10:55 A.M.",
+              "Norwich"
+            ]
+          ]
+        },
+        "raw": [
+          "Bảng giờ khởi hành (EASTERN TRAINS Departures):",
+          "| Departure | Destination |",
+          "| :--- | :--- |",
+          "| 10:00 A.M. | Cambridge |",
+          "| 10:15 A.M. | Peterborough |",
+          "| 10:20 A.M. | Stansted |",
+          "| 10:55 A.M. | Norwich |"
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 68,
+          "questionText": "Where most likely is the conversation taking place?",
+          "options": [
+            {
+              "key": "A",
+              "text": "In a taxi"
+            },
+            {
+              "key": "B",
+              "text": "In a coach"
+            },
+            {
+              "key": "C",
+              "text": "On a train"
+            },
+            {
+              "key": "D",
+              "text": "At a bus stop"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": true,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 69,
+          "questionText": "Look at the graphic. Where are the speakers traveling to?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Cambridge"
+            },
+            {
+              "key": "B",
+              "text": "Peterborough"
+            },
+            {
+              "key": "C",
+              "text": "Stansted"
+            },
+            {
+              "key": "D",
+              "text": "Norwich"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": true,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 70,
+          "questionText": "Why is the man concerned?",
+          "options": [
+            {
+              "key": "A",
+              "text": "He needs to pay by credit card."
+            },
+            {
+              "key": "B",
+              "text": "He has lost the reference number."
+            },
+            {
+              "key": "C",
+              "text": "There is no booking confirmation."
+            },
+            {
+              "key": "D",
+              "text": "He does not have the tickets."
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": true,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-71-73",
+      "part": "PART 4",
+      "title": "Questions 71-73",
+      "range": [
+        71,
+        73
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 71,
+          "questionText": "What is the purpose of the event?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To raise money for good causes"
+            },
+            {
+              "key": "B",
+              "text": "To publicize local businesses"
+            },
+            {
+              "key": "C",
+              "text": "To launch a range of new products"
+            },
+            {
+              "key": "D",
+              "text": "To honor successful businesspeople"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 72,
+          "questionText": "What does the speaker say about trade via the Internet?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It is very important for all businesses."
+            },
+            {
+              "key": "B",
+              "text": "It mostly benefits larger organizations."
+            },
+            {
+              "key": "C",
+              "text": "It makes international trade quicker."
+            },
+            {
+              "key": "D",
+              "text": "It will change the way business is done."
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 73,
+          "questionText": "What does Mrs. Sumner's company do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Manufacture furniture"
+            },
+            {
+              "key": "B",
+              "text": "Produce fresh fruit"
+            },
+            {
+              "key": "C",
+              "text": "Sell flowers online"
+            },
+            {
+              "key": "D",
+              "text": "Train entrepreneurs"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-74-76",
+      "part": "PART 4",
+      "title": "Questions 74-76",
+      "range": [
+        74,
+        76
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 74,
+          "questionText": "What is the message mainly about?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A meeting request"
+            },
+            {
+              "key": "B",
+              "text": "A new publication"
+            },
+            {
+              "key": "C",
+              "text": "A business seminar"
+            },
+            {
+              "key": "D",
+              "text": "A hospital appointment"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 75,
+          "questionText": "Who most likely is Carla Johnson?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A medical doctor"
+            },
+            {
+              "key": "B",
+              "text": "A travel agent"
+            },
+            {
+              "key": "C",
+              "text": "A book publisher"
+            },
+            {
+              "key": "D",
+              "text": "A business reporter"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 76,
+          "questionText": "What does the speaker imply when she says, \"It shouldn't take longer than an hour\"?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She only has one hour available."
+            },
+            {
+              "key": "B",
+              "text": "It will not be too inconvenient."
+            },
+            {
+              "key": "C",
+              "text": "There is a strict time limit."
+            },
+            {
+              "key": "D",
+              "text": "No further delays can be allowed."
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-77-79",
+      "part": "PART 4",
+      "title": "Questions 77-79",
+      "range": [
+        77,
+        79
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 77,
+          "questionText": "Who is the speaker probably addressing?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Company employees"
+            },
+            {
+              "key": "B",
+              "text": "Important clients"
+            },
+            {
+              "key": "C",
+              "text": "Job applicants"
+            },
+            {
+              "key": "D",
+              "text": "Shareholders"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 78,
+          "questionText": "What is the purpose of the event the speaker announces?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To improve the company's image"
+            },
+            {
+              "key": "B",
+              "text": "To attract potential investors"
+            },
+            {
+              "key": "C",
+              "text": "To boost production"
+            },
+            {
+              "key": "D",
+              "text": "To reward loyal customers"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 79,
+          "questionText": "What will happen next?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Management will answer questions."
+            },
+            {
+              "key": "B",
+              "text": "The audience will vote for a Chairman."
+            },
+            {
+              "key": "C",
+              "text": "The speaker will ask a question."
+            },
+            {
+              "key": "D",
+              "text": "Mr. Sissons will give a presentation."
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-80-82",
+      "part": "PART 4",
+      "title": "Questions 80-82",
+      "range": [
+        80,
+        82
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 80,
+          "questionText": "What kind of vacations does Betts Travel specialize in?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Trips to Egypt and Africa"
+            },
+            {
+              "key": "B",
+              "text": "Sunny locations worldwide"
+            },
+            {
+              "key": "C",
+              "text": "Winter package deals"
+            },
+            {
+              "key": "D",
+              "text": "Tours of North America"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 81,
+          "questionText": "What will customers get if they book a \"last minute\" deal?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A $500 credit"
+            },
+            {
+              "key": "B",
+              "text": "A free travel bag"
+            },
+            {
+              "key": "C",
+              "text": "A half-price vacation"
+            },
+            {
+              "key": "D",
+              "text": "Low-cost car rental"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 82,
+          "questionText": "What does the speaker mean when she says, \"Life is short\"?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Nobody lives forever."
+            },
+            {
+              "key": "B",
+              "text": "There is no time to waste."
+            },
+            {
+              "key": "C",
+              "text": "You never know what may happen."
+            },
+            {
+              "key": "D",
+              "text": "Do not worry about small details."
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-83-85",
+      "part": "PART 4",
+      "title": "Questions 83-85",
+      "range": [
+        83,
+        85
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 83,
+          "questionText": "What do callers who press number 2 want to do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Ask about medication"
+            },
+            {
+              "key": "B",
+              "text": "See a doctor urgently"
+            },
+            {
+              "key": "C",
+              "text": "Make an appointment"
+            },
+            {
+              "key": "D",
+              "text": "Arrange a home visit"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 84,
+          "questionText": "What should you do if your call is urgent and the office is closed?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hold the line"
+            },
+            {
+              "key": "B",
+              "text": "Press 3"
+            },
+            {
+              "key": "C",
+              "text": "Dial a different number"
+            },
+            {
+              "key": "D",
+              "text": "Call the hospital"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 85,
+          "questionText": "When is the baby clinic open?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Every day"
+            },
+            {
+              "key": "B",
+              "text": "Weekdays at 9:00 A.M."
+            },
+            {
+              "key": "C",
+              "text": "One day a week"
+            },
+            {
+              "key": "D",
+              "text": "By appointment only"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-86-88",
+      "part": "PART 4",
+      "title": "Questions 86-88",
+      "range": [
+        86,
+        88
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 86,
+          "questionText": "What is this report mainly about?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Wages for workers"
+            },
+            {
+              "key": "B",
+              "text": "New products and services"
+            },
+            {
+              "key": "C",
+              "text": "Rising job opportunities"
+            },
+            {
+              "key": "D",
+              "text": "Skill shortages in the United States"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 87,
+          "questionText": "How many employers responded to the survey?",
+          "options": [
+            {
+              "key": "A",
+              "text": "6,000"
+            },
+            {
+              "key": "B",
+              "text": "9,000"
+            },
+            {
+              "key": "C",
+              "text": "12,000"
+            },
+            {
+              "key": "D",
+              "text": "15,000"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 88,
+          "questionText": "Which sector of the economy will benefit most?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Finance"
+            },
+            {
+              "key": "B",
+              "text": "Retail"
+            },
+            {
+              "key": "C",
+              "text": "Manufacturing"
+            },
+            {
+              "key": "D",
+              "text": "Construction"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-89-91",
+      "part": "PART 4",
+      "title": "Questions 89-91",
+      "range": [
+        89,
+        91
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 89,
+          "questionText": "What is the purpose of the speech?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To announce a job vacancy"
+            },
+            {
+              "key": "B",
+              "text": "To welcome a new employee"
+            },
+            {
+              "key": "C",
+              "text": "To review stockroom procedures"
+            },
+            {
+              "key": "D",
+              "text": "To congratulate workers"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 90,
+          "questionText": "What is implied about Wallace & Sons?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It has plans to expand."
+            },
+            {
+              "key": "B",
+              "text": "It has many employees."
+            },
+            {
+              "key": "C",
+              "text": "It is a popular retail store."
+            },
+            {
+              "key": "D",
+              "text": "It started trading five years ago."
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 91,
+          "questionText": "What will happen next?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The audience will have a meal."
+            },
+            {
+              "key": "B",
+              "text": "The speaker will chair a meeting."
+            },
+            {
+              "key": "C",
+              "text": "The stockroom manager will give a talk."
+            },
+            {
+              "key": "D",
+              "text": "The meeting will come to an end."
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-92-94",
+      "part": "PART 4",
+      "title": "Questions 92-94",
+      "range": [
+        92,
+        94
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
+        {
+          "questionNumber": 92,
+          "questionText": "Who is being addressed?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Service managers"
+            },
+            {
+              "key": "B",
+              "text": "New employees"
+            },
+            {
+              "key": "C",
+              "text": "Factory inspectors"
+            },
+            {
+              "key": "D",
+              "text": "College students"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 93,
+          "questionText": "On which floor is the Financial Services department?",
+          "options": [
+            {
+              "key": "A",
+              "text": "First"
+            },
+            {
+              "key": "B",
+              "text": "Second"
+            },
+            {
+              "key": "C",
+              "text": "Third"
+            },
+            {
+              "key": "D",
+              "text": "Fourth"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 94,
+          "questionText": "Where will extra information be posted?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Near the entrance"
+            },
+            {
+              "key": "B",
+              "text": "By the elevator"
+            },
+            {
+              "key": "C",
+              "text": "On the website"
+            },
+            {
+              "key": "D",
+              "text": "In the newsletter"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-95-97",
+      "part": "PART 4",
+      "title": "Questions 95-97",
+      "range": [
+        95,
+        97
+      ],
+      "hasGraphic": true,
+      "graphicData": {
+        "type": "chart",
+        "title": "Biểu đồ cột \"April: Percentage increase in sales\" (Tỷ lệ phần trăm tăng trưởng doanh số tháng Tư)",
+        "chart": [
+          {
+            "label": "Kitchen products (Sản phẩm nhà bếp)",
+            "value": 10
+          },
+          {
+            "label": "Bathroom products (Sản phẩm phòng tắm)",
+            "value": 22
+          },
+          {
+            "label": "Professional care (Chăm sóc chuyên nghiệp)",
+            "value": 10
+          },
+          {
+            "label": "Baby care (Chăm sóc trẻ em)",
+            "value": 15
+          }
+        ],
+        "raw": [
+          "Biểu đồ cột \"April: Percentage increase in sales\" (Tỷ lệ phần trăm tăng trưởng doanh số tháng Tư):",
+          "Kitchen products (Sản phẩm nhà bếp): 10%",
+          "Bathroom products (Sản phẩm phòng tắm): ~22%",
+          "Professional care (Chăm sóc chuyên nghiệp): 10%",
+          "Baby care (Chăm sóc trẻ em): 15%"
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 95,
+          "questionText": "When is this talk taking place?",
+          "options": [
+            {
+              "key": "A",
+              "text": "At an annual shareholders' meeting"
+            },
+            {
+              "key": "B",
+              "text": "During a recruitment interview"
+            },
+            {
+              "key": "C",
+              "text": "At the start of a business meeting"
+            },
+            {
+              "key": "D",
+              "text": "At the end of a sales presentation"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": true,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 96,
+          "questionText": "Look at the graphic. In which department does Michael work?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Kitchen products"
+            },
+            {
+              "key": "B",
+              "text": "Bathroom products"
+            },
+            {
+              "key": "C",
+              "text": "Professional care"
+            },
+            {
+              "key": "D",
+              "text": "Baby care"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": true,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 97,
+          "questionText": "What does the speaker imply listeners will receive?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A promotion"
+            },
+            {
+              "key": "B",
+              "text": "A free product"
+            },
+            {
+              "key": "C",
+              "text": "A financial reward"
+            },
+            {
+              "key": "D",
+              "text": "A monthly bonus"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": true,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-98-100",
+      "part": "PART 4",
+      "title": "Questions 98-100",
+      "range": [
+        98,
+        100
+      ],
+      "hasGraphic": true,
+      "graphicData": {
+        "type": "description",
+        "title": "Bản đồ sơ đồ vườn (Garden Layout)",
+        "raw": [
+          "Bản đồ sơ đồ vườn (Garden Layout):",
+          "Khu vực 1 nằm cạnh Nhà kho (Shed) ở góc trên bên trái.",
+          "Khu vực 2 nằm cạnh Nhà kính (Greenhouse) ở góc trên bên phải.",
+          "Sân giữa có hồ nước (Pond).",
+          "Cổng (Gate) ở phía dưới bên trái, dẫn vào khu vườn (gần đó có khu vực 3).",
+          "Nhà (House) ở phía dưới bên phải.",
+          "Khu vực 4 nằm sát hàng rào (Fence) phía bên phải."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 98,
+          "questionText": "Who is the woman speaking to?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A gardener"
+            },
+            {
+              "key": "B",
+              "text": "A delivery driver"
+            },
+            {
+              "key": "C",
+              "text": "A sales assistant"
+            },
+            {
+              "key": "D",
+              "text": "Her husband"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": true,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 99,
+          "questionText": "What is implied about the shed?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It is a tall structure."
+            },
+            {
+              "key": "B",
+              "text": "It is made of wood."
+            },
+            {
+              "key": "C",
+              "text": "It is unpleasant to look at."
+            },
+            {
+              "key": "D",
+              "text": "It was recently erected."
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": true,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 100,
+          "questionText": "Look at the graphic. In which area of the garden will the bushes be planted?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Area 1"
+            },
+            {
+              "key": "B",
+              "text": "Area 2"
+            },
+            {
+              "key": "C",
+              "text": "Area 3"
+            },
+            {
+              "key": "D",
+              "text": "Area 4"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": true,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

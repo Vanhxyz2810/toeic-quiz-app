@@ -1,0 +1,97 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "TOEIC Quiz Part 3 & 4 · Listening" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+        - generic [ref=e9]:
+          - paragraph [ref=e10]: TOEIC Quiz
+          - paragraph [ref=e11]: Part 3 & 4 · Listening
+      - button "Chuyển sang tối" [ref=e12] [cursor=pointer]:
+        - img [ref=e13]
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - link "Thoát" [ref=e18] [cursor=pointer]:
+          - /url: /
+          - button "Thoát" [ref=e19]:
+            - img [ref=e20]
+            - text: Thoát
+        - generic [ref=e22]:
+          - generic [ref=e23]: Có graphic
+          - generic [ref=e24]:
+            - img [ref=e25]
+            - text: Study
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e30]: Questions 98-100
+          - generic [ref=e31]: Câu 1/3
+        - progressbar [ref=e32]
+      - generic [ref=e36]:
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - img [ref=e41]
+              - generic [ref=e45]: Bản đồ sơ đồ vườn (Garden Layout)
+            - generic [ref=e46]:
+              - img [ref=e47]
+              - text: Sơ đồ
+          - generic [ref=e50]:
+            - generic [ref=e51]: Fence
+            - generic [ref=e52]:
+              - generic [ref=e53]:
+                - img [ref=e54]
+                - text: Shed
+              - generic [ref=e57]:
+                - img [ref=e58]
+                - text: Greenhouse
+              - generic [ref=e62]:
+                - generic [ref=e63]: "1"
+                - generic [ref=e64]: Khu 1
+              - generic [ref=e65]:
+                - generic [ref=e66]: "2"
+                - generic [ref=e67]: Khu 2
+              - generic [ref=e68]:
+                - generic [ref=e69]: "3"
+                - generic [ref=e70]: Khu 3
+              - generic [ref=e71]:
+                - generic [ref=e72]: "4"
+                - generic [ref=e73]: Khu 4
+              - generic [ref=e74]:
+                - img [ref=e75]
+                - text: Pond
+              - generic [ref=e78]:
+                - img [ref=e79]
+                - text: Gate
+              - generic [ref=e82]:
+                - img [ref=e83]
+                - text: House
+            - generic [ref=e86]: Fence
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - generic [ref=e90]: "98"
+              - heading "Who is the woman speaking to?" [level=2] [ref=e91]
+            - button "Đánh dấu câu khó" [ref=e92] [cursor=pointer]:
+              - img [ref=e93]
+          - generic [ref=e95]:
+            - button "A A gardener" [ref=e96] [cursor=pointer]:
+              - generic [ref=e97]: A
+              - generic [ref=e98]: A gardener
+            - button "B A delivery driver" [ref=e99] [cursor=pointer]:
+              - generic [ref=e100]: B
+              - generic [ref=e101]: A delivery driver
+            - button "C A sales assistant" [ref=e102] [cursor=pointer]:
+              - generic [ref=e103]: C
+              - generic [ref=e104]: A sales assistant
+            - button "D Her husband" [ref=e105] [cursor=pointer]:
+              - generic [ref=e106]: D
+              - generic [ref=e107]: Her husband
+      - generic [ref=e108]:
+        - button "Previous" [disabled]:
+          - img
+          - text: Previous
+        - button "Next" [ref=e109] [cursor=pointer]:
+          - text: Next
+          - img [ref=e110]
+  - alert [ref=e112]
