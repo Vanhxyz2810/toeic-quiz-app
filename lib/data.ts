@@ -3,6 +3,7 @@ import type {
   EnrichedQuestion,
   Progress,
   QuestionGroup,
+  QuizBlock,
   QuizData,
   QuizSetKey,
 } from "@/types";
@@ -67,6 +68,32 @@ export function resolveQuestionSet(
       // group id
       return allQuestions.filter((q) => q.groupId === key);
   }
+}
+
+/**
+ * Gom danh sách câu (phẳng) thành các block theo hội thoại (groupId),
+ * giữ nguyên thứ tự xuất hiện. 3 câu của một hội thoại luôn nằm chung block.
+ */
+export function groupIntoBlocks(questions: EnrichedQuestion[]): QuizBlock[] {
+  const map = new Map<string, QuizBlock>();
+  for (const q of questions) {
+    if (!map.has(q.groupId)) {
+      map.set(q.groupId, {
+        key: q.groupId,
+        title: q.groupTitle,
+        part: q.part,
+        graphicData: q.graphicData,
+        questions: [],
+      });
+    }
+    map.get(q.groupId)!.questions.push(q);
+  }
+  return [...map.values()];
+}
+
+/** Giải một QuizSetKey trực tiếp thành các block (dùng cho màn làm bài). */
+export function resolveQuizBlocks(key: QuizSetKey, progress?: Progress): QuizBlock[] {
+  return groupIntoBlocks(resolveQuestionSet(key, progress));
 }
 
 /** Nhãn hiển thị cho một QuizSetKey. */

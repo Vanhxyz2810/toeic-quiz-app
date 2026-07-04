@@ -74,18 +74,22 @@ export function ResultScreen({ questions, answers, onRetryAll, onRetryWrong }: R
               <XCircle className="h-4 w-4 text-danger" /> Câu trả lời sai ({wrong.length})
             </h2>
             <ul className="space-y-2">
-              {wrong.map((q) => (
-                <li key={q.questionNumber} className="rounded-lg border border-border bg-muted/30 p-3 text-sm">
-                  <div className="flex items-start gap-2">
-                    <span className="font-semibold text-danger">#{q.questionNumber}</span>
-                    <span className="flex-1">{q.questionText}</span>
-                  </div>
-                  <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 pl-6 text-xs text-muted-foreground">
-                    <span>Bạn chọn: <b className="text-danger">({answers[q.questionNumber]})</b></span>
-                    <span>Đáp án đúng: <b className="text-success">({q.correctAnswer})</b></span>
-                  </div>
-                </li>
-              ))}
+              {wrong.map((q) => {
+                const chosen = q.options.find((o) => o.key === answers[q.questionNumber]);
+                const correct = q.options.find((o) => o.key === q.correctAnswer);
+                return (
+                  <li key={q.questionNumber} className="rounded-lg border border-border bg-muted/30 p-3 text-sm">
+                    <div className="flex items-start gap-2">
+                      <span className="font-semibold text-danger">#{q.questionNumber}</span>
+                      <span className="flex-1">{q.questionText}</span>
+                    </div>
+                    <div className="mt-2 space-y-1 pl-6 text-xs">
+                      <p className="text-danger">✗ Bạn chọn: {chosen?.text ?? "—"}</p>
+                      <p className="text-success">✓ Đáp án đúng: {correct?.text ?? "—"}</p>
+                    </div>
+                  </li>
+                );
+              })}
             </ul>
           </CardContent>
         </Card>

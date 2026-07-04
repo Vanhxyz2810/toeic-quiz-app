@@ -22,6 +22,8 @@ interface QuestionCardProps {
   bookmarked: boolean;
   onSelect: (key: AnswerKey) => void;
   onToggleBookmark: () => void;
+  /** Có tự render graphic trong card này không (tắt khi graphic đã hiện ở cấp nhóm). */
+  showGraphic?: boolean;
 }
 
 export function QuestionCard({
@@ -31,14 +33,18 @@ export function QuestionCard({
   bookmarked,
   onSelect,
   onToggleBookmark,
+  showGraphic = true,
 }: QuestionCardProps) {
   const [showExplanation, setShowExplanation] = useState(false);
   const correct = question.correctAnswer;
+  // Nhãn hiển thị của đáp án đúng (theo thứ tự đã đảo nếu có).
+  const correctDisplay =
+    question.options.find((o) => o.key === correct)?.displayKey ?? correct;
 
   return (
     <div className="grid gap-4 lg:grid-cols-[1fr] xl:gap-6">
       {/* Graphic (nếu có) hiển thị phía trên câu hỏi */}
-      {question.graphicData && <GraphicCard graphic={question.graphicData} />}
+      {showGraphic && question.graphicData && <GraphicCard graphic={question.graphicData} />}
 
       <div>
         {/* Header câu hỏi */}
@@ -104,7 +110,7 @@ export function QuestionCard({
                     state === "wrong" && "border-danger bg-danger text-danger-foreground"
                   )}
                 >
-                  {opt.key}
+                  {opt.displayKey ?? opt.key}
                 </span>
                 <span className="flex-1 text-sm sm:text-base">{opt.text}</span>
 
@@ -150,7 +156,7 @@ export function QuestionCard({
                   </Badge>
                 ) : (
                   <Badge variant="danger" className="px-3 py-1 text-sm">
-                    <X className="h-4 w-4" /> Đáp án đúng là ({correct})
+                    <X className="h-4 w-4" /> Đáp án đúng là ({correctDisplay})
                   </Badge>
                 )}
 

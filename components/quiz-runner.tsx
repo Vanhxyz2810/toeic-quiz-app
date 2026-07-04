@@ -10,95 +10,90 @@ import {
   CheckCheck,
   FlaskConical,
   GraduationCap,
+  Image as ImageIcon,
 } from "lucide-react";
-import type { AnswerKey, EnrichedQuestion, QuizMode } from "@/types";
+import type { AnswerKey, EnrichedQuestion, QuizBlock, QuizMode } from "@/types";
 import { useProgress } from "@/components/providers";
+import { groupIntoBlocks } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
+import { Card } from "@/components/ui/card";
 import { QuestionCard } from "@/components/question-card";
+import { GraphicCard } from "@/components/graphic-card";
 import { ResultScreen } from "@/components/result-screen";
 
 interface QuizRunnerProps {
   title: string;
-  questions: EnrichedQuestion[];
+  blocks: QuizBlock[];
   mode: QuizMode;
 }
 
-export function QuizRunner({ title, questions: initialQuestions, mode }: QuizRunnerProps) {
+export function QuizRunner({ title, blocks: initialBlocks, mode }: QuizRunnerProps) {
   const { progress, answer, toggleBookmark, clearAnswers } = useProgress();
 
-  // Cho phép làm lại một tập con (câu sai) mà không rời trang.
-  const [questions, setQuestions] = useState(initialQuestions);
-  const [index, setIndex] = useState(0);
+  const [blocks, setBlocks] = useState(initialBlocks);
+  const [index, setIndex] = useState(0); // chỉ số BLOCK (hội thoại) hiện tại
   const [direction, setDirection] = useState(1);
   const [finished, setFinished] = useState(false);
 
-  // Đáp án của phiên hiện tại (độc lập với localStorage cho tới khi ghi nhận).
+  // Đáp án phiên hiện tại — luôn lưu theo KEY GỐC (chấm điểm chuẩn dù đã đảo).
   const [session, setSession] = useState<Record<number, AnswerKey>>({});
-  // Study mode: đã "check" câu nào (mới reveal câu đó).
+  // Study mode: các câu đã "check" (mới reveal).
   const [checked, setChecked] = useState<Set<number>>(new Set());
 
-  const current = questions[index];
-  const answeredCount = Object.keys(session).length;
-  const selected = current ? session[current.questionNumber] : undefined;
-  const isRevealed = mode === "study" && !!current && checked.has(current.questionNumber);
+  const current = blocks[index];
+  const allQuestions = useMemo(() => blocks.flatMap((b) => b.questions), [blocks]);
+  const answeredCount = allQuestions.filter((q) => session[q.questionNumber]).length;
+  const allAnswered = allQuestions.every((q) => session[q.questionNumber]);
 
-  const canGoNext = index < questions.length - 1;
-  const canGoPrev = index > 0;
+  const canPrev = index > 0;
+  const canNext = index < blocks.length - 1;
 
-  const allAnswered = questions.every((q) => session[q.questionNumber]);
-
-  function handleSelect(key: AnswerKey) {
-    if (!current) return;
-    if (mode === "study" && checked.has(current.questionNumber)) return; // khóa sau khi check
-    setSession((s) => ({ ...s, [current.questionNumber]: key }));
-
+  function handleSelect(q: EnrichedQuestion, key: AnswerKey) {
+    if (mode === "study" && checked.has(q.questionNumber)) return; // khóa sau khi check
+    setSession((s) => ({ ...s, [q.questionNumber]: key }));
     if (mode === "study") {
-      // Study: check ngay -> reveal + ghi nhận tiến độ.
-      setChecked((c) => new Set(c).add(current.questionNumber));
-      answer(current.questionNumber, key);
+      setChecked((c) => new Set(c).add(q.questionNumber));
+      answer(q.questionNumber, key); // ghi nhận ngay
     }
   }
 
   function goTo(next: number) {
     setDirection(next > index ? 1 : -1);
     setIndex(next);
+    if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   function handleSubmit() {
-    // Test mode: ghi nhận toàn bộ đáp án đã chọn xuống tiến độ.
-    for (const q of questions) {
+    for (const q of allQuestions) {
       const a = session[q.questionNumber];
       if (a) answer(q.questionNumber, a);
     }
     setFinished(true);
   }
 
-  function restart(qs: EnrichedQuestion[]) {
-    setQuestions(qs);
+  function restart(newBlocks: QuizBlock[]) {
+    setBlocks(newBlocks);
     setSession({});
     setChecked(new Set());
     setIndex(0);
     setFinished(false);
   }
 
-  const modeBadge = useMemo(
-    () =>
-      mode === "study" ? (
-        <Badge variant="accent"><GraduationCap className="h-3.5 w-3.5" /> Study</Badge>
-      ) : (
-        <Badge variant="secondary"><FlaskConical className="h-3.5 w-3.5" /> Test</Badge>
-      ),
-    [mode]
-  );
+  const modeBadge =
+    mode === "study" ? (
+      <Badge variant="accent"><GraduationCap className="h-3.5 w-3.5" /> Study</Badge>
+    ) : (
+      <Badge variant="secondary"><FlaskConical className="h-3.5 w-3.5" /> Test</Badge>
+    );
 
-  // ---- Empty / Result states ----
-  if (!questions.length) {
+  // ---- Empty / Result ----
+  if (!blocks.length) {
     return (
       <div className="mx-auto max-w-md py-20 text-center">
-        <p className="text-muted-foreground">Không có câu hỏi nào trong nhóm này.</p>
+        <p className="text-muted-foreground">Không có câu hỏi nào.</p>
         <Link href="/" className="mt-4 inline-block">
           <Button variant="outline"><ArrowLeft className="h-4 w-4" /> Về Dashboard</Button>
         </Link>
@@ -109,13 +104,13 @@ export function QuizRunner({ title, questions: initialQuestions, mode }: QuizRun
   if (finished) {
     return (
       <ResultScreen
-        questions={questions}
+        questions={allQuestions}
         answers={session}
-        onRetryAll={() => restart(initialQuestions)}
+        onRetryAll={() => restart(initialBlocks)}
         onRetryWrong={(wrong) => {
-          // Xóa đáp án cũ của các câu sai để làm lại "sạch".
           clearAnswers(wrong.map((q) => q.questionNumber));
-          restart(wrong);
+          // Gom lại thành block theo hội thoại để vẫn học 3 câu liên quan cùng nhau.
+          restart(groupIntoBlocks(wrong));
         }}
       />
     );
@@ -123,68 +118,87 @@ export function QuizRunner({ title, questions: initialQuestions, mode }: QuizRun
 
   return (
     <div className="mx-auto max-w-3xl space-y-5">
-      {/* Thanh trên: back + tiêu đề + tiến độ */}
+      {/* Thanh trên */}
       <div className="flex items-center justify-between gap-3">
         <Link href="/">
           <Button variant="ghost" size="sm"><ArrowLeft className="h-4 w-4" /> Thoát</Button>
         </Link>
         <div className="flex items-center gap-2">
-          {current.graphicData && <Badge variant="outline">Có graphic</Badge>}
+          {current.graphicData && (
+            <Badge variant="outline"><ImageIcon className="h-3.5 w-3.5" /> Có graphic</Badge>
+          )}
           {modeBadge}
         </div>
       </div>
 
+      {/* Tiến độ theo hội thoại */}
       <div>
         <div className="mb-2 flex items-center justify-between text-sm">
           <span className="font-medium">{title}</span>
           <span className="tabular-nums text-muted-foreground">
-            Câu {index + 1}/{questions.length}
+            Đoạn {index + 1}/{blocks.length}
           </span>
         </div>
-        <Progress value={((index + 1) / questions.length) * 100} />
+        <Progress value={((index + 1) / blocks.length) * 100} />
         {mode === "test" && (
           <p className="mt-1.5 text-xs text-muted-foreground">
-            Đã chọn {answeredCount}/{questions.length} câu · sẽ chấm điểm khi nộp bài.
+            Đã chọn {answeredCount}/{allQuestions.length} câu · chấm điểm khi nộp bài.
           </p>
         )}
       </div>
 
-      {/* Câu hỏi (fade/slide khi chuyển) */}
+      {/* Một hội thoại: graphic (1 lần) + 3 câu liên quan */}
       <div className="relative overflow-hidden">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
-            key={current.questionNumber}
+            key={current.key}
             custom={direction}
             initial={{ opacity: 0, x: direction * 40 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: direction * -40 }}
             transition={{ duration: 0.28, ease: "easeInOut" }}
+            className="space-y-4"
           >
-            <QuestionCard
-              question={current}
-              selected={selected}
-              revealed={isRevealed}
-              bookmarked={progress.bookmarks.includes(current.questionNumber)}
-              onSelect={handleSelect}
-              onToggleBookmark={() => toggleBookmark(current.questionNumber)}
-            />
+            {/* Nhãn hội thoại */}
+            <div className="flex items-center gap-2">
+              <Badge variant="secondary">{current.part}</Badge>
+              <span className="text-sm font-semibold">{current.title}</span>
+              <span className="text-xs text-muted-foreground">
+                · {current.questions.length} câu liên quan
+              </span>
+            </div>
+
+            {/* Graphic dùng chung cho cả hội thoại */}
+            {current.graphicData && <GraphicCard graphic={current.graphicData} />}
+
+            {/* Các câu trong hội thoại */}
+            <Card className="divide-y divide-border">
+              {current.questions.map((q) => (
+                <div key={q.questionNumber} className="p-4 sm:p-5">
+                  <QuestionCard
+                    question={q}
+                    selected={session[q.questionNumber]}
+                    revealed={mode === "study" && checked.has(q.questionNumber)}
+                    bookmarked={progress.bookmarks.includes(q.questionNumber)}
+                    onSelect={(key) => handleSelect(q, key)}
+                    onToggleBookmark={() => toggleBookmark(q.questionNumber)}
+                    showGraphic={false}
+                  />
+                </div>
+              ))}
+            </Card>
           </motion.div>
         </AnimatePresence>
       </div>
 
-      {/* Điều hướng */}
+      {/* Điều hướng theo hội thoại */}
       <div className="flex items-center justify-between gap-3 border-t border-border pt-4">
-        <Button variant="outline" onClick={() => goTo(index - 1)} disabled={!canGoPrev}>
-          <ChevronLeft className="h-4 w-4" /> Previous
+        <Button variant="outline" onClick={() => goTo(index - 1)} disabled={!canPrev}>
+          <ChevronLeft className="h-4 w-4" /> Đoạn trước
         </Button>
-
-        {canGoNext ? (
-          <Button
-            onClick={() => goTo(index + 1)}
-            // Study mode khuyến khích trả lời trước khi qua câu (không bắt buộc)
-            className={cn(mode === "study" && !isRevealed && "opacity-90")}
-          >
-            Next <ChevronRight className="h-4 w-4" />
+        {canNext ? (
+          <Button onClick={() => goTo(index + 1)}>
+            Đoạn tiếp <ChevronRight className="h-4 w-4" />
           </Button>
         ) : (
           <Button variant="success" onClick={handleSubmit} disabled={mode === "test" && !allAnswered}>

@@ -10,8 +10,10 @@ import {
   Image as ImageIcon,
   Layers,
   ListChecks,
+  ListOrdered,
   RotateCcw,
   Search,
+  Shuffle,
   Target,
   Trophy,
   XCircle,
@@ -31,7 +33,12 @@ import { QuickStart } from "@/components/quick-start";
 export function Dashboard() {
   const { stats, progress, reset, hydrated } = useProgress();
   const [mode, setMode] = useState<QuizMode>("study");
+  const [shuffleGroups, setShuffleGroups] = useState(false);
+  const [shuffleOptions, setShuffleOptions] = useState(false);
   const [query, setQuery] = useState("");
+
+  // Query string chung cho mọi link quiz: mode + tùy chọn đảo.
+  const qs = `mode=${mode}${shuffleGroups ? "&sg=1" : ""}${shuffleOptions ? "&so=1" : ""}`;
 
   const wrongCount = resolveQuestionSet("wrong", progress).length;
   const bookmarkCount = resolveQuestionSet("bookmarked", progress).length;
@@ -105,19 +112,51 @@ export function Dashboard() {
             ))}
           </div>
         </div>
-        <p className="-mt-2 text-xs text-muted-foreground">
-          {mode === "study"
-            ? "Study: chọn xong hiện đúng/sai ngay + giải thích."
-            : "Test: làm hết rồi mới chấm điểm, giống thi thật."}
+        <div className="-mt-2 flex flex-wrap items-center gap-2">
+          <p className="text-xs text-muted-foreground">
+            {mode === "study"
+              ? "Study: chọn xong hiện đúng/sai ngay + giải thích."
+              : "Test: làm hết rồi mới chấm điểm, giống thi thật."}
+          </p>
+          <span className="text-muted-foreground/40">·</span>
+          {/* Toggle đảo nhóm hội thoại */}
+          <button
+            onClick={() => setShuffleGroups((v) => !v)}
+            aria-pressed={shuffleGroups}
+            className={cn(
+              "inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition-colors",
+              shuffleGroups
+                ? "border-primary bg-primary/10 text-primary"
+                : "border-border text-muted-foreground hover:text-foreground"
+            )}
+          >
+            <Shuffle className="h-3.5 w-3.5" /> Đảo thứ tự hội thoại
+          </button>
+          {/* Toggle đảo đáp án */}
+          <button
+            onClick={() => setShuffleOptions((v) => !v)}
+            aria-pressed={shuffleOptions}
+            className={cn(
+              "inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition-colors",
+              shuffleOptions
+                ? "border-primary bg-primary/10 text-primary"
+                : "border-border text-muted-foreground hover:text-foreground"
+            )}
+          >
+            <ListOrdered className="h-3.5 w-3.5" /> Đảo đáp án A/B/C/D
+          </button>
+        </div>
+        <p className="text-[11px] text-muted-foreground/80">
+          Đảo hội thoại chỉ xáo thứ tự các đoạn — 3 câu trong một đoạn luôn đi cùng nhau.
         </p>
 
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          <QuickStart href="/quiz/all" icon={BookOpen} title="Toàn bộ đề" subtitle="Tất cả câu Part 3 & 4" count={stats.total} mode={mode} />
-          <QuickStart href="/quiz/part-3" icon={Layers} title="Part 3" subtitle="Conversations" count={resolveQuestionSet("part-3").length} mode={mode} />
-          <QuickStart href="/quiz/part-4" icon={Layers} title="Part 4" subtitle="Short talks" count={resolveQuestionSet("part-4").length} mode={mode} tone="success" />
-          <QuickStart href="/quiz/graphic" icon={ImageIcon} title="Câu có graphic" subtitle="Bảng biểu & sơ đồ" count={graphicCount} mode={mode} tone="amber" />
-          <QuickStart href="/quiz/wrong" icon={XCircle} title="Ôn câu sai" subtitle="Chỉ những câu đã trả lời sai" count={wrongCount} mode={mode} tone="danger" disabled={wrongCount === 0} />
-          <QuickStart href="/quiz/bookmarked" icon={Bookmark} title="Câu đã đánh dấu" subtitle="Danh sách bookmark của bạn" count={bookmarkCount} mode={mode} tone="primary" disabled={bookmarkCount === 0} />
+          <QuickStart href="/quiz/all" icon={BookOpen} title="Toàn bộ đề" subtitle="Tất cả câu Part 3 & 4" count={stats.total} mode={mode} query={qs} />
+          <QuickStart href="/quiz/part-3" icon={Layers} title="Part 3" subtitle="Conversations" count={resolveQuestionSet("part-3").length} mode={mode} query={qs} />
+          <QuickStart href="/quiz/part-4" icon={Layers} title="Part 4" subtitle="Short talks" count={resolveQuestionSet("part-4").length} mode={mode} query={qs} tone="success" />
+          <QuickStart href="/quiz/graphic" icon={ImageIcon} title="Câu có graphic" subtitle="Bảng biểu & sơ đồ" count={graphicCount} mode={mode} query={qs} tone="amber" />
+          <QuickStart href="/quiz/wrong" icon={XCircle} title="Ôn câu sai" subtitle="Chỉ những câu đã trả lời sai" count={wrongCount} mode={mode} query={qs} tone="danger" disabled={wrongCount === 0} />
+          <QuickStart href="/quiz/bookmarked" icon={Bookmark} title="Câu đã đánh dấu" subtitle="Danh sách bookmark của bạn" count={bookmarkCount} mode={mode} query={qs} tone="primary" disabled={bookmarkCount === 0} />
         </div>
       </section>
 
@@ -154,7 +193,7 @@ export function Dashboard() {
                   ).length;
                   const done = answered === total;
                   return (
-                    <Link key={g.id} href={`/quiz/${g.id}?mode=${mode}`}>
+                    <Link key={g.id} href={`/quiz/${g.id}?${qs}`}>
                       <motion.div whileHover={{ y: -3 }} className="h-full">
                         <Card className={cn("h-full transition-colors hover:border-primary/40", done && "border-success/40")}>
                           <CardHeader className="pb-3">

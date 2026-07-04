@@ -3,8 +3,11 @@
 export type AnswerKey = "A" | "B" | "C" | "D";
 
 export interface Option {
+  /** Đáp án GỐC (A/B/C/D theo nguồn) — dùng để chấm điểm & lưu tiến độ. */
   key: AnswerKey;
   text: string;
+  /** Nhãn HIỂN THỊ sau khi đảo đáp án (A/B/C/D theo vị trí mới). Chỉ để render. */
+  displayKey?: AnswerKey;
 }
 
 /** Bảng graphic (flight info, clinic schedule, train departures...). */
@@ -67,6 +70,24 @@ export interface EnrichedQuestion extends Question {
   groupTitle: string;
   part: string;
   graphicData: GraphicData | null;
+}
+
+/**
+ * Một "khối" khi làm bài = 1 hội thoại/bài nói (3 câu liên quan nhau).
+ * Đảo nhóm = đảo thứ tự các block; 3 câu trong block luôn dính nhau.
+ */
+export interface QuizBlock {
+  key: string; // = groupId
+  title: string;
+  part: string;
+  graphicData: GraphicData | null;
+  questions: EnrichedQuestion[];
+}
+
+/** Tùy chọn xáo trộn khi bắt đầu một phiên quiz. */
+export interface ShuffleOptions {
+  groups: boolean; // đảo thứ tự các hội thoại
+  options: boolean; // đảo A/B/C/D trong mỗi câu
 }
 
 /** Tiến độ lưu trong localStorage. */

@@ -13,6 +13,8 @@ interface QuickStartProps {
   subtitle: string;
   count: number;
   mode: QuizMode;
+  /** Query string (không kèm dấu ?) — mode + tùy chọn đảo. */
+  query: string;
   tone?: "primary" | "success" | "danger" | "amber";
   disabled?: boolean;
 }
@@ -32,6 +34,7 @@ export function QuickStart({
   subtitle,
   count,
   mode,
+  query,
   tone = "primary",
   disabled,
 }: QuickStartProps) {
@@ -61,7 +64,7 @@ export function QuickStart({
 
   if (disabled) return <div>{body}</div>;
   return (
-    <Link href={`${href}?mode=${mode}`} className="block h-full">
+    <Link href={`${href}?${query}`} className="block h-full">
       {body}
     </Link>
   );
