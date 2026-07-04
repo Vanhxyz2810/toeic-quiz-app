@@ -362,12 +362,12 @@
       ]
     },
     {
-      "id": "q-44-45",
+      "id": "q-44-46",
       "part": "PART 3",
-      "title": "Questions 44-45",
+      "title": "Questions 44-46",
       "range": [
         44,
-        45
+        46
       ],
       "hasGraphic": false,
       "graphicData": null,
@@ -421,20 +421,7 @@
           "correctAnswer": "C",
           "hasGraphic": false,
           "explanation": ""
-        }
-      ]
-    },
-    {
-      "id": "q-46-49",
-      "part": "PART 3",
-      "title": "Questions 46-49",
-      "range": [
-        46,
-        49
-      ],
-      "hasGraphic": false,
-      "graphicData": null,
-      "questions": [
+        },
         {
           "questionNumber": 46,
           "questionText": "When does this conversation take place?",
@@ -459,7 +446,20 @@
           "correctAnswer": "B",
           "hasGraphic": false,
           "explanation": ""
-        },
+        }
+      ]
+    },
+    {
+      "id": "q-47-49",
+      "part": "PART 3",
+      "title": "Questions 47-49",
+      "range": [
+        47,
+        49
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "questions": [
         {
           "questionNumber": 47,
           "questionText": "Who is the woman talking to?",
@@ -802,12 +802,12 @@
       ]
     },
     {
-      "id": "q-59-60",
+      "id": "q-59-61",
       "part": "PART 3",
-      "title": "Questions 59-60",
+      "title": "Questions 59-61",
       "range": [
         59,
-        60
+        61
       ],
       "hasGraphic": false,
       "graphicData": null,
@@ -861,15 +861,40 @@
           "correctAnswer": "A",
           "hasGraphic": false,
           "explanation": ""
+        },
+        {
+          "questionNumber": 61,
+          "questionText": "What will the man probably do next?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Call a taxi"
+            },
+            {
+              "key": "B",
+              "text": "Go to the mall"
+            },
+            {
+              "key": "C",
+              "text": "Wait for twenty minutes"
+            },
+            {
+              "key": "D",
+              "text": "Get dressed"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
         }
       ]
     },
     {
-      "id": "q-61-64",
+      "id": "q-62-64",
       "part": "PART 3",
-      "title": "Questions 61-64",
+      "title": "Questions 62-64",
       "range": [
-        61,
+        62,
         64
       ],
       "hasGraphic": true,
@@ -909,31 +934,6 @@
         ]
       },
       "questions": [
-        {
-          "questionNumber": 61,
-          "questionText": "What will the man probably do next?",
-          "options": [
-            {
-              "key": "A",
-              "text": "Call a taxi"
-            },
-            {
-              "key": "B",
-              "text": "Go to the mall"
-            },
-            {
-              "key": "C",
-              "text": "Wait for twenty minutes"
-            },
-            {
-              "key": "D",
-              "text": "Get dressed"
-            }
-          ],
-          "correctAnswer": "B",
-          "hasGraphic": true,
-          "explanation": ""
-        },
         {
           "questionNumber": 62,
           "questionText": "Why does the woman have to wait?",

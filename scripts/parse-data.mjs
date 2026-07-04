@@ -4,9 +4,11 @@
  *
  * Nguyên tắc:
  *  - Giữ nguyên dữ liệu gốc, không làm mất thông tin.
- *  - Tự nhận diện block graphic (bảng / biểu đồ / bản đồ) nằm giữa header nhóm
- *    và câu hỏi đầu tiên -> lưu vào graphicData (kèm parse table/chart nếu được).
- *  - Format không đồng nhất thì xử lý linh hoạt thay vì ném lỗi.
+ *  - TOEIC Part 3 & 4: mỗi hội thoại/bài nói = ĐÚNG 3 câu liên tiếp.
+ *    Header "Questions X-Y" trong nguồn có chỗ bị lệch (44-45, 46-49, 61-64…)
+ *    nên KHÔNG dựa vào header để gom nhóm — thay vào đó gom 3 câu liên tiếp
+ *    trong mỗi Part (Part 3: 32-70, Part 4: 71-100).
+ *  - Graphic (bảng/biểu đồ/sơ đồ) được gắn vào nhóm chứa câu "Look at the graphic".
  *
  * Chạy: node scripts/parse-data.mjs
  */
@@ -18,6 +20,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 const SRC = resolve(ROOT, "data.txt");
 const OUT = resolve(ROOT, "data", "questions.json");
+const GROUP_SIZE = 3; // TOEIC: 3 câu / hội thoại
 
 const raw = readFileSync(SRC, "utf8");
 const lines = raw.split(/\r?\n/);
@@ -29,6 +32,7 @@ const RE_QUESTION = /^(\d+)\.\s+(.*)$/;
 const RE_OPTION = /^\(([A-D])\)\s*(.*)$/;
 const RE_ANSWER = /^Đáp án đúng:\s*\(([A-D])\)/i;
 const RE_GRAPHIC_FLAG = /Hình ảnh|Bảng biểu|graphic/i;
+const RE_LOOK_GRAPHIC = /Look at the graphic/i;
 
 // ---- Helpers cho graphic -----------------------------------------------------
 /** Parse markdown table (các dòng bắt đầu bằng `|`) thành {headers, rows}. */
@@ -36,15 +40,9 @@ function parseMarkdownTable(block) {
   const rows = block
     .filter((l) => l.trim().startsWith("|"))
     .map((l) =>
-      l
-        .trim()
-        .replace(/^\|/, "")
-        .replace(/\|$/, "")
-        .split("|")
-        .map((c) => c.trim())
+      l.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map((c) => c.trim())
     );
   if (rows.length < 2) return null;
-  // Bỏ dòng separator dạng | :--- | :--- |
   const isSep = (r) => r.every((c) => /^:?-{3,}:?$/.test(c));
   const headers = rows[0];
   const body = rows.slice(1).filter((r) => !isSep(r));
@@ -70,129 +68,137 @@ function parseBarChart(block) {
   return data.length ? data : null;
 }
 
-/**
- * Phân loại block graphic và trả về cấu trúc render-friendly.
- * Luôn kèm `raw` (mảng dòng gốc) để không mất dữ liệu.
- */
+/** Phân loại block graphic -> cấu trúc render-friendly (luôn kèm `raw`). */
 function buildGraphicData(block, title) {
-  const text = block.join("\n");
   const raw = block.slice();
-
-  // 1) Markdown table
   if (block.some((l) => l.trim().startsWith("|"))) {
     const table = parseMarkdownTable(block);
     if (table) return { type: "table", title, table, raw };
   }
-  // 2) Bar chart (có % )
   const chart = parseBarChart(block);
   if (chart) return { type: "chart", title, chart, raw };
-  // 3) Pipe pairs (CODE | DEST) không có header markdown
   if (block.some((l) => /\S\s*\|\s*\S/.test(l))) {
     const table = parsePipePairs(block);
     if (table) return { type: "table", title, table, raw };
   }
-  // 4) Mô tả bản đồ / sơ đồ -> render dạng list mô tả
   return { type: "description", title, raw };
 }
 
-// ---- Máy trạng thái duyệt file ----------------------------------------------
-const groups = [];
+// ---- Pass 1: parse phẳng toàn bộ câu hỏi ------------------------------------
+const flat = []; // { number, text, options[], answer, part, graphicRef|null }
 let currentPart = "PART 3";
-let currentGroup = null;
 let currentQuestion = null;
-let pendingGraphicLines = null; // đang thu thập block graphic của nhóm
+let pendingGraphicLines = null; // đang gom block graphic
+let pendingGraphic = null; // graphic đã build, chờ câu "Look at the graphic"
 
-function flushQuestion() {
-  if (currentQuestion && currentGroup) currentGroup.questions.push(currentQuestion);
+function pushQuestion() {
+  if (currentQuestion) flat.push(currentQuestion);
   currentQuestion = null;
-}
-function flushGroup() {
-  flushQuestion();
-  if (currentGroup && currentGroup.questions.length) groups.push(currentGroup);
-  currentGroup = null;
 }
 
 for (const rawLine of lines) {
   const line = rawLine.trim();
   if (!line) continue;
 
-  // PART marker
   const mPart = line.match(RE_PART);
   if (mPart) {
-    flushGroup();
+    pushQuestion();
     currentPart = `PART ${mPart[1]}`;
+    pendingGraphicLines = null;
     continue;
   }
 
-  // Group header
   const mGroup = line.match(RE_GROUP);
   if (mGroup) {
-    flushGroup();
-    const from = Number(mGroup[1]);
-    const to = Number(mGroup[2]);
-    const tail = (mGroup[3] || "").trim();
-    const hasGraphic = RE_GRAPHIC_FLAG.test(tail);
-    currentGroup = {
-      id: `q-${from}-${to}`,
-      part: currentPart,
-      title: `Questions ${from}-${to}`,
-      range: [from, to],
-      hasGraphic,
-      graphicData: null,
-      questions: [],
-    };
-    pendingGraphicLines = hasGraphic ? [] : null;
+    pushQuestion();
+    // Chỉ dùng header để biết CÓ graphic đi kèm hay không (không dùng để gom nhóm).
+    pendingGraphicLines = RE_GRAPHIC_FLAG.test(mGroup[3] || "") ? [] : null;
     continue;
   }
 
-  // Question line
   const mQ = line.match(RE_QUESTION);
-  if (mQ && currentGroup) {
-    // Kết thúc thu thập graphic khi gặp câu hỏi đầu tiên
+  if (mQ) {
+    // Kết thúc gom block graphic -> build và chờ gắn.
     if (pendingGraphicLines && pendingGraphicLines.length) {
       const firstLine = pendingGraphicLines[0];
       const title = /[:：]/.test(firstLine) ? firstLine.replace(/[:：]\s*$/, "") : "Graphic";
-      currentGroup.graphicData = buildGraphicData(pendingGraphicLines, title);
+      pendingGraphic = buildGraphicData(pendingGraphicLines, title);
     }
     pendingGraphicLines = null;
 
-    flushQuestion();
+    pushQuestion();
+    const text = mQ[2].trim();
     currentQuestion = {
-      questionNumber: Number(mQ[1]),
-      questionText: mQ[2].trim(),
+      number: Number(mQ[1]),
+      text,
       options: [],
-      correctAnswer: null,
-      hasGraphic: /Look at the graphic/i.test(mQ[2]) || currentGroup.hasGraphic,
-      explanation: "", // chưa có giải thích trong nguồn -> để rỗng
+      answer: null,
+      part: currentPart,
+      graphicRef: null,
     };
+    // Gắn graphic vào đúng câu "Look at the graphic".
+    if (pendingGraphic && RE_LOOK_GRAPHIC.test(text)) {
+      currentQuestion.graphicRef = pendingGraphic;
+      pendingGraphic = null;
+    }
     continue;
   }
 
-  // Option line
   const mO = line.match(RE_OPTION);
   if (mO && currentQuestion) {
     currentQuestion.options.push({ key: mO[1], text: mO[2].trim() });
     continue;
   }
 
-  // Answer line
   const mA = line.match(RE_ANSWER);
   if (mA && currentQuestion) {
-    currentQuestion.correctAnswer = mA[1];
+    currentQuestion.answer = mA[1];
     continue;
   }
 
-  // Còn lại: nếu đang chờ graphic -> gom vào block graphic
-  if (pendingGraphicLines) {
-    pendingGraphicLines.push(line);
-    continue;
-  }
-  // Ngược lại: dòng lạ -> nối vào questionText để không mất dữ liệu
-  if (currentQuestion && !currentQuestion.options.length) {
-    currentQuestion.questionText += " " + line;
+  // Dòng còn lại: gom vào block graphic, hoặc nối vào đề (tránh mất dữ liệu).
+  if (pendingGraphicLines) pendingGraphicLines.push(line);
+  else if (currentQuestion && !currentQuestion.options.length)
+    currentQuestion.text += " " + line;
+}
+pushQuestion();
+
+// ---- Pass 2: gom 3 câu liên tiếp trong mỗi Part -----------------------------
+const byPart = new Map();
+for (const q of flat) {
+  if (!byPart.has(q.part)) byPart.set(q.part, []);
+  byPart.get(q.part).push(q);
+}
+
+const groups = [];
+for (const [part, qs] of byPart) {
+  qs.sort((a, b) => a.number - b.number);
+  for (let i = 0; i < qs.length; i += GROUP_SIZE) {
+    const chunk = qs.slice(i, i + GROUP_SIZE);
+    const from = chunk[0].number;
+    const to = chunk[chunk.length - 1].number;
+    // Graphic của nhóm = graphic gắn ở bất kỳ câu nào trong nhóm.
+    const graphicData = chunk.find((c) => c.graphicRef)?.graphicRef ?? null;
+    const hasGraphic = !!graphicData;
+
+    groups.push({
+      id: `q-${from}-${to}`,
+      part,
+      title: `Questions ${from}-${to}`,
+      range: [from, to],
+      hasGraphic,
+      graphicData,
+      questions: chunk.map((c) => ({
+        questionNumber: c.number,
+        questionText: c.text,
+        options: c.options,
+        correctAnswer: c.answer,
+        hasGraphic, // cả nhóm dùng chung graphic (audio + hình của 1 hội thoại)
+        explanation: "", // chưa có giải thích trong nguồn
+      })),
+    });
   }
 }
-flushGroup();
 
 // ---- Thống kê & ghi file -----------------------------------------------------
 const allQuestions = groups.flatMap((g) => g.questions);
@@ -203,9 +209,10 @@ const meta = {
   generatedFrom: "data.txt",
 };
 
-// Cảnh báo mềm cho dữ liệu thiếu (không throw)
 const warnings = [];
 for (const g of groups) {
+  if (g.questions.length !== GROUP_SIZE)
+    warnings.push(`${g.title}: có ${g.questions.length} câu (khác ${GROUP_SIZE})`);
   for (const q of g.questions) {
     if (!q.correctAnswer) warnings.push(`Câu ${q.questionNumber}: thiếu đáp án`);
     if (q.options.length < 2) warnings.push(`Câu ${q.questionNumber}: chỉ có ${q.options.length} lựa chọn`);
@@ -215,8 +222,8 @@ for (const g of groups) {
 mkdirSync(dirname(OUT), { recursive: true });
 writeFileSync(OUT, JSON.stringify({ meta, groups }, null, 2), "utf8");
 
-console.log(`✓ Parsed ${meta.totalQuestions} câu / ${meta.totalGroups} nhóm -> ${OUT}`);
+console.log(`✓ Parsed ${meta.totalQuestions} câu / ${meta.totalGroups} nhóm (mỗi nhóm ${GROUP_SIZE} câu) -> ${OUT}`);
 console.log(`  Parts: ${meta.parts.join(", ")}`);
-console.log(`  Nhóm có graphic: ${groups.filter((g) => g.hasGraphic).length}`);
+console.log(`  Nhóm có graphic: ${groups.filter((g) => g.hasGraphic).map((g) => g.title).join(", ")}`);
 if (warnings.length) console.log("⚠ Cảnh báo:\n  " + warnings.join("\n  "));
 else console.log("  Không có cảnh báo dữ liệu.");
