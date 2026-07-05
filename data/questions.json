@@ -4163,10 +4163,68 @@
       "hasGraphic": false,
       "graphicData": null,
       "passage": {
-        "type": "reference",
-        "title": "Đoạn văn tham chiếu",
+        "type": "documents",
+        "title": "Text Message Chain",
         "content": [
           "Tin nhắn hội thoại (Text Message Chain) giữa Sue Watkins và Zoe Trent về việc đi xem kịch có sự tham gia của diễn viên Jason Pollard."
+        ],
+        "documents": [
+          {
+            "format": "chat",
+            "label": "Text Messages",
+            "entries": [
+              {
+                "speaker": "Sue Watkins",
+                "time": "February 12, 8:32 P.M.",
+                "text": "I'm here now. Where are you?"
+              },
+              {
+                "speaker": "Zoe Trent",
+                "time": "February 12, 8:36 P.M.",
+                "text": "Sorry – got held up at the office. It was Gavin again – he starts talking and never stops…"
+              },
+              {
+                "speaker": "Sue Watkins",
+                "time": "February 12, 8:38 P.M.",
+                "text": "Tell me about it…"
+              },
+              {
+                "speaker": "Zoe Trent",
+                "time": "February 12, 8:42 P.M.",
+                "text": "Anyway, two more stops and I'll be there. Cowper Road, right?"
+              },
+              {
+                "speaker": "Sue Watkins",
+                "time": "February 12, 8:42 P.M.",
+                "text": "Yes. It shouldn't take long to walk there from here."
+              },
+              {
+                "speaker": "Zoe Trent",
+                "time": "February 12, 8:43 P.M.",
+                "text": "Great. I'm really looking forward to it!"
+              },
+              {
+                "speaker": "Sue Watkins",
+                "time": "February 12, 8:44 P.M.",
+                "text": "Me too. This has great reviews."
+              },
+              {
+                "speaker": "Zoe Trent",
+                "time": "February 12, 8:45 P.M.",
+                "text": "I know. And Jason Pollard is in it!"
+              },
+              {
+                "speaker": "Sue Watkins",
+                "time": "February 12, 8:49 P.M.",
+                "text": "He's brilliant. I love him. He was fantastic in Back Home, wasn't he?"
+              },
+              {
+                "speaker": "Zoe Trent",
+                "time": "February 12, 8:52 P.M.",
+                "text": "Yes… arriving now. I can see you!"
+              }
+            ]
+          }
         ]
       },
       "questions": [
@@ -4233,10 +4291,35 @@
       "hasGraphic": false,
       "graphicData": null,
       "passage": {
-        "type": "reference",
-        "title": "Đoạn văn tham chiếu",
+        "type": "documents",
+        "title": "Steering Group Agenda",
         "content": [
           "Agenda cuộc họp của Ban điều hành trường Cao đẳng cộng đồng hạt Chorley (Chorley County Community College - Steering Group Agenda)."
+        ],
+        "documents": [
+          {
+            "format": "plain",
+            "label": "Agenda",
+            "paragraphs": [
+              "Chorley County Community College",
+              "Steering Group – Agenda",
+              "Monday, October 14 · Main Hall, 7:30 P.M.",
+              "AGENDA",
+              "• 7:30 P.M. Welcome, Calling Meeting to Order",
+              "• 7:33 P.M. Roll Call",
+              "• 7:35 P.M. Public Comments — At this time, any member of the public can take the opportunity to address the Steering Group (SG) on any item within the subject matter jurisdiction of SG. Comments are restricted to three minutes per item. Please note that SG cannot take action on any items not on the agenda.",
+              "• 8:00 P.M. Approval of Minutes/Matters arising from previous meeting (September 16)",
+              "• 8:20 P.M. Chairperson's Report on plans for the annual College Open House",
+              "• 8:30 P.M. Reports from Treasurer, Administrator, and other Officers",
+              "• 8:45 P.M. Action items: 1 – Fundraising projects · 2 – Promoting greater student engagement · 3 – Valuing Diversity · 4 – Tuition and Fees · 5 – Employee and Student Well-Being · 6 – Africa Project Update · 7 – Academic Achievement – Grading and Credits",
+              "• 9:30 P.M. Any Other Business for discussion and adoption of resolutions",
+              "• 9:45 P.M. Discussion of details for next meeting",
+              "• 9:50 P.M. Adjournment of Meeting",
+              "Chairperson of the Meeting: Mr. R. Lee",
+              "Date of Next Meeting: November 12",
+              "Individuals wishing to attend who require special accommodations should contact Winnifred Martlow at (555) 729-2370 at least 24 hours prior to the start of the meeting."
+            ]
+          }
         ]
       },
       "questions": [
@@ -4303,10 +4386,48 @@
       "hasGraphic": false,
       "graphicData": null,
       "passage": {
-        "type": "reference",
-        "title": "Đoạn văn tham chiếu",
+        "type": "documents",
+        "title": "Memo",
         "content": [
           "Bản ghi nhớ (Memo) gửi các nhân viên của Viện Hopkins (The Hopkins Institute) từ Cheryl Baker (Marketing Manager) giới thiệu 2 nhân sự mới là Leanne Riggins và Kevin Rose."
+        ],
+        "documents": [
+          {
+            "format": "email",
+            "label": "Memo",
+            "header": [
+              {
+                "label": "To",
+                "value": "Hopkins Institute Employees <allstaff@hopkinsinstitute.co.us>"
+              },
+              {
+                "label": "From",
+                "value": "Cheryl Baker <c.baker@hopkinsinstitute.co.us>"
+              },
+              {
+                "label": "Date",
+                "value": "March 19"
+              },
+              {
+                "label": "Re",
+                "value": "Developing the Marketing team"
+              }
+            ],
+            "paragraphs": [
+              "I am pleased to announce two further appointments to our Marketing team.",
+              "Leanne Riggins will be working from our Houston, Texas office. Leanne will be on the Client Service team as an account manager, and brings a wealth of marketing experience. She has specialized in the design of strategic marketing plans as well as website and e-mail marketing technology. Her past positions include Development Director at Parrington Chemicals International and Marketing Project Manager at Usafo, Inc. Leanna will start full-time on March 25.",
+              "Also joining the marketing team will be Kevin Rose, who will begin on the first of next month as a marketing assistant. Kevin recently majored in Business Economics at the Mayfair International School at Washington University. Kevin previously worked for Allied Pensions, Hersh's, Inc. and West Virginia Promotions. Kevin's main objective will be to help deliver marketing projects for the team, and he will be working closely with many of you in the future. Kevin will initially be working three days a week until October 1.",
+              "I am sure you will all join me in making Leanne and Kevin feel at home. Please do what you can to help them settle in as quickly as possible.",
+              "Brad – please arrange login details and remote desktop access. Their user registration details should be ready when they each start work.",
+              "Naomi – please contact Security for clearance.",
+              "Claire – please arrange for temporary badges.",
+              "Molly – please set them both up on the AccountPro system, and arrange training as appropriate.",
+              "Sincerely,",
+              "Cheryl Baker",
+              "Marketing Manager",
+              "The Hopkins Institute"
+            ]
+          }
         ]
       },
       "questions": [
@@ -4398,10 +4519,34 @@
       "hasGraphic": false,
       "graphicData": null,
       "passage": {
-        "type": "reference",
-        "title": "Đoạn văn tham chiếu",
+        "type": "documents",
+        "title": "Reservation Confirmation",
         "content": [
           "Biên nhận đặt chỗ đỗ xe (RESERVATION CONFIRMATION) tại bãi xe Perfect Parking Ltd của khách hàng S. Bernstein từ 15/1 đến 28/1."
+        ],
+        "documents": [
+          {
+            "format": "plain",
+            "label": "Form",
+            "paragraphs": [
+              "RESERVATION CONFIRMATION",
+              "Perfect Parking Ltd. — East Road, Vancouver, British Columbia, V1D 3Y5, Canada — E-mail: reservations@perfectparking.com",
+              "Booking reference: UO86",
+              "Client Details: Mr. S. Bernstein",
+              "Vehicle Details: SILVER HONDA",
+              "License plate number: 674 NDA",
+              "Passengers: 2",
+              "Parking Details: PERFECT PARKING PARK & RIDE",
+              "Meeting at: 2:00 P.M., Jan 15 — For flight: BA015",
+              "Return: 1:35 P.M., Jan 28 — On Flight: BA014",
+              "Payment Details — Total Cost: $280 · Payment: $280 · Card No: ****2194",
+              "Cancellations made with at least 24 hours' notice are refunded in full. Within 24 hours we apply a $40.00 cancellation charge. No-shows are not refundable.",
+              "Please arrive at least 30 minutes before your airport check-in time.",
+              "Parking Lot telephone number: (604) 234-7853",
+              "BOOKING CONDITIONS",
+              "Customers using Perfect Parking will be subject to the terms and conditions, which contain certain exemption clauses and limit each company's liability. Perfect Parking will only accept liability for proven acts of negligence. Full terms and conditions are displayed on the site and are available in printed form upon request. Claims cannot be made after your vehicle has left the site, so please check your vehicle carefully before proceeding with your journey."
+            ]
+          }
         ]
       },
       "questions": [
@@ -4468,10 +4613,45 @@
       "hasGraphic": false,
       "graphicData": null,
       "passage": {
-        "type": "reference",
-        "title": "Đoạn văn tham chiếu",
+        "type": "documents",
+        "title": "E-mail",
         "content": [
           "E-mail gửi Andrei Ivanski từ Liam O'Toole (Bellevue Hotel) xác nhận đặt phòng tổ chức sự kiện liệu pháp toàn diện (Holistic Therapy event)."
+        ],
+        "documents": [
+          {
+            "format": "email",
+            "label": "E-mail",
+            "header": [
+              {
+                "label": "To",
+                "value": "andrei.ivanski@onesurf.net"
+              },
+              {
+                "label": "From",
+                "value": "bookings@bellevuehotel.co.uk"
+              },
+              {
+                "label": "Date",
+                "value": "April 29"
+              },
+              {
+                "label": "Subject",
+                "value": "Details of your booking"
+              }
+            ],
+            "paragraphs": [
+              "Dear Mr. Ivanski:",
+              "It was good to talk to you on the phone today. Thank you for your inquiry about holding your Holistic Therapy event here at the Bellevue Hotel. Just to confirm, we have provisionally booked the Main Conference Room for May 23 – May 27, from 1:30 – 4:30 P.M. The total cost will be £800 to rent the room for that period. This includes a 15 percent discount for off-peak reservations, since these are all weekdays. ---[1]---",
+              "In order to confirm your reservation, you are required to provide a copy of your public liability insurance. For invoicing purposes, I am assuming this e-mail address is correct. ---[2]--- If this is not the case, please let me know. I will mail the brochures to you shortly.",
+              "I have attached a catering price list and a facilities order form. I would appreciate it if you could please complete these and e-mail them back at least one week before your event. However, please be aware that the catering service's prices are currently being revised and are likely to increase after May 9. ---[3]--- If you place your order before this date, we can commit to the current prices, so it will be cheaper for you to prioritize your catering requirements.",
+              "I have also attached our terms and conditions for room rentals. Please read this document carefully and sign the last page to confirm you have understood and agree to meet our terms and conditions. Please return the signed original to me, and keep a copy for your own records. ---[4]---",
+              "If you have any other questions, please do not hesitate to ask.",
+              "Liam O'Toole",
+              "Conference Reservations",
+              "Bellevue Hotel"
+            ]
+          }
         ]
       },
       "questions": [
@@ -4588,10 +4768,23 @@
       "hasGraphic": false,
       "graphicData": null,
       "passage": {
-        "type": "reference",
-        "title": "Đoạn văn tham chiếu",
+        "type": "documents",
+        "title": "Article",
         "content": [
           "Bài báo \"Hi-Tech Companies Lead Recovery\" (Các công ty công nghệ cao dẫn đầu xu hướng phục hồi sau suy thoái kinh tế)."
+        ],
+        "documents": [
+          {
+            "format": "plain",
+            "label": "Article",
+            "paragraphs": [
+              "Hi-Tech Companies Lead Recovery",
+              "BY KYONG LEE, ATC NEWS BUSINESS CORRESPONDENT",
+              "The impact of the global recession has never been more evident than in recent months. ---[1]--- A large number of companies have reported losses, in what has proven to be a disastrous financial year for many. Traditional industries have been the hardest hit. Over the last year, demand in some manufacturing sectors such as aerospace, textiles, and shipbuilding has declined by up to 40 percent.",
+              "---[2]--- Recent press releases show that companies making equipment used to manufacture microchips enjoyed healthy sales growth. In fact, sales have more than doubled in the past four quarters for leading hi-tech manufacturer TWN Technologies. Chief Financial Officer Adam Wong attributes much of this turnaround to the demand for the latest smartphone and tablet computer gadgets. \"The future looks bright. For us, demand for microchips has never been higher,\" he said. A host of new handheld tablet PCs and ever-increasing numbers of smartphones coming onto the market all contribute to the demand. TWN Technologies is just one of many fast-growing technology providers, spurred on by the popularity of gadgets for home and business use. Wireless carriers seeking to expand network capacity for online gaming and to meet the rising demand for mobile video also helped to drive sales upwards. ---[3]--- The rush in demand for in-car navigation systems and telecommunications equipment is also seen as a contributing factor.",
+              "Market analysts are going so far as to claim that demand for consumer electronics might actually be leading the way out of the recession. ---[4]--- \"Companies that produce microchips typically see sales pick up at the very beginning of a recovery. This is definitely the first wave of growth we're seeing here,\" said vice president Dr. Jane Murthy, at Mann Research. She points out that some chipmakers also benefited from a rise in memory prices. \"The price per megabyte of DRAM memory, which is used for temporary data storage by computing devices, rose 17 percent this year.\""
+            ]
+          }
         ]
       },
       "questions": [
@@ -4683,10 +4876,28 @@
       "hasGraphic": false,
       "graphicData": null,
       "passage": {
-        "type": "reference",
-        "title": "Đoạn văn tham chiếu",
+        "type": "documents",
+        "title": "InterContinental Trade Show — Services",
         "content": [
           "Bảng thông báo các dịch vụ tại triển lãm thương mại quốc tế (INTERCONTINENTAL TRADE SHOW) tổ chức tại Berlin."
+        ],
+        "documents": [
+          {
+            "format": "plain",
+            "label": "Information",
+            "paragraphs": [
+              "INTERCONTINENTAL TRADE SHOW",
+              "Tenth Annual Conference — June 2–5, IEC International Exhibition Center, Berlin",
+              "SERVICES DURING THE EVENT:",
+              "Infodesk — Need information about talks, room locations or other matters? Our volunteers will be happy to assist you at one of the ten Infodesks located throughout the site. The main Infodesk is located in Hall 2.",
+              "Coat check — Don't want to carry your coat or bags? Then store them in our free coat check room near the entrance to Hall 1. This will be permanently staffed, so you can drop off or pick up at any time.",
+              "Catering — Breakfast will be available on Saturday and Sunday from 7:30 A.M. at The Breakfast Bar in the D Building. Prices are very reasonable. For other meals, including sandwiches, hamburgers, pizza, and pasta, the Cafeteria in Central Plaza has it all. There are also catering vans parked outside the D, F, and G Buildings serving hot tasty snacks from 10:30 A.M.",
+              "Physical security — We hope this event will be safe and comfortable for everyone. Security guards will be patrolling the show during the weekend. Notify Security if you think there is a problem. You can also contact any staff member (identifiable by their bright red T-shirts with \"Staff\" on the back).",
+              "Lost & found — Found or lost something? Head over to the main Infodesk.",
+              "First aid — Feeling sick, or had an accident? A fully trained First Aid team is on hand during the entire weekend. Follow the signs in Hall 4.",
+              "Some requests — • Do not leave your valuables unattended at any time. • In the interests of fire safety, do not try to enter a room if the sign says Full. • Please dispose of all empty bottles, packages, etc. in the appropriate recycling bins."
+            ]
+          }
         ]
       },
       "questions": [
@@ -4803,10 +5014,36 @@
       "hasGraphic": false,
       "graphicData": null,
       "passage": {
-        "type": "reference",
-        "title": "Đoạn văn tham chiếu",
+        "type": "documents",
+        "title": "Invoice",
         "content": [
           "Hóa đơn (INVOICE) của công ty bảo trì báo động A1 Alarm Maintenance gửi khách hàng Mr. James về dịch vụ sửa lỗi báo động giả."
+        ],
+        "documents": [
+          {
+            "format": "plain",
+            "label": "Invoice",
+            "paragraphs": [
+              "A1 Alarm Maintenance — 387 Maple Street, Des Moines, IA 33500",
+              "INVOICE",
+              "Mr. James, 67 Alpha Terrace, Ames, IA 33142",
+              "Date: June 4 — Invoice Number: 3498FD",
+              "Description: Visited the site on May 29 to attend to the smoke detectors after reports of false alarms. Two devices present on the property. Stripped and cleaned both detectors, then tested both in sequence. Detector in the lounge failed (gave a false alarm, unknown cause). Fitted new optical unit in lounge and verified unit in landing working correctly. All left clear. Tim Edwards.",
+              "Installation as quotation",
+              "Labor: $95.00",
+              "Materials (1 x optical unit FX114): $80.00",
+              "Maintenance —",
+              "Emergency call out charge —",
+              "Monitoring fee —",
+              "Sub total: $175.00",
+              "Sales tax @ 9%: $10.50",
+              "Total: $185.50",
+              "If you wish to contact us regarding this invoice, please either e-mail us at sales@A1-alarm-maintenance.co.us, or phone 555-832-1000.",
+              "We do not issue reminders. Please pay upon receipt of this invoice. Terms strictly 14 days.",
+              "A1 Alarm Maintenance reserves rights to all goods supplied until payment received in full.",
+              "Note: Tests on existing equipment are to determine correct operation only and do not imply that the system complies with current US or international standards."
+            ]
+          }
         ]
       },
       "questions": [
@@ -4923,10 +5160,46 @@
       "hasGraphic": false,
       "graphicData": null,
       "passage": {
-        "type": "reference",
-        "title": "Đoạn văn tham chiếu",
+        "type": "documents",
+        "title": "Advertisement & Reservation Form",
         "content": [
           "Quảng cáo chuỗi khách sạn Paramount Hotels kèm theo mẫu đơn đặt phòng (Reservation Form) viết tay của Thomas Whitly đặt phòng tại Park Hotel từ ngày 23/7 đến 25/7."
+        ],
+        "documents": [
+          {
+            "format": "plain",
+            "label": "Advertisement",
+            "paragraphs": [
+              "PARAMOUNT HOTELS — Luxury at a Price you can Afford",
+              "Every Paramount Hotel offers luxurious accommodations right in the heart of unique locations throughout the United States – the Imperial Hotel in Los Angeles, the Boathouse Hotel in Maine, the Old Stables Hotel in Chicago, and the Park Hotel in New York. Excellent service, beautifully furnished hotel rooms and fine dining in each of our hotel restaurants are the key features of all Paramount hotels.",
+              "Great rooms at great prices from $120 throughout August!",
+              "Save 10% by booking online.",
+              "Free fruit basket for all Paramount Frequent Travel Club members.",
+              "Special Offer: Stay two nights in July and get breakfast absolutely free."
+            ]
+          },
+          {
+            "format": "plain",
+            "label": "Reservation Form",
+            "paragraphs": [
+              "PARAMOUNT HOTELS — E-mail: Reservations@paramounthotel.com",
+              "RESERVATION FORM",
+              "SEND THIS PAGE TO US WITH YOUR DEPOSIT TO CONFIRM YOUR RESERVATION. ALTERNATIVELY E-MAIL US WITH ALL THE INFORMATION REQUIRED BELOW AND WE WILL CONFIRM YOUR RESERVATION WITHIN 48 HOURS.",
+              "NAME: Thomas Whitly",
+              "ADDRESS: 1132 N. Broad Crescent, Atlanta, GA 30309",
+              "TEL: 404-357-4269",
+              "PLEASE RESERVE… Hotel: Park Hotel",
+              "Room Type: [✓] Single Room  [ ] Double Room  [ ] Twin Room",
+              "No. of People: 1 — No. of Rooms: 1",
+              "Check in: 7/23 — Check out: 7/25",
+              "Paramount Frequent Travel Club member: [ ] Yes  [✓] No",
+              "Note:",
+              "– All rooms are Non-Smoking.",
+              "– There is a supplement of $20 per day to use a double as a single.",
+              "– All rooms have showers, flat-screen TVs, hairdryers, & tea/coffee making facilities. Sorry, no bathtubs.",
+              "– Deposits are non-refundable. In the event of a cancellation within four weeks of the date of arrival, a cancellation charge of 75% may be made if the room is not resold."
+            ]
+          }
         ]
       },
       "questions": [
@@ -5068,10 +5341,34 @@
       "hasGraphic": false,
       "graphicData": null,
       "passage": {
-        "type": "reference",
-        "title": "Đoạn văn tham chiếu",
+        "type": "documents",
+        "title": "Article & Calendar of Events",
         "content": [
           "Bài báo phân tích về sự phát triển của thị trường toàn cầu \"Developing Global Markets\" kết hợp cùng lịch trình chuỗi sự kiện của diễn đàn doanh nghiệp Wellington (Wellington Business Forum - Calendar of Events)."
+        ],
+        "documents": [
+          {
+            "format": "plain",
+            "label": "Article",
+            "paragraphs": [
+              "Developing Global Markets",
+              "Changing demographics are opening the door to new markets and exciting opportunities. That's the conclusion of the panel of experts interviewed last Saturday as part of the Wellington Business Forum \"Festival of Ideas.\" Dr. Philippe Gaston of Hendrix Associates, a leading investment bank, put forward the view that there will soon be millions of new consumers for high-value products in the global market place. He argued that emerging economies like China, India and Brazil will spark major changes to global income distribution, significantly altering consumer demand and spending.",
+              "Professor Marvin Klysters, lead Economics analyst at Wellington Business Institute, agreed. According to his figures, disposable incomes among consumers in these emerging economies will rise and expenditure will increase dramatically in areas such as leisure, medical care, and luxury products and services.",
+              "New Zealand Shipping Association Chief Executive Jason Foulkes added to the positive tone of the symposium, saying that he was excited by the new export, supply chain, and commercial opportunities already in evidence.",
+              "Dr. Carole Sherringham, a colleague of Prof. Klysters, supported these assertions with statistical data suggesting that Asia's economy could grow by as much as 40% in the next five years. She put this into context by explaining it would make Asia comparable in size to the economies of the US and Europe. She went on to say that with China's economy growing at around 9% a year, China could overtake the United States as the global economic superpower by as early as 2030.",
+              "Around 300 people attended the panel discussion, which was very well received. The \"Festival of Ideas\" lasts until Friday 27th, with all events held in the West Road Theater. Those wishing to attend the remaining events are encouraged to call as soon as possible."
+            ]
+          },
+          {
+            "format": "plain",
+            "label": "Calendar of Events",
+            "paragraphs": [
+              "Wellington Business Forum — Festival of Ideas — Calendar of Events — FINAL WEEK",
+              "A World of Opportunity — Tuesday, October 24, 7:30 P.M. This talk will focus on key trends in the global economy. Astonishing facts and figures promise huge potential for New Zealand manufacturing. Exciting opportunities for growth will be identified and the projections made could astound you. — Dr. Xavier Hernandes, Wellington Business Institute",
+              "Emerging Markets — Thursday, October 26, 7:30 P.M. The emerging economies of Brazil, Russia, India, China and South Africa – otherwise known as the BRICS – form the basis for a stimulating presentation on the future of the global economy. Discover how these economies will shape the new international political and economic order. — Mr. Ian Sissons, global economist, New Zealand Times",
+              "Environmental Market Opportunities — Friday, October 27, 6:30 P.M. With the world's energy supplies starting to run out, find out about the huge opportunities available in the field of energy efficiency. This presentation will use the example of New Zealand Autos as a case study to show how \"green technology,\" and particularly low-carbon technology, can make the world a safer, cleaner, and more productive place. — Professor Lee Kwok, Green Matters, Inc., Auckland"
+            ]
+          }
         ]
       },
       "questions": [
@@ -5213,10 +5510,77 @@
       "hasGraphic": false,
       "graphicData": null,
       "passage": {
-        "type": "reference",
-        "title": "Đoạn văn tham chiếu",
+        "type": "documents",
+        "title": "Advertisement & E-mails",
         "content": [
           "Tin đăng tuyển dụng các vị trí hành chính (Bilingual Call Center Assistant, Customer Service Representative, Administrative Assistant...) và e-mail xin việc của ứng viên Claire Robertson, kèm thư giới thiệu từ quản lý cũ Jefferson Waters."
+        ],
+        "documents": [
+          {
+            "format": "plain",
+            "label": "Job Advertisements",
+            "paragraphs": [
+              "Bilingual Call Center Assistant — Total Call Insurance is looking for bilingual (Spanish/English) customer care professionals who have a minimum of two years of call center experience delivering excellent customer satisfaction in a fast-paced environment. Call Center Assistants respond to customer queries, and help troubleshoot and resolve their problems. [APPLY]",
+              "Customer Service Representative — Mellistone Edwards is a leading Financial Services company. We are looking for an exceptional professional to answer inbound customer service phone inquiries in an accurate, timely, and courteous manner. High school diploma or equivalent required. At least two years of customer service experience required, preferably in a call center. Financial services experience useful. Knowledge of Spanish preferred, but not essential. [APPLY]",
+              "Administrative Assistant — Campbelltown Medical Center is seeking a part-time Administrative Assistant to perform general office duties, including dealing with correspondence and maintaining a database. Must possess excellent communication skills and be able to type 60 wpm. Knowledge of French useful. [APPLY]",
+              "Clerical Assistant — Deutsche Werkzeuge GmbH is currently seeking a candidate with an extensive administrative and/or clerical background. The successful candidate will handle multiple office duties, including answering phone calls, and record-keeping. Must have knowledge of word processing and database software, and be fluent in German. [APPLY]",
+              "Accounting Assistant — Leading international accounting firm JV Watson has an immediate opening for a bilingual (German/English) Accounting Assistant, who will work closely with a team of senior accountants to perform various administrative duties, including: prepare customer and client invoices; book and arrange travel as needed; general office duties such as filing, and answering phones. Previous accounting experience essential. Degree in Accountancy, Finance, Business Management, or related field required. [APPLY]"
+            ]
+          },
+          {
+            "format": "email",
+            "label": "E-mail (ứng tuyển)",
+            "header": [
+              {
+                "label": "From",
+                "value": "Claire Robertson <c.robertson@oneworldnet.com>"
+              },
+              {
+                "label": "To",
+                "value": "hr@totalcall.net"
+              },
+              {
+                "label": "Subject",
+                "value": "job advertisement – Bilingual Call Center Assistant"
+              }
+            ],
+            "paragraphs": [
+              "Dear Sir,",
+              "I am writing to apply for the Bilingual Call Center Assistant position advertised in the online classified section of The Downtown Gazette. I have completed high school, and possess four years of call center experience. My resumé is attached.",
+              "I currently work as a Call Center Representative for Etrusco Financial Services, where I receive daily calls from customers and assist them with their inquiries. I enjoy working in this fast-paced environment very much. I have been here a year. This is a part-time position, and I am looking to move because I am seeking a full-time position. I am also eager to work for an insurance company, since my ambition is to become an insurance broker. I am currently attending a night class that leads to the Certificate in General Insurance.",
+              "I am organized and pay great attention to detail. I have a positive attitude and a friendly phone voice that helps to put customers at ease. Previous supervisors have praised my professional attitude and interpersonal skills. I feel confident that I will be a great asset to Total Call Insurance.",
+              "Please do not hesitate to contact me by phone or email at your earliest convenience to arrange an in-person meeting. I look forward to speaking with you.",
+              "Sincerely,",
+              "Claire Robertson"
+            ]
+          },
+          {
+            "format": "email",
+            "label": "E-mail (thư giới thiệu)",
+            "header": [
+              {
+                "label": "From",
+                "value": "Jefferson_Waters@invopro.com"
+              },
+              {
+                "label": "To",
+                "value": "hr@totalcall.net"
+              },
+              {
+                "label": "Subject",
+                "value": "Claire Robertson"
+              }
+            ],
+            "paragraphs": [
+              "Dear Ms. West,",
+              "Thank you for your e-mail regarding your candidate for the Bilingual Call Center Assistant position, Claire Robertson. Claire worked in the Call Center at InvoPro for two years, before she moved to Etrusco Financial Services. Claire is a very competent young woman, and we were all sorry when she left InvoPro. She had a professional attitude when dealing with customers and coworkers, and she was a popular member of staff. I can recommend her to you wholeheartedly.",
+              "If you require any further information, do not hesitate to contact me.",
+              "Sincerely,",
+              "Jefferson Waters",
+              "Team Leader",
+              "International Call Center, InvoPro Inc."
+            ]
+          }
         ]
       },
       "questions": [
@@ -5358,10 +5722,71 @@
       "hasGraphic": false,
       "graphicData": null,
       "passage": {
-        "type": "reference",
-        "title": "Đoạn văn tham chiếu",
+        "type": "documents",
+        "title": "Web Page, Order Summary & E-mail",
         "content": [
           "Trang web bán dao \"cleancutknives.com\", bảng tóm tắt đơn hàng số 5755 (Order Summary) và e-mail phản hồi từ bếp trưởng khách sạn Douglas Long về việc bị trừ tiền nhầm lẫn trên thẻ tín dụng."
+        ],
+        "documents": [
+          {
+            "format": "plain",
+            "label": "Web Page — cleancutknives.com",
+            "paragraphs": [
+              "CleanCut Professional Knives",
+              "All of our knives have high carbon stainless steel blades (so they won't rust!), well-designed handles fit the hand comfortably, and finger guards for safety.",
+              "Beware: these knives are extremely sharp!",
+              "Wash and dry immediately after using. Note that the handles are not dishwasher-safe.",
+              "Lifetime warranty.",
+              "7-inch chef's knife — ideal for cutting and slicing fruit and vegetables, and for all the smaller kitchen jobs — $59 [BUY]",
+              "8-inch butcher's cleaver — a serious knife for butchers and commercial kitchens. Designed to disjoint turkey, chicken, and other poultry with ease. Heavy and powerful enough to crack spare ribs. — $175 [BUY]",
+              "9-inch bread knife — Glides effortlessly through freshly baked bread, giving slices as thin as you like — $79 [BUY]",
+              "11-inch carving knife — cuts cleanly through all meats; long enough to cut through turkey, and large roasts — $95 [BUY]"
+            ]
+          },
+          {
+            "format": "plain",
+            "label": "Order Summary",
+            "paragraphs": [
+              "www.cleancutknives.com/shoppingcart",
+              "Order Summary: Number 5755",
+              "Item: kitchen knife — Quantity: 1 — Price: $59.00",
+              "Subtotal: $59.00",
+              "Tax (8%): $4.72",
+              "Standard shipping (5-7 business days) – free: $0.00",
+              "Expedited shipping (next business day): $15",
+              "TOTAL: $63.72",
+              "[Proceed to Checkout]"
+            ]
+          },
+          {
+            "format": "email",
+            "label": "E-mail",
+            "header": [
+              {
+                "label": "From",
+                "value": "Douglas Long <dlong@grandmetrohotel.net>"
+              },
+              {
+                "label": "To",
+                "value": "Customer Services <custserv@cleancutknives.com>"
+              },
+              {
+                "label": "Date",
+                "value": "June 15"
+              },
+              {
+                "label": "Subject",
+                "value": "Order #5755"
+              }
+            ],
+            "paragraphs": [
+              "Hello,",
+              "The knife I ordered arrived this morning. Thank you for that. However, I checked with my credit card provider after reading the delivery note and see that you debited my account by over $85. It looks like you charged me for a $79 knife, but this is not what I bought. Please rectify this mistake immediately.",
+              "Regards,",
+              "Douglas Long",
+              "Senior chef, Grand Metropolitan Hotel"
+            ]
+          }
         ]
       },
       "questions": [
@@ -5503,10 +5928,61 @@
       "hasGraphic": false,
       "graphicData": null,
       "passage": {
-        "type": "reference",
-        "title": "Đoạn văn tham chiếu",
+        "type": "documents",
+        "title": "Notice, Comment Form & E-mail",
         "content": [
           "Tờ rơi quảng cáo khóa huấn luyện thể hình cuối tuần \"WEEKEND FITNESS BOOT CAMP\", phiếu nhận xét của học viên Lisa Liu, và e-mail trao đổi giữa huấn luyện viên trưởng Logan Dexter gửi các trợ lý phân công ca trực thứ Bảy."
+        ],
+        "documents": [
+          {
+            "format": "plain",
+            "label": "Notice",
+            "paragraphs": [
+              "WEEKEND FITNESS BOOT CAMP",
+              "Shape up! Kickstart your new fitness routine! Lose those first few pounds! Maximize fat burning! Build strength and stamina! Increase muscle tone! Challenge yourself mentally and physically!",
+              "Two days of challenging, military-style activities to start you working toward your fitness goals. Our inspiring and motivating Weekend Fitness Boot Camp coaches are focused on helping you improve your long-term health and fitness. Train with others in a small group in a safe and motivating environment.",
+              "Commit to get fit! Be a champion! We're here to help.",
+              "Your weekend boot camp will include a range of activities. Exact schedules vary, depending on participants and weather, but may include the following:",
+              "Circuit training · Bodyweight training · Boxing/Boxercise · Cycling · Hiking · Running · Power yoga · Team games · Aerobics",
+              "After a hard day's training why not treat yourself to a massage or other relaxation treatment? You can book these on arrival at the camp. There is an extra charge for these treatments, but this is the only activity you will have to pay for over the weekend – everything else is included."
+            ]
+          },
+          {
+            "format": "plain",
+            "label": "Comment Form",
+            "paragraphs": [
+              "COMMENT",
+              "Great weekend! I might not be saying that tomorrow, though, when my muscles are aching! I don't think I lost any weight – the meals were delicious, and I probably ate too much – but I learned a lot and improved my technique. I'll definitely be coming again before my wedding in August. Thanks particularly to Matt, who was very patient with me, the slowest member of the group!",
+              "Lisa Liu"
+            ]
+          },
+          {
+            "format": "email",
+            "label": "E-mail",
+            "header": [
+              {
+                "label": "From",
+                "value": "Logan Dexter"
+              },
+              {
+                "label": "To",
+                "value": "Fitness Instructors"
+              },
+              {
+                "label": "Subject",
+                "value": "Upcoming Weekend Boot Camp"
+              }
+            ],
+            "paragraphs": [
+              "Hi all,",
+              "The upcoming fitness boot camp weekend has had more bookings than ever before. Twenty-five people have signed up, so we'll offer three different activities for each of the morning sessions. These are my ideas for Saturday's program. We'll see how it goes, and then decide on Sunday's program.",
+              "Brad, will you lead the boxercise sessions and the obstacle course? Teri, will you lead the groups for aerobics and basketball? And Kris, will you lead the circuit training sessions?",
+              "In the afternoon I'd like Teri to lead the hiking group, and Matt, who can't make it here before lunchtime, will organize a ten-mile bike ride for those who want it. I'll take anyone interested on a long run.",
+              "Unfortunately, Charmaine's not available this weekend, so we can't run her usual sessions, as no-one else is qualified.",
+              "Thanks,",
+              "Logan"
+            ]
+          }
         ]
       },
       "questions": [
