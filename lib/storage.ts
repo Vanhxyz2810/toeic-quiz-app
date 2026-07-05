@@ -13,7 +13,8 @@ export function loadProgress(): Progress {
     const parsed = JSON.parse(raw) as Partial<Progress>;
     return {
       answers: parsed.answers ?? {},
-      bookmarks: parsed.bookmarks ?? [],
+      // Tiến độ cũ lưu bookmark dạng số -> chuẩn hóa về uid string.
+      bookmarks: (parsed.bookmarks ?? []).map(String),
     };
   } catch {
     return { ...empty };

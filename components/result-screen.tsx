@@ -18,7 +18,7 @@ import { AccuracyRing } from "@/components/accuracy-ring";
 
 interface ResultScreenProps {
   questions: EnrichedQuestion[];
-  answers: Record<number, AnswerKey>;
+  answers: Record<string, AnswerKey>;
   onRetryAll: () => void;
   onRetryWrong: (wrong: EnrichedQuestion[]) => void;
 }
@@ -26,9 +26,9 @@ interface ResultScreenProps {
 /** Màn tổng kết sau khi hoàn thành phiên quiz. */
 export function ResultScreen({ questions, answers, onRetryAll, onRetryWrong }: ResultScreenProps) {
   const total = questions.length;
-  const correct = questions.filter((q) => answers[q.questionNumber] === q.correctAnswer).length;
+  const correct = questions.filter((q) => answers[q.uid] === q.correctAnswer).length;
   const wrong = questions.filter(
-    (q) => answers[q.questionNumber] && answers[q.questionNumber] !== q.correctAnswer
+    (q) => answers[q.uid] && answers[q.uid] !== q.correctAnswer
   );
   const accuracy = total ? Math.round((correct / total) * 100) : 0;
 
@@ -75,10 +75,10 @@ export function ResultScreen({ questions, answers, onRetryAll, onRetryWrong }: R
             </h2>
             <ul className="space-y-2">
               {wrong.map((q) => {
-                const chosen = q.options.find((o) => o.key === answers[q.questionNumber]);
+                const chosen = q.options.find((o) => o.key === answers[q.uid]);
                 const correct = q.options.find((o) => o.key === q.correctAnswer);
                 return (
-                  <li key={q.questionNumber} className="rounded-lg border border-border bg-muted/30 p-3 text-sm">
+                  <li key={q.uid} className="rounded-lg border border-border bg-muted/30 p-3 text-sm">
                     <div className="flex items-start gap-2">
                       <span className="font-semibold text-danger">#{q.questionNumber}</span>
                       <span className="flex-1">{q.questionText}</span>

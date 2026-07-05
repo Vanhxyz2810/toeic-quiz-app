@@ -40,25 +40,25 @@ export function QuizRunner({ title, blocks: initialBlocks, mode }: QuizRunnerPro
   const [direction, setDirection] = useState(1);
   const [finished, setFinished] = useState(false);
 
-  // Đáp án phiên hiện tại — luôn lưu theo KEY GỐC (chấm điểm chuẩn dù đã đảo).
-  const [session, setSession] = useState<Record<number, AnswerKey>>({});
+  // Đáp án phiên hiện tại — key theo uid, giá trị là KEY GỐC (chấm chuẩn dù đã đảo).
+  const [session, setSession] = useState<Record<string, AnswerKey>>({});
   // Study mode: các câu đã "check" (mới reveal).
-  const [checked, setChecked] = useState<Set<number>>(new Set());
+  const [checked, setChecked] = useState<Set<string>>(new Set());
 
   const current = blocks[index];
   const allQuestions = useMemo(() => blocks.flatMap((b) => b.questions), [blocks]);
-  const answeredCount = allQuestions.filter((q) => session[q.questionNumber]).length;
-  const allAnswered = allQuestions.every((q) => session[q.questionNumber]);
+  const answeredCount = allQuestions.filter((q) => session[q.uid]).length;
+  const allAnswered = allQuestions.every((q) => session[q.uid]);
 
   const canPrev = index > 0;
   const canNext = index < blocks.length - 1;
 
   function handleSelect(q: EnrichedQuestion, key: AnswerKey) {
-    if (mode === "study" && checked.has(q.questionNumber)) return; // khóa sau khi check
-    setSession((s) => ({ ...s, [q.questionNumber]: key }));
+    if (mode === "study" && checked.has(q.uid)) return; // khóa sau khi check
+    setSession((s) => ({ ...s, [q.uid]: key }));
     if (mode === "study") {
-      setChecked((c) => new Set(c).add(q.questionNumber));
-      answer(q.questionNumber, key); // ghi nhận ngay
+      setChecked((c) => new Set(c).add(q.uid));
+      answer(q.uid, key); // ghi nhận ngay
     }
   }
 
@@ -70,8 +70,8 @@ export function QuizRunner({ title, blocks: initialBlocks, mode }: QuizRunnerPro
 
   function handleSubmit() {
     for (const q of allQuestions) {
-      const a = session[q.questionNumber];
-      if (a) answer(q.questionNumber, a);
+      const a = session[q.uid];
+      if (a) answer(q.uid, a);
     }
     setFinished(true);
   }
@@ -110,7 +110,7 @@ export function QuizRunner({ title, blocks: initialBlocks, mode }: QuizRunnerPro
         answers={session}
         onRetryAll={() => restart(initialBlocks)}
         onRetryWrong={(wrong) => {
-          clearAnswers(wrong.map((q) => q.questionNumber));
+          clearAnswers(wrong.map((q) => q.uid));
           // Gom lại thành block theo hội thoại để vẫn học 3 câu liên quan cùng nhau.
           restart(groupIntoBlocks(wrong));
         }}
@@ -182,14 +182,14 @@ export function QuizRunner({ title, blocks: initialBlocks, mode }: QuizRunnerPro
             {/* Các câu trong hội thoại */}
             <Card className="divide-y divide-border">
               {current.questions.map((q) => (
-                <div key={q.questionNumber} className="p-4 sm:p-5">
+                <div key={q.uid} className="p-4 sm:p-5">
                   <QuestionCard
                     question={q}
-                    selected={session[q.questionNumber]}
-                    revealed={mode === "study" && checked.has(q.questionNumber)}
-                    bookmarked={progress.bookmarks.includes(q.questionNumber)}
+                    selected={session[q.uid]}
+                    revealed={mode === "study" && checked.has(q.uid)}
+                    bookmarked={progress.bookmarks.includes(q.uid)}
                     onSelect={(key) => handleSelect(q, key)}
-                    onToggleBookmark={() => toggleBookmark(q.questionNumber)}
+                    onToggleBookmark={() => toggleBookmark(q.uid)}
                     showGraphic={false}
                   />
                 </div>

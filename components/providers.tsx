@@ -19,11 +19,11 @@ import { loadProgress, saveProgress, clearProgress } from "@/lib/storage";
 interface ProgressCtx {
   progress: Progress;
   hydrated: boolean;
-  answer: (questionNumber: number, key: AnswerKey) => void;
-  toggleBookmark: (questionNumber: number) => void;
+  answer: (uid: string, key: AnswerKey) => void;
+  toggleBookmark: (uid: string) => void;
   reset: () => void;
   /** Xóa đáp án của một tập câu (dùng khi "làm lại câu sai"). */
-  clearAnswers: (questionNumbers: number[]) => void;
+  clearAnswers: (uids: string[]) => void;
   stats: {
     total: number;
     answered: number;
@@ -57,24 +57,24 @@ function ProgressProvider({ children }: { children: React.ReactNode }) {
     if (hydrated) saveProgress(progress);
   }, [progress, hydrated]);
 
-  const answer = (questionNumber: number, key: AnswerKey) =>
+  const answer = (uid: string, key: AnswerKey) =>
     setProgress((p) => ({
       ...p,
-      answers: { ...p.answers, [questionNumber]: key },
+      answers: { ...p.answers, [uid]: key },
     }));
 
-  const toggleBookmark = (questionNumber: number) =>
+  const toggleBookmark = (uid: string) =>
     setProgress((p) => ({
       ...p,
-      bookmarks: p.bookmarks.includes(questionNumber)
-        ? p.bookmarks.filter((n) => n !== questionNumber)
-        : [...p.bookmarks, questionNumber],
+      bookmarks: p.bookmarks.includes(uid)
+        ? p.bookmarks.filter((n) => n !== uid)
+        : [...p.bookmarks, uid],
     }));
 
-  const clearAnswers = (questionNumbers: number[]) =>
+  const clearAnswers = (uids: string[]) =>
     setProgress((p) => {
       const answers = { ...p.answers };
-      for (const n of questionNumbers) delete answers[n];
+      for (const n of uids) delete answers[n];
       return { ...p, answers };
     });
 
@@ -89,7 +89,7 @@ function ProgressProvider({ children }: { children: React.ReactNode }) {
     let answered = 0;
     let correct = 0;
     for (const q of allQuestions) {
-      const a = progress.answers[q.questionNumber];
+      const a = progress.answers[q.uid];
       if (!a) continue;
       answered++;
       if (a === q.correctAnswer) correct++;

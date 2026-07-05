@@ -15,7 +15,7 @@ export function SiteHeader() {
           </span>
           <div className="leading-tight">
             <p className="text-sm font-semibold">TOEIC Quiz</p>
-            <p className="text-xs text-muted-foreground">Part 3 &amp; 4 · Listening</p>
+            <p className="text-xs text-muted-foreground">Part 3–7 · 2 Practice Tests</p>
           </div>
         </Link>
         <ThemeToggle />

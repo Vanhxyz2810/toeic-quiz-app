@@ -54,6 +54,11 @@ export interface Passage {
 }
 
 export interface Question {
+  /**
+   * Khóa duy nhất toàn cục (số câu trùng nhau giữa các đề):
+   * đề 1 = "32" (tương thích tiến độ cũ), đề 2 = "t2-32".
+   */
+  uid: string;
   questionNumber: number;
   questionText: string;
   options: Option[];
@@ -64,6 +69,8 @@ export interface Question {
 
 export interface QuestionGroup {
   id: string;
+  /** Đề practice test: "test1" | "test2". */
+  test: string;
   part: string;
   title: string;
   range: [number, number];
@@ -89,6 +96,7 @@ export interface QuizData {
 export interface EnrichedQuestion extends Question {
   groupId: string;
   groupTitle: string;
+  test: string;
   part: string;
   graphicData: GraphicData | null;
   passage: Passage | null;
@@ -113,19 +121,24 @@ export interface ShuffleOptions {
   options: boolean; // đảo A/B/C/D trong mỗi câu
 }
 
-/** Tiến độ lưu trong localStorage. */
+/** Tiến độ lưu trong localStorage — key theo uid câu hỏi. */
 export interface Progress {
-  /** answers[questionNumber] = đáp án user đã chọn (đã "check"). */
-  answers: Record<number, AnswerKey>;
-  /** Danh sách số câu được bookmark. */
-  bookmarks: number[];
+  /** answers[uid] = đáp án user đã chọn (đã "check"). */
+  answers: Record<string, AnswerKey>;
+  /** Danh sách uid câu được bookmark. */
+  bookmarks: string[];
 }
 
 export type QuizMode = "study" | "test";
 
-/** Khóa xác định tập câu hỏi cho một phiên quiz. */
+/**
+ * Khóa xác định tập câu hỏi cho một phiên quiz.
+ * Tiền tố "t2-" chọn Đề 2 (vd "t2-all", "t2-part-5", "t2-range-101-110",
+ * group id đề 2 vốn đã có tiền tố: "t2-q-32-34").
+ * "wrong" / "bookmarked" áp dụng chung cả 2 đề.
+ */
 export type QuizSetKey =
-  | string // group id, vd "q-32-34"
+  | string // group id, vd "q-32-34" | "t2-q-32-34"
   | "all"
   | "part-3"
   | "part-4"

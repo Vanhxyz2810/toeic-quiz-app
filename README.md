@@ -1,6 +1,6 @@
-# TOEIC Quiz App — Luyện Part 3 & 4
+# TOEIC Quiz App — Part 3 → 7 · 2 Practice Tests
 
-Web app luyện nghe TOEIC (Part 3 & Part 4) build bằng **Next.js 14 + TypeScript + Tailwind + Framer Motion**. Dữ liệu câu hỏi được parse tự động từ `data.txt`, có Study/Test mode, review câu sai, bookmark, thống kê và dark mode.
+Web app luyện TOEIC (Part 3 → 7, **2 đề practice test, 338 câu**) build bằng **Next.js 14 + TypeScript + Tailwind + Framer Motion**. Dữ liệu parse tự động từ `data.txt` + `data2.txt` (Đề 1) và `practice_test2.txt` (Đề 2); có Study/Test mode, review câu sai, bookmark, đảo nhóm/đáp án, thống kê và dark mode.
 
 ## Cài đặt & chạy
 
@@ -18,13 +18,13 @@ npm run start
 
 ## Cập nhật dữ liệu câu hỏi
 
-Nếu chỉnh sửa `data.txt`, chạy lại parser để sinh `data/questions.json`:
+Nếu chỉnh sửa `data.txt` / `data2.txt` / `practice_test2.txt` / `data/part7-passages.json`, chạy lại parser để sinh `data/questions.json`:
 
 ```bash
 npm run parse
 ```
 
-Parser (`scripts/parse-data.mjs`) tự nhận diện: PART, nhóm `Questions X-Y`, câu hỏi, đáp án `(A)–(D)`, dòng `Đáp án đúng: (X)`, và block **graphic** (bảng / biểu đồ / sơ đồ) — xử lý linh hoạt khi format không đồng nhất.
+Parser (`scripts/parse-data.mjs`) tự nhận diện: PART, nhóm (`Questions X-Y` hoặc `[Mã nhóm: Listening/Talk/Passage X-Y]`), câu hỏi, đáp án, block **graphic** (bảng / biểu đồ / sơ đồ / menu / bảng tàu) và **đoạn văn** (Part 6 nguyên văn, Part 7 nguyên văn qua `part7-passages.json`). Số câu 2 đề trùng nhau nên mỗi câu có `uid` riêng (`"32"` đề 1, `"t2-32"` đề 2) dùng cho tiến độ/bookmark.
 
 ## Vì sao chọn Next.js (React)
 

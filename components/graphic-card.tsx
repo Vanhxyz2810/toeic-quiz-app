@@ -12,12 +12,15 @@ import {
 import { motion } from "framer-motion";
 import {
   BarChart3,
-  Clock,
+  Coffee,
   DoorOpen,
   Droplets,
+  Gem,
   Home,
   Image as ImageIcon,
   Map,
+  Monitor,
+  Newspaper,
   Plane,
   Sprout,
   Stethoscope,
@@ -38,25 +41,50 @@ const CHART_COLORS = [
 /* ============================================================
    Nhận diện "loại bảng" để render giống graphic thật trong đề.
    ============================================================ */
-type BoardKind = "flight" | "train" | "clinic" | "plain";
+type BoardKind = "flight" | "train" | "clinic" | "menu" | "magazine" | "gem" | "plain";
 
 function detectBoardKind(table: GraphicTable): BoardKind {
-  const firstCol = table.rows.map((r) => (r[0] ?? "").trim());
-  const headerText = table.headers.join(" ").toLowerCase();
-  const allFlightCodes = firstCol.every((c) => /^[A-Z]{2,3}\s?\d{2,4}$/.test(c));
-  const allTimes = firstCol.every((c) => /\d{1,2}:\d{2}/.test(c));
+  const h = table.headers;
+  if (h[0] === "Flight") return "flight";
+  if (h[2] === "Platform") return "train";
+  if (h[1] === "Price") return h[0] === "Magazine" ? "magazine" : "menu";
+  if (h[1] === "Birthstone") return "gem";
 
-  if (allFlightCodes) return "flight";
+  // Bảng markdown đề 1 (header gốc trong nguồn).
+  const firstCol = table.rows.map((r) => (r[0] ?? "").trim());
+  const headerText = h.join(" ").toLowerCase();
+  const allTimes = firstCol.every((c) => /\d{1,2}:\d{2}/.test(c));
   if (allTimes && /(patient|appointment)/.test(headerText)) return "clinic";
   if (allTimes && /(depart|destination)/.test(headerText)) return "train";
   if (allTimes) return "clinic";
   return "plain";
 }
 
-/** Lấy tên bảng in hoa trong ngoặc, vd "(WESTGATE CLINIC)" -> "WESTGATE CLINIC". */
+const KIND_META: Record<Exclude<BoardKind, "plain">, { icon: typeof Plane; heading: string }> = {
+  flight: { icon: Plane, heading: "DEPARTURES" },
+  train: { icon: TrainFront, heading: "DEPARTURES" },
+  clinic: { icon: Stethoscope, heading: "SCHEDULE" },
+  menu: { icon: Coffee, heading: "MENU" },
+  magazine: { icon: Newspaper, heading: "MAGAZINES" },
+  gem: { icon: Gem, heading: "BIRTHSTONES" },
+};
+
+/** Lấy tên bảng trong ngoặc, vd "(WESTGATE CLINIC)" -> "WESTGATE CLINIC". */
 function parenthetical(title: string): string {
   const m = title.match(/\(([^)]+)\)/);
-  return (m ? m[1] : title).trim();
+  return (m ? m[1] : title).replace(/^Graphic\s*-\s*/i, "").trim();
+}
+
+/** Tiêu đề tiếng Việt (có dấu) -> dùng heading mặc định theo loại board. */
+function hasVietnamese(s: string): boolean {
+  return /[àáảãạăâđèéẻẽẹêìíỉĩịòóỏõọôơùúủũụưỳýỷỹỵ]/i.test(s);
+}
+
+/** Cột nên dùng font mono: giờ, mã hiệu, giá tiền. */
+function isMonoCol(table: GraphicTable, c: number): boolean {
+  return table.rows.every(
+    (r) => /\d{1,2}:\d{2}/.test(r[c] ?? "") || /^[A-Z]{2,3}\s?\d{2,4}$/.test((r[c] ?? "").trim()) || /^\$\s?\d/.test((r[c] ?? "").trim())
+  );
 }
 
 function TypeBadge({ type }: { type: GraphicData["type"] }) {
@@ -74,8 +102,7 @@ function TypeBadge({ type }: { type: GraphicData["type"] }) {
 }
 
 /* ============================================================
-   Bảng thông tin dạng "signage" — mô phỏng bảng in trong đề TOEIC
-   (flight board, train departures, clinic schedule).
+   Bảng "signage" — mô phỏng bảng in trong đề TOEIC (hỗ trợ 2-3 cột).
    ============================================================ */
 function SignTable({
   table,
@@ -83,37 +110,45 @@ function SignTable({
   boardTitle,
 }: {
   table: GraphicTable;
-  kind: BoardKind;
+  kind: Exclude<BoardKind, "plain">;
   boardTitle: string;
 }) {
-  const Icon =
-    kind === "flight" ? Plane : kind === "train" ? TrainFront : kind === "clinic" ? Stethoscope : Table2;
+  const { icon: Icon, heading } = KIND_META[kind];
+  const cols = table.headers.length;
+  const monoCols = table.headers.map((_, c) => isMonoCol(table, c));
 
-  // EASTERN TRAINS có dòng phụ "Departures"; tách ra cho giống ảnh.
-  const [mainTitle, subTitle] =
-    kind === "train" && /departures/i.test(boardTitle)
-      ? [boardTitle.replace(/departures/i, "").trim(), "Departures"]
-      : [boardTitle, null];
+  // Tiêu đề: dùng tên trong đề nếu là tiếng Anh, ngược lại heading mặc định.
+  const rawTitle = boardTitle && !hasVietnamese(boardTitle) ? boardTitle : heading;
+  const [mainTitle, subTitle] = /departures/i.test(rawTitle) && rawTitle.toLowerCase() !== "departures"
+    ? [rawTitle.replace(/departures/i, "").trim(), "Departures"]
+    : [rawTitle, null];
 
-  const monoFirst = kind === "flight" || kind === "train" || kind === "clinic";
+  // Cột đầu hẹp khi chứa giờ/mã hiệu; ngược lại cột đầu rộng, cột sau hẹp.
+  const gridTemplateColumns =
+    cols === 3 ? "1fr 6.5rem 7.5rem" : monoCols[0] ? "10rem 1fr" : "1fr 8rem";
 
   return (
     <div className="overflow-hidden rounded-xl border border-slate-300 shadow-sm dark:border-slate-700">
-      {/* Tiêu đề bảng (căn giữa, in hoa) */}
       <div className="flex flex-col items-center justify-center gap-0.5 bg-slate-700 py-2 text-center text-slate-50 dark:bg-slate-800">
         <span className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-widest">
           <Icon className="h-4 w-4" /> {mainTitle}
         </span>
-        {subTitle && <span className="text-xs font-semibold uppercase tracking-wider opacity-90">{subTitle}</span>}
+        {subTitle && (
+          <span className="text-xs font-semibold uppercase tracking-wider opacity-90">{subTitle}</span>
+        )}
       </div>
 
-      {/* Header cột */}
-      <div className="grid grid-cols-[9rem_1fr] bg-slate-600 text-xs font-semibold uppercase tracking-wide text-slate-50 dark:bg-slate-700">
-        <div className="border-r border-slate-500/50 px-4 py-2">{table.headers[0]}</div>
-        <div className="px-4 py-2">{table.headers[1]}</div>
+      <div
+        className="grid bg-slate-600 text-xs font-semibold uppercase tracking-wide text-slate-50 dark:bg-slate-700"
+        style={{ gridTemplateColumns }}
+      >
+        {table.headers.map((h, i) => (
+          <div key={i} className={i < cols - 1 ? "border-r border-slate-500/50 px-4 py-2" : "px-4 py-2"}>
+            {h}
+          </div>
+        ))}
       </div>
 
-      {/* Các dòng dữ liệu — zebra xám như bảng in */}
       <div>
         {table.rows.map((row, r) => (
           <motion.div
@@ -121,16 +156,22 @@ function SignTable({
             initial={{ opacity: 0, y: -4 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: r * 0.06 }}
-            className="grid grid-cols-[9rem_1fr] items-center border-t border-slate-200 bg-slate-50 text-sm odd:bg-white dark:border-slate-700 dark:bg-slate-900 dark:odd:bg-slate-950"
+            className="grid items-center border-t border-slate-200 bg-slate-50 text-sm odd:bg-white dark:border-slate-700 dark:bg-slate-900 dark:odd:bg-slate-950"
+            style={{ gridTemplateColumns }}
           >
-            <div
-              className={`border-r border-slate-200 px-4 py-2.5 font-bold text-slate-800 dark:border-slate-700 dark:text-slate-100 ${
-                monoFirst ? "font-mono tabular-nums tracking-wide" : ""
-              }`}
-            >
-              {row[0]}
-            </div>
-            <div className="px-4 py-2.5 text-slate-700 dark:text-slate-200">{row[1]}</div>
+            {row.map((cell, c) => (
+              <div
+                key={c}
+                className={[
+                  "px-4 py-2.5",
+                  c < cols - 1 ? "border-r border-slate-200 dark:border-slate-700" : "",
+                  c === 0 ? "font-bold text-slate-800 dark:text-slate-100" : "text-slate-700 dark:text-slate-200",
+                  monoCols[c] ? "font-mono tabular-nums tracking-wide" : "",
+                ].join(" ")}
+              >
+                {cell}
+              </div>
+            ))}
           </motion.div>
         ))}
       </div>
@@ -139,7 +180,7 @@ function SignTable({
 }
 
 /* ============================================================
-   Bảng thường (fallback) — table gọn có zebra.
+   Bảng thường (fallback).
    ============================================================ */
 function PlainTable({ table }: { table: GraphicTable }) {
   return (
@@ -171,9 +212,7 @@ function PlainTable({ table }: { table: GraphicTable }) {
 }
 
 /* ============================================================
-   Sơ đồ vườn (garden layout) — dựng đúng bố cục ảnh đề:
-   Shed & Greenhouse ở mép trên, Fence hai bên, khu 1-2-3-4,
-   Pond ở giữa, Gate + House ở mép dưới.
+   Sơ đồ vườn (garden layout) — đề 1, câu 98-100.
    ============================================================ */
 function EdgeBox({ icon: Icon, label, className }: { icon: typeof Home; label: string; className: string }) {
   return (
@@ -203,30 +242,61 @@ function GardenMap() {
   return (
     <div className="flex items-stretch gap-1">
       <div className={fence}>Fence</div>
-
       <div className="relative aspect-[5/4] flex-1 rounded-lg border-2 border-emerald-700/50 bg-gradient-to-br from-emerald-50 to-lime-50 dark:from-emerald-950/50 dark:to-emerald-900/30">
-        {/* Mép trên: Shed (trái), Greenhouse (phải) */}
         <EdgeBox icon={Home} label="Shed" className="-top-3 left-3" />
         <EdgeBox icon={Sprout} label="Greenhouse" className="-top-3 right-3" />
-
-        {/* 4 khu vực trồng cây */}
         <AreaChip n={1} className="left-[15%] top-[16%]" />
         <AreaChip n={2} className="right-[15%] top-[16%]" />
         <AreaChip n={3} className="bottom-[20%] left-[15%]" />
         <AreaChip n={4} className="bottom-[20%] right-[15%]" />
-
-        {/* Pond ở giữa */}
         <div className="absolute left-1/2 top-1/2 flex h-14 w-16 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-[50%] border border-sky-400 bg-sky-200/70 text-[11px] font-semibold text-sky-800 dark:bg-sky-900/50 dark:text-sky-100">
           <Droplets className="h-4 w-4" />
           Pond
         </div>
-
-        {/* Mép dưới: Gate (trái), House (phải) */}
         <EdgeBox icon={DoorOpen} label="Gate" className="-bottom-3 left-4" />
         <EdgeBox icon={Home} label="House" className="-bottom-3 right-4" />
       </div>
-
       <div className={fence}>Fence</div>
+    </div>
+  );
+}
+
+/* ============================================================
+   Sơ đồ văn phòng (office map) — đề 2, câu 68-70:
+   Entrance góc trên phải, Reception góc dưới phải,
+   hành lang giữa dẫn vào phòng 1, 2 (bên phải); 3, 4 (bên trái).
+   ============================================================ */
+function RoomBox({ n }: { n: number }) {
+  return (
+    <div className="flex flex-col items-center justify-center rounded-lg border-2 border-indigo-500/50 bg-indigo-50 py-3 dark:bg-indigo-950/40">
+      <DoorOpen className="h-4 w-4 text-indigo-500" />
+      <span className="mt-1 text-sm font-bold text-indigo-800 dark:text-indigo-200">Room {n}</span>
+    </div>
+  );
+}
+
+function OfficeMap() {
+  return (
+    <div className="rounded-xl border-2 border-slate-400/60 bg-slate-50 p-3 dark:bg-slate-900/50">
+      <div className="grid grid-cols-[1fr_3.5rem_1fr_1fr] grid-rows-2 gap-2">
+        {/* Hàng trên: Room 3 | hành lang | Room 1 | Entrance */}
+        <RoomBox n={3} />
+        <div className="row-span-2 flex items-center justify-center rounded-lg bg-slate-200/70 text-[10px] font-semibold uppercase tracking-widest text-slate-500 [writing-mode:vertical-rl] dark:bg-slate-800/70">
+          Hallway
+        </div>
+        <RoomBox n={1} />
+        <div className="flex flex-col items-center justify-center rounded-lg border border-dashed border-slate-400 py-3 text-slate-600 dark:text-slate-300">
+          <DoorOpen className="h-4 w-4" />
+          <span className="mt-1 text-xs font-semibold">Entrance</span>
+        </div>
+        {/* Hàng dưới: Room 4 | (hành lang) | Room 2 | Reception */}
+        <RoomBox n={4} />
+        <RoomBox n={2} />
+        <div className="flex flex-col items-center justify-center rounded-lg border border-slate-400 bg-white py-3 text-slate-700 shadow-sm dark:bg-slate-800 dark:text-slate-200">
+          <Monitor className="h-4 w-4" />
+          <span className="mt-1 text-xs font-semibold">Reception desk</span>
+        </div>
+      </div>
     </div>
   );
 }
@@ -236,6 +306,7 @@ function GardenMap() {
    ============================================================ */
 export function GraphicCard({ graphic }: { graphic: GraphicData }) {
   const isGarden = graphic.type === "description" && /vườn|garden/i.test(graphic.title);
+  const isOffice = graphic.type === "description" && /văn phòng|office/i.test(graphic.title);
 
   return (
     <motion.div
@@ -308,10 +379,12 @@ export function GraphicCard({ graphic }: { graphic: GraphicData }) {
             </div>
           )}
 
-          {/* --- Sơ đồ: bản đồ vườn 2D, còn lại fallback list --- */}
+          {/* --- Sơ đồ: vườn / văn phòng / fallback list --- */}
           {graphic.type === "description" &&
             (isGarden ? (
               <GardenMap />
+            ) : isOffice ? (
+              <OfficeMap />
             ) : (
               <ul className="space-y-2 text-sm text-muted-foreground">
                 {graphic.raw.slice(1).map((line, i) => (
