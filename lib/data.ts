@@ -22,6 +22,7 @@ export const allQuestions: EnrichedQuestion[] = groups.flatMap((g) =>
     groupTitle: g.title,
     part: g.part,
     graphicData: g.graphicData,
+    passage: g.passage,
   }))
 );
 
@@ -51,8 +52,16 @@ export function resolveQuestionSet(
       return allQuestions.filter((q) => q.part === "PART 3");
     case "part-4":
       return allQuestions.filter((q) => q.part === "PART 4");
+    case "part-5":
+      return allQuestions.filter((q) => q.part === "PART 5");
+    case "part-6":
+      return allQuestions.filter((q) => q.part === "PART 6");
+    case "part-7":
+      return allQuestions.filter((q) => q.part === "PART 7");
     case "graphic":
       return allQuestions.filter((q) => q.hasGraphic || q.graphicData);
+    case "reading":
+      return allQuestions.filter((q) => q.passage);
     case "wrong":
       if (!progress) return [];
       return allQuestions.filter((q) => {
@@ -65,6 +74,12 @@ export function resolveQuestionSet(
         progress.bookmarks.includes(q.questionNumber)
       );
     default:
+      // range-<from>-<to>: lọc theo dải số câu (dùng cho Part 5 chia khối)
+      if (key.startsWith("range-")) {
+        const [, a, b] = key.split("-");
+        const from = Number(a), to = Number(b);
+        return allQuestions.filter((q) => q.questionNumber >= from && q.questionNumber <= to);
+      }
       // group id
       return allQuestions.filter((q) => q.groupId === key);
   }
@@ -83,6 +98,7 @@ export function groupIntoBlocks(questions: EnrichedQuestion[]): QuizBlock[] {
         title: q.groupTitle,
         part: q.part,
         graphicData: q.graphicData,
+        passage: q.passage,
         questions: [],
       });
     }
@@ -100,18 +116,30 @@ export function resolveQuizBlocks(key: QuizSetKey, progress?: Progress): QuizBlo
 export function setLabel(key: QuizSetKey): string {
   switch (key) {
     case "all":
-      return "Toàn bộ 100 câu";
+      return `Toàn bộ ${quizMeta.totalQuestions} câu`;
     case "part-3":
       return "Part 3 — Conversations";
     case "part-4":
       return "Part 4 — Talks";
+    case "part-5":
+      return "Part 5 — Incomplete Sentences";
+    case "part-6":
+      return "Part 6 — Text Completion";
+    case "part-7":
+      return "Part 7 — Reading";
     case "graphic":
       return "Câu có bảng / biểu đồ";
+    case "reading":
+      return "Câu có đoạn văn";
     case "wrong":
       return "Ôn lại câu sai";
     case "bookmarked":
       return "Câu đã đánh dấu";
     default:
+      if (key.startsWith("range-")) {
+        const [, a, b] = key.split("-");
+        return `Câu ${a}-${b}`;
+      }
       return getGroup(key)?.title ?? "Quiz";
   }
 }

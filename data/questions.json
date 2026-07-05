@@ -1,12 +1,15 @@
 {
   "meta": {
-    "totalQuestions": 69,
-    "totalGroups": 23,
+    "totalQuestions": 169,
+    "totalGroups": 72,
     "parts": [
       "PART 3",
-      "PART 4"
+      "PART 4",
+      "PART 5",
+      "PART 6",
+      "PART 7"
     ],
-    "generatedFrom": "data.txt"
+    "generatedFrom": "data.txt + data2.txt"
   },
   "groups": [
     {
@@ -19,6 +22,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 32,
@@ -107,6 +111,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 35,
@@ -195,6 +200,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 38,
@@ -283,6 +289,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 41,
@@ -371,6 +378,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 44,
@@ -459,6 +467,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 47,
@@ -547,6 +556,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 50,
@@ -635,6 +645,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 53,
@@ -723,6 +734,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 56,
@@ -811,6 +823,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 59,
@@ -933,6 +946,7 @@
           "LU458 | Warsaw"
         ]
       },
+      "passage": null,
       "questions": [
         {
           "questionNumber": 62,
@@ -1057,6 +1071,7 @@
           "| 2:50 P.M. | Mr. Kasparov |"
         ]
       },
+      "passage": null,
       "questions": [
         {
           "questionNumber": 65,
@@ -1181,6 +1196,7 @@
           "| 10:55 A.M. | Norwich |"
         ]
       },
+      "passage": null,
       "questions": [
         {
           "questionNumber": 68,
@@ -1269,6 +1285,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 71,
@@ -1357,6 +1374,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 74,
@@ -1445,6 +1463,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 77,
@@ -1533,6 +1552,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 80,
@@ -1621,6 +1641,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 83,
@@ -1709,6 +1730,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 86,
@@ -1797,6 +1819,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 89,
@@ -1885,6 +1908,7 @@
       ],
       "hasGraphic": false,
       "graphicData": null,
+      "passage": null,
       "questions": [
         {
           "questionNumber": 92,
@@ -2001,6 +2025,7 @@
           "Baby care (Chăm sóc trẻ em): 15%"
         ]
       },
+      "passage": null,
       "questions": [
         {
           "questionNumber": 95,
@@ -2101,6 +2126,7 @@
           "Khu vực 4 nằm sát hàng rào (Fence) phía bên phải."
         ]
       },
+      "passage": null,
       "questions": [
         {
           "questionNumber": 98,
@@ -2175,6 +2201,3336 @@
           ],
           "correctAnswer": "A",
           "hasGraphic": true,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-101",
+      "part": "PART 5",
+      "title": "Question 101",
+      "range": [
+        101,
+        101
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 101,
+          "questionText": "Everyone is welcome to walk around the exhibit hall, but visitors are _________ from eating or drinking.",
+          "options": [
+            {
+              "key": "A",
+              "text": "discouraged"
+            },
+            {
+              "key": "B",
+              "text": "disappointed"
+            },
+            {
+              "key": "C",
+              "text": "dissatisfied"
+            },
+            {
+              "key": "D",
+              "text": "discounted"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-102",
+      "part": "PART 5",
+      "title": "Question 102",
+      "range": [
+        102,
+        102
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 102,
+          "questionText": "Unless we fix the gas leak soon, we run the risk of the situation becoming so serious that we _________ have to evacuate the production site.",
+          "options": [
+            {
+              "key": "A",
+              "text": "can"
+            },
+            {
+              "key": "B",
+              "text": "will"
+            },
+            {
+              "key": "C",
+              "text": "must"
+            },
+            {
+              "key": "D",
+              "text": "should"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-103",
+      "part": "PART 5",
+      "title": "Question 103",
+      "range": [
+        103,
+        103
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 103,
+          "questionText": "If you have any further questions, please contact our reception staff who will be glad to _________ further assistance.",
+          "options": [
+            {
+              "key": "A",
+              "text": "donate"
+            },
+            {
+              "key": "B",
+              "text": "grant"
+            },
+            {
+              "key": "C",
+              "text": "present"
+            },
+            {
+              "key": "D",
+              "text": "provide"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-104",
+      "part": "PART 5",
+      "title": "Question 104",
+      "range": [
+        104,
+        104
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 104,
+          "questionText": "Negotiations between management and workers over the new _________ contract were finally concluded at a meeting with union leaders last night.",
+          "options": [
+            {
+              "key": "A",
+              "text": "employment"
+            },
+            {
+              "key": "B",
+              "text": "employer"
+            },
+            {
+              "key": "C",
+              "text": "employ"
+            },
+            {
+              "key": "D",
+              "text": "employing"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-105",
+      "part": "PART 5",
+      "title": "Question 105",
+      "range": [
+        105,
+        105
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 105,
+          "questionText": "The results of the market research survey _________ that the reputation of the company had suffered due to negative press reports earlier in the year.",
+          "options": [
+            {
+              "key": "A",
+              "text": "designed"
+            },
+            {
+              "key": "B",
+              "text": "approved"
+            },
+            {
+              "key": "C",
+              "text": "confirmed"
+            },
+            {
+              "key": "D",
+              "text": "depended"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-106",
+      "part": "PART 5",
+      "title": "Question 106",
+      "range": [
+        106,
+        106
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 106,
+          "questionText": "By the time the conference was finally over, everyone was so tired they that they were _________ asleep on their feet.",
+          "options": [
+            {
+              "key": "A",
+              "text": "presumably"
+            },
+            {
+              "key": "B",
+              "text": "proportionately"
+            },
+            {
+              "key": "C",
+              "text": "practically"
+            },
+            {
+              "key": "D",
+              "text": "passionately"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-107",
+      "part": "PART 5",
+      "title": "Question 107",
+      "range": [
+        107,
+        107
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 107,
+          "questionText": "Customers who are not satisfied with any of our products may bring them back at any time and _________ them for an alternative of their choice.",
+          "options": [
+            {
+              "key": "A",
+              "text": "exchange"
+            },
+            {
+              "key": "B",
+              "text": "transfer"
+            },
+            {
+              "key": "C",
+              "text": "hand over"
+            },
+            {
+              "key": "D",
+              "text": "renounce"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-108",
+      "part": "PART 5",
+      "title": "Question 108",
+      "range": [
+        108,
+        108
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 108,
+          "questionText": "We have never had a single accident in the history of the company, _________ is an industrial safety record we are very proud of.",
+          "options": [
+            {
+              "key": "A",
+              "text": "that"
+            },
+            {
+              "key": "B",
+              "text": "which"
+            },
+            {
+              "key": "C",
+              "text": "what"
+            },
+            {
+              "key": "D",
+              "text": "whom"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-109",
+      "part": "PART 5",
+      "title": "Question 109",
+      "range": [
+        109,
+        109
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 109,
+          "questionText": "One thing that was very noticeable about the debate was the great _________ of opinions expressed by the participants.",
+          "options": [
+            {
+              "key": "A",
+              "text": "mobility"
+            },
+            {
+              "key": "B",
+              "text": "diversity"
+            },
+            {
+              "key": "C",
+              "text": "adversity"
+            },
+            {
+              "key": "D",
+              "text": "capacity"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-110",
+      "part": "PART 5",
+      "title": "Question 110",
+      "range": [
+        110,
+        110
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 110,
+          "questionText": "Due to the upturn in the global economy, sales have risen _________ over the past two months.",
+          "options": [
+            {
+              "key": "A",
+              "text": "sincerely"
+            },
+            {
+              "key": "B",
+              "text": "generously"
+            },
+            {
+              "key": "C",
+              "text": "heavily"
+            },
+            {
+              "key": "D",
+              "text": "sharply"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-111",
+      "part": "PART 5",
+      "title": "Question 111",
+      "range": [
+        111,
+        111
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 111,
+          "questionText": "Increasing wages for the entire staff equally is a very fair and cost-effective way for a company to motivate _________ employees and boost performance.",
+          "options": [
+            {
+              "key": "A",
+              "text": "it"
+            },
+            {
+              "key": "B",
+              "text": "its"
+            },
+            {
+              "key": "C",
+              "text": "them"
+            },
+            {
+              "key": "D",
+              "text": "they"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-112",
+      "part": "PART 5",
+      "title": "Question 112",
+      "range": [
+        112,
+        112
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 112,
+          "questionText": "Campers in the National Park are welcome to hike anywhere they want, but fishing in the lakes and rivers is not _________ in order to protect the balance of our wildlife population.",
+          "options": [
+            {
+              "key": "A",
+              "text": "permit"
+            },
+            {
+              "key": "B",
+              "text": "permitted"
+            },
+            {
+              "key": "C",
+              "text": "permissive"
+            },
+            {
+              "key": "D",
+              "text": "permission"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-113",
+      "part": "PART 5",
+      "title": "Question 113",
+      "range": [
+        113,
+        113
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 113,
+          "questionText": "I know the negotiations were very difficult, but I would not have agreed to such a big discount, if I _________ you.",
+          "options": [
+            {
+              "key": "A",
+              "text": "were"
+            },
+            {
+              "key": "B",
+              "text": "had"
+            },
+            {
+              "key": "C",
+              "text": "am"
+            },
+            {
+              "key": "D",
+              "text": "did"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-114",
+      "part": "PART 5",
+      "title": "Question 114",
+      "range": [
+        114,
+        114
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 114,
+          "questionText": "We believe the secret to the success of every one of our projects comes down to good design and thorough _________ .",
+          "options": [
+            {
+              "key": "A",
+              "text": "preparation"
+            },
+            {
+              "key": "B",
+              "text": "legislation"
+            },
+            {
+              "key": "C",
+              "text": "translation"
+            },
+            {
+              "key": "D",
+              "text": "declaration"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-115",
+      "part": "PART 5",
+      "title": "Question 115",
+      "range": [
+        115,
+        115
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 115,
+          "questionText": "After a long delay due to bad weather, our flight _________ London to Vancouver finally took off six hours behind schedule.",
+          "options": [
+            {
+              "key": "A",
+              "text": "for"
+            },
+            {
+              "key": "B",
+              "text": "at"
+            },
+            {
+              "key": "C",
+              "text": "in"
+            },
+            {
+              "key": "D",
+              "text": "from"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-116",
+      "part": "PART 5",
+      "title": "Question 116",
+      "range": [
+        116,
+        116
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 116,
+          "questionText": "An electrician was called to check the smoke alarm, which had gone off several times in the office building _________ there was no smoke.",
+          "options": [
+            {
+              "key": "A",
+              "text": "because"
+            },
+            {
+              "key": "B",
+              "text": "even though"
+            },
+            {
+              "key": "C",
+              "text": "despite"
+            },
+            {
+              "key": "D",
+              "text": "however"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-117",
+      "part": "PART 5",
+      "title": "Question 117",
+      "range": [
+        117,
+        117
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 117,
+          "questionText": "Mr. Arakawa was chosen to lead the project because he was one of the most hard working and _________ members of the team.",
+          "options": [
+            {
+              "key": "A",
+              "text": "knowledge"
+            },
+            {
+              "key": "B",
+              "text": "knowing"
+            },
+            {
+              "key": "C",
+              "text": "knowledgeable"
+            },
+            {
+              "key": "D",
+              "text": "knowledgeably"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-118",
+      "part": "PART 5",
+      "title": "Question 118",
+      "range": [
+        118,
+        118
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 118,
+          "questionText": "When Mike and Claude became business partners they knew that in order for the company to succeed they would have to trust _________ completely.",
+          "options": [
+            {
+              "key": "A",
+              "text": "another"
+            },
+            {
+              "key": "B",
+              "text": "other"
+            },
+            {
+              "key": "C",
+              "text": "each other"
+            },
+            {
+              "key": "D",
+              "text": "both"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-119",
+      "part": "PART 5",
+      "title": "Question 119",
+      "range": [
+        119,
+        119
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 119,
+          "questionText": "Following the first night's performance of the new play, all of the reviews were, without _________ , full of praise.",
+          "options": [
+            {
+              "key": "A",
+              "text": "conception"
+            },
+            {
+              "key": "B",
+              "text": "deception"
+            },
+            {
+              "key": "C",
+              "text": "exemption"
+            },
+            {
+              "key": "D",
+              "text": "exception"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-120",
+      "part": "PART 5",
+      "title": "Question 120",
+      "range": [
+        120,
+        120
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 120,
+          "questionText": "Please can you pass _________ the blue folder over there on the top shelf?",
+          "options": [
+            {
+              "key": "A",
+              "text": "I"
+            },
+            {
+              "key": "B",
+              "text": "me"
+            },
+            {
+              "key": "C",
+              "text": "myself"
+            },
+            {
+              "key": "D",
+              "text": "my"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-121",
+      "part": "PART 5",
+      "title": "Question 121",
+      "range": [
+        121,
+        121
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 121,
+          "questionText": "Although our stand at the exhibition was not very big, the event went very well for us because far more potential customers _________ up than we had expected.",
+          "options": [
+            {
+              "key": "A",
+              "text": "showed"
+            },
+            {
+              "key": "B",
+              "text": "enquired"
+            },
+            {
+              "key": "C",
+              "text": "arrived"
+            },
+            {
+              "key": "D",
+              "text": "appeared"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-122",
+      "part": "PART 5",
+      "title": "Question 122",
+      "range": [
+        122,
+        122
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 122,
+          "questionText": "The report concluded that the heavy losses the company sustained over the previous year meant that _________ could have been done to save it from bankruptcy.",
+          "options": [
+            {
+              "key": "A",
+              "text": "something"
+            },
+            {
+              "key": "B",
+              "text": "anything"
+            },
+            {
+              "key": "C",
+              "text": "everything"
+            },
+            {
+              "key": "D",
+              "text": "nothing"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-123",
+      "part": "PART 5",
+      "title": "Question 123",
+      "range": [
+        123,
+        123
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 123,
+          "questionText": "After Roberto was promoted to supervisor in the packing department, he _________ given the freedom necessary to change procedures.",
+          "options": [
+            {
+              "key": "A",
+              "text": "had"
+            },
+            {
+              "key": "B",
+              "text": "was"
+            },
+            {
+              "key": "C",
+              "text": "be"
+            },
+            {
+              "key": "D",
+              "text": "has"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-124",
+      "part": "PART 5",
+      "title": "Question 124",
+      "range": [
+        124,
+        124
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 124,
+          "questionText": "The furniture store drastically cut its prices across its entire line of luxury sofas _________ an attempt to generate more sales.",
+          "options": [
+            {
+              "key": "A",
+              "text": "in"
+            },
+            {
+              "key": "B",
+              "text": "at"
+            },
+            {
+              "key": "C",
+              "text": "on"
+            },
+            {
+              "key": "D",
+              "text": "by"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-125",
+      "part": "PART 5",
+      "title": "Question 125",
+      "range": [
+        125,
+        125
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 125,
+          "questionText": "The coffee maker that Zoe gave us as a wedding present is _________ better than the last one we had, isn't it?",
+          "options": [
+            {
+              "key": "A",
+              "text": "more"
+            },
+            {
+              "key": "B",
+              "text": "as"
+            },
+            {
+              "key": "C",
+              "text": "most"
+            },
+            {
+              "key": "D",
+              "text": "much"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-126",
+      "part": "PART 5",
+      "title": "Question 126",
+      "range": [
+        126,
+        126
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 126,
+          "questionText": "The annual 'Best in Business' award ceremony, which is the most prestigious event of the year, _________ take place in the Grosvenor Center on Saturday, June 3rd.",
+          "options": [
+            {
+              "key": "A",
+              "text": "will"
+            },
+            {
+              "key": "B",
+              "text": "is"
+            },
+            {
+              "key": "C",
+              "text": "has"
+            },
+            {
+              "key": "D",
+              "text": "do"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-127",
+      "part": "PART 5",
+      "title": "Question 127",
+      "range": [
+        127,
+        127
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 127,
+          "questionText": "I was surprised at all the positive comments I received after my talk, because I never expected it _________ so well.",
+          "options": [
+            {
+              "key": "A",
+              "text": "go"
+            },
+            {
+              "key": "B",
+              "text": "going"
+            },
+            {
+              "key": "C",
+              "text": "to go"
+            },
+            {
+              "key": "D",
+              "text": "goes"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-128",
+      "part": "PART 5",
+      "title": "Question 128",
+      "range": [
+        128,
+        128
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 128,
+          "questionText": "Our enjoyment of the fishing expedition was severely _________ by the bad weather, which caused several members of our group to be seasick.",
+          "options": [
+            {
+              "key": "A",
+              "text": "accepted"
+            },
+            {
+              "key": "B",
+              "text": "effected"
+            },
+            {
+              "key": "C",
+              "text": "affected"
+            },
+            {
+              "key": "D",
+              "text": "infected"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-129",
+      "part": "PART 5",
+      "title": "Question 129",
+      "range": [
+        129,
+        129
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 129,
+          "questionText": "The meal at the restaurant downtown was so expensive that we decided to share the cost, and so _________ of us paid $25.",
+          "options": [
+            {
+              "key": "A",
+              "text": "every"
+            },
+            {
+              "key": "B",
+              "text": "nobody"
+            },
+            {
+              "key": "C",
+              "text": "none"
+            },
+            {
+              "key": "D",
+              "text": "each"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-130",
+      "part": "PART 5",
+      "title": "Question 130",
+      "range": [
+        130,
+        130
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": null,
+      "questions": [
+        {
+          "questionNumber": 130,
+          "questionText": "Lindsey Martinez, the Director of Operations at Hope Hospital, said the growing number of patients suffering from tropical disease was _________ alarming.",
+          "options": [
+            {
+              "key": "A",
+              "text": "remarkably"
+            },
+            {
+              "key": "B",
+              "text": "strictly"
+            },
+            {
+              "key": "C",
+              "text": "extremely"
+            },
+            {
+              "key": "D",
+              "text": "mainly"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-131-134",
+      "part": "PART 6",
+      "title": "Questions 131-134",
+      "range": [
+        131,
+        134
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "text",
+        "title": "FAX",
+        "content": [
+          "FAX",
+          "To: Kirsty Spalding, Reservations Manager – Hotel Grand Chapelle",
+          "From: Rei Matsumoto",
+          "Pages: 1",
+          "Date: May 23",
+          "Subject: Room confirmation",
+          "Dear Ms. Spalding:",
+          "Regarding our recent telephone conversation, I am writing to confirm the following reservation at your hotel: One non-smoking executive double room, for two nights beginning Friday, May 29.",
+          "Can you please confirm that the room will have a balcony with a (131) of the sea, as promised? We would also like a room with a bathtub, rather than a shower, if at all possible.",
+          "We understand that the room rate of 120 per night includes breakfast. Can you also confirm that the hotel provides free internet access, and that the room (132) a safe?",
+          "We understand that no deposit is required, but we need to make payment in full on arrival. (133)",
+          "Thank you for your time, and I look forward to your prompt (134).",
+          "Kind regards,",
+          "Rei Matsumoto"
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 131,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (131).",
+          "options": [
+            {
+              "key": "A",
+              "text": "sight"
+            },
+            {
+              "key": "B",
+              "text": "view"
+            },
+            {
+              "key": "C",
+              "text": "vision"
+            },
+            {
+              "key": "D",
+              "text": "mirage"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 132,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (132).",
+          "options": [
+            {
+              "key": "A",
+              "text": "to have"
+            },
+            {
+              "key": "B",
+              "text": "is having"
+            },
+            {
+              "key": "C",
+              "text": "will have"
+            },
+            {
+              "key": "D",
+              "text": "has had"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 133,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (133).",
+          "options": [
+            {
+              "key": "A",
+              "text": "Your cooperation in this matter is appreciated."
+            },
+            {
+              "key": "B",
+              "text": "We are looking forward to our stay in your hotel."
+            },
+            {
+              "key": "C",
+              "text": "If you have any questions, please get in touch."
+            },
+            {
+              "key": "D",
+              "text": "We accept all major credit cards."
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 134,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (134).",
+          "options": [
+            {
+              "key": "A",
+              "text": "responsive"
+            },
+            {
+              "key": "B",
+              "text": "respond"
+            },
+            {
+              "key": "C",
+              "text": "responding"
+            },
+            {
+              "key": "D",
+              "text": "response"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-135-138",
+      "part": "PART 6",
+      "title": "Questions 135-138",
+      "range": [
+        135,
+        138
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "text",
+        "title": "ADVERTISEMENT",
+        "content": [
+          "Corporate Vision – The Eye Care Specialists",
+          "For All Your Business Eye Care Needs",
+          "Here at Corporate Vision, we make it our business to help your business. We are Canada's No. 1 supplier of glasses and No. 1 provider of eye tests. We have also been voted the country's most (135) opticians for the past ten years.",
+          "Contact our Account Management team today to discuss your eye care needs. Soon, you could be (136) the peace of mind that comes with knowing you are caring for your company's most important assets... its employees. Research shows that eye care benefits are highly valued by employees, and are an effective way to encourage staff loyalty. (137) If your employees use screens for periods of an hour or more continuously, then you must comply with Display Screen Regulations.",
+          "What's more, corporate client employees can take advantage of our exclusive Executive Club. This allows them, and their family members, to enjoy great savings on glasses from our Supreme range. Employees are entitled to three Executive Club coupons per year, one for themselves and two for family members. Distribute the coupons (138) your staff, and they can be redeemed at any store.",
+          "Call Corporate Vision today and find out about our great deals."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 135,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (135).",
+          "options": [
+            {
+              "key": "A",
+              "text": "vigilant"
+            },
+            {
+              "key": "B",
+              "text": "precious"
+            },
+            {
+              "key": "C",
+              "text": "predictable"
+            },
+            {
+              "key": "D",
+              "text": "trustworthy"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 136,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (136).",
+          "options": [
+            {
+              "key": "A",
+              "text": "enjoying"
+            },
+            {
+              "key": "B",
+              "text": "enjoy"
+            },
+            {
+              "key": "C",
+              "text": "to enjoy"
+            },
+            {
+              "key": "D",
+              "text": "enjoyed"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 137,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (137).",
+          "options": [
+            {
+              "key": "A",
+              "text": "Laser eye surgery is also available."
+            },
+            {
+              "key": "B",
+              "text": "Tell your staff now about this exciting opportunity."
+            },
+            {
+              "key": "C",
+              "text": "On-site eye testing can be arranged."
+            },
+            {
+              "key": "D",
+              "text": "Providing eye care is also a legal requirement."
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 138,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (138).",
+          "options": [
+            {
+              "key": "A",
+              "text": "in"
+            },
+            {
+              "key": "B",
+              "text": "about"
+            },
+            {
+              "key": "C",
+              "text": "among"
+            },
+            {
+              "key": "D",
+              "text": "over"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-139-142",
+      "part": "PART 6",
+      "title": "Questions 139-142",
+      "range": [
+        139,
+        142
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "text",
+        "title": "ARTICLE",
+        "content": [
+          "International Poll Shows Stress Affects Us All",
+          "Work-related stress is an everyday part of most people's lives. That's the result of one recent survey of over 15,000 workers across ten countries. A staggering 70% of workers described their jobs as \"very stressful.\" (139)",
+          "According to the U-Poll International survey, which took over a year to complete, the most stressful of all occupations include police officer, firefighter, and commercial pilot. Workers in these professions are most affected by work-related stress, depression, and anxiety. The statistics suggest that work-related stress affects men and women equally, (140) that older workers suffer more than younger people.",
+          "The poll found that 84% of respondents (141) high levels of stress at some point in their lives. Common causes of stress at work include large workloads, lack of support, weak management, bullying or harassment, and a poor working environment.",
+          "It seems that (142) no one is immune to stress. In Japan, the perceived threat from this \"silent killer\" is so strong that the Japanese even have a word for sudden death as a result of overwork, \"karoushi.\""
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 139,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (139).",
+          "options": [
+            {
+              "key": "A",
+              "text": "The effects of stress in the workplace can be alarming."
+            },
+            {
+              "key": "B",
+              "text": "However, the reasons remain largely unknown."
+            },
+            {
+              "key": "C",
+              "text": "Reducing stress must be a priority."
+            },
+            {
+              "key": "D",
+              "text": "Most respondents felt stressed to some degree."
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 140,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (140).",
+          "options": [
+            {
+              "key": "A",
+              "text": "so"
+            },
+            {
+              "key": "B",
+              "text": "but"
+            },
+            {
+              "key": "C",
+              "text": "even"
+            },
+            {
+              "key": "D",
+              "text": "for"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 141,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (141).",
+          "options": [
+            {
+              "key": "A",
+              "text": "experienced"
+            },
+            {
+              "key": "B",
+              "text": "were experienced"
+            },
+            {
+              "key": "C",
+              "text": "to experience"
+            },
+            {
+              "key": "D",
+              "text": "experiencing"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 142,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (142).",
+          "options": [
+            {
+              "key": "A",
+              "text": "strictly"
+            },
+            {
+              "key": "B",
+              "text": "definitely"
+            },
+            {
+              "key": "C",
+              "text": "unanimously"
+            },
+            {
+              "key": "D",
+              "text": "virtually"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-143-146",
+      "part": "PART 6",
+      "title": "Questions 143-146",
+      "range": [
+        143,
+        146
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "text",
+        "title": "MEMO",
+        "content": [
+          "MEMO",
+          "To: All staff",
+          "From: Shirley Blaine",
+          "Re: Security issues",
+          "Date: September 14th",
+          "In recent weeks there have been a number of thefts from the premises. These include a client's notebook computer taken from Study Center 1, one of our new digital cameras that went (143) from the reception area, and Carol Miller's purse, which apparently was stolen yesterday from her desk while she was at lunch.",
+          "Obviously, this is an important matter and we have asked the police to investigate. In the meantime, I'd like to ask everyone to take particular care of your personal belongings, especially any valuable items (bags, wallets, cell phones, etc.). Always lock your offices when you leave, (144) it's only for a short time. We need to do everything we can to deter opportunistic thieves. Please be vigilant and report anyone (145) in a suspicious manner to Bob or Michael in Security immediately.",
+          "We also have an ultra-violet marker pen at reception, for you to mark items such as notebook computers and cell phones. This is very easy and quick to do, so please take advantage of this security option. (146)",
+          "SB"
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 143,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (143).",
+          "options": [
+            {
+              "key": "A",
+              "text": "missing"
+            },
+            {
+              "key": "B",
+              "text": "absent"
+            },
+            {
+              "key": "C",
+              "text": "misplaced"
+            },
+            {
+              "key": "D",
+              "text": "lost"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 144,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (144).",
+          "options": [
+            {
+              "key": "A",
+              "text": "yet"
+            },
+            {
+              "key": "B",
+              "text": "even if"
+            },
+            {
+              "key": "C",
+              "text": "ever"
+            },
+            {
+              "key": "D",
+              "text": "still"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 145,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (145).",
+          "options": [
+            {
+              "key": "A",
+              "text": "acts"
+            },
+            {
+              "key": "B",
+              "text": "act"
+            },
+            {
+              "key": "C",
+              "text": "acting"
+            },
+            {
+              "key": "D",
+              "text": "acted"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 146,
+          "questionText": "Chọn đáp án phù hợp cho chỗ trống (146).",
+          "options": [
+            {
+              "key": "A",
+              "text": "Please be sure to return it after use."
+            },
+            {
+              "key": "B",
+              "text": "Therefore, more pens will be purchased."
+            },
+            {
+              "key": "C",
+              "text": "Thank you for joining the security team."
+            },
+            {
+              "key": "D",
+              "text": "I will let you know when it is available."
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-147-148",
+      "part": "PART 7",
+      "title": "Questions 147-148",
+      "range": [
+        147,
+        148
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "Online Chat Discussion (Giữa Mandy P và Celine Depardieu liên quan đến việc giao nhầm 250 cuốn sách thay vì 200 cuốn)."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 147,
+          "questionText": "At 3:34 P.M., what does Ms. Depardieu mean when she writes, \"That's a pain\"?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She has no printer."
+            },
+            {
+              "key": "B",
+              "text": "She is feeling unwell."
+            },
+            {
+              "key": "C",
+              "text": "She dislikes the trouble."
+            },
+            {
+              "key": "D",
+              "text": "The books are very heavy."
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 148,
+          "questionText": "What will Mandy P most likely do next?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Revise a bill"
+            },
+            {
+              "key": "B",
+              "text": "Process a refund"
+            },
+            {
+              "key": "C",
+              "text": "Check her e-mail"
+            },
+            {
+              "key": "D",
+              "text": "Renew a policy"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-149-151",
+      "part": "PART 7",
+      "title": "Questions 149-151",
+      "range": [
+        149,
+        151
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "E-mail gửi Mark Jenkins từ Sue Morriss (Accounts Payable tại Hertford Legal) yêu cầu bản sao hóa đơn chưa thanh toán."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 149,
+          "questionText": "What does this e-mail confirm?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A payment is overdue."
+            },
+            {
+              "key": "B",
+              "text": "An account has been changed."
+            },
+            {
+              "key": "C",
+              "text": "An invoice has been processed."
+            },
+            {
+              "key": "D",
+              "text": "An employee will be disciplined."
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 150,
+          "questionText": "Who is Dan Denapoli?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A worker in the Accounts Payable department"
+            },
+            {
+              "key": "B",
+              "text": "A colleague of Mark Jenkins"
+            },
+            {
+              "key": "C",
+              "text": "An employee of Hertford Legal"
+            },
+            {
+              "key": "D",
+              "text": "An accountant at the main office"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 151,
+          "questionText": "The word \"oversight\" in paragraph 2, line 1, is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "delay"
+            },
+            {
+              "key": "B",
+              "text": "difficulty"
+            },
+            {
+              "key": "C",
+              "text": "obstacle"
+            },
+            {
+              "key": "D",
+              "text": "mistake"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-152-153",
+      "part": "PART 7",
+      "title": "Questions 152-153",
+      "range": [
+        152,
+        153
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "Tin nhắn hội thoại (Text Message Chain) giữa Sue Watkins và Zoe Trent về việc đi xem kịch có sự tham gia của diễn viên Jason Pollard."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 152,
+          "questionText": "At 8:38 P.M., what does Ms. Watkins mean when she writes, \"Tell me about it\"?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She wants to hear more information."
+            },
+            {
+              "key": "B",
+              "text": "She understands the situation completely."
+            },
+            {
+              "key": "C",
+              "text": "She was unaware of the problem."
+            },
+            {
+              "key": "D",
+              "text": "She expected Ms. Trent to be late."
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 153,
+          "questionText": "Who most likely is Jason Pollard?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A coworker"
+            },
+            {
+              "key": "B",
+              "text": "A friend"
+            },
+            {
+              "key": "C",
+              "text": "A manager"
+            },
+            {
+              "key": "D",
+              "text": "An actor"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-154-155",
+      "part": "PART 7",
+      "title": "Questions 154-155",
+      "range": [
+        154,
+        155
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "Agenda cuộc họp của Ban điều hành trường Cao đẳng cộng đồng hạt Chorley (Chorley County Community College - Steering Group Agenda)."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 154,
+          "questionText": "How often does the Steering Group most likely meet?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Once a week"
+            },
+            {
+              "key": "B",
+              "text": "Once a month"
+            },
+            {
+              "key": "C",
+              "text": "Twice a month"
+            },
+            {
+              "key": "D",
+              "text": "Twice a year"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 155,
+          "questionText": "What was NOT discussed at this meeting?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Plans to raise money for the college"
+            },
+            {
+              "key": "B",
+              "text": "Efforts to encourage more students to get involved"
+            },
+            {
+              "key": "C",
+              "text": "Decisions made at the last meeting"
+            },
+            {
+              "key": "D",
+              "text": "Ways to promote the college's online courses"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-156-158",
+      "part": "PART 7",
+      "title": "Questions 156-158",
+      "range": [
+        156,
+        158
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "Bản ghi nhớ (Memo) gửi các nhân viên của Viện Hopkins (The Hopkins Institute) từ Cheryl Baker (Marketing Manager) giới thiệu 2 nhân sự mới là Leanne Riggins và Kevin Rose."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 156,
+          "questionText": "What is the purpose of the memo?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To introduce new staff members"
+            },
+            {
+              "key": "B",
+              "text": "To notify employees of new work policies"
+            },
+            {
+              "key": "C",
+              "text": "To announce new marketing projects"
+            },
+            {
+              "key": "D",
+              "text": "To review company procedures"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 157,
+          "questionText": "How much time does Brad have to prepare for Kevin's arrival?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Three days"
+            },
+            {
+              "key": "B",
+              "text": "Until the end of the week"
+            },
+            {
+              "key": "C",
+              "text": "Less than two weeks"
+            },
+            {
+              "key": "D",
+              "text": "One month"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 158,
+          "questionText": "What can be inferred about The Hopkins Institute?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It is a Market Research company."
+            },
+            {
+              "key": "B",
+              "text": "It is expanding its marketing operations."
+            },
+            {
+              "key": "C",
+              "text": "It needs help to develop its marketing projects."
+            },
+            {
+              "key": "D",
+              "text": "It relies heavily on marketing technology."
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-159-160",
+      "part": "PART 7",
+      "title": "Questions 159-160",
+      "range": [
+        159,
+        160
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "Biên nhận đặt chỗ đỗ xe (RESERVATION CONFIRMATION) tại bãi xe Perfect Parking Ltd của khách hàng S. Bernstein từ 15/1 đến 28/1."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 159,
+          "questionText": "How long has Mr. Bernstein reserved to park his car at the Perfect Parking lot?",
+          "options": [
+            {
+              "key": "A",
+              "text": "7 days"
+            },
+            {
+              "key": "B",
+              "text": "10 days"
+            },
+            {
+              "key": "C",
+              "text": "14 days"
+            },
+            {
+              "key": "D",
+              "text": "17 days"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 160,
+          "questionText": "How much money will Mr. Bernstein receive if he cancels his booking on the day of departure?",
+          "options": [
+            {
+              "key": "A",
+              "text": "$0"
+            },
+            {
+              "key": "B",
+              "text": "$140"
+            },
+            {
+              "key": "C",
+              "text": "$240"
+            },
+            {
+              "key": "D",
+              "text": "$280"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-161-164",
+      "part": "PART 7",
+      "title": "Questions 161-164",
+      "range": [
+        161,
+        164
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "E-mail gửi Andrei Ivanski từ Liam O'Toole (Bellevue Hotel) xác nhận đặt phòng tổ chức sự kiện liệu pháp toàn diện (Holistic Therapy event)."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 161,
+          "questionText": "In which position marked [1], [2], [3], and [4] does the following sentence best belong? \"This is also inclusive of all taxes.\"",
+          "options": [
+            {
+              "key": "A",
+              "text": "[1]"
+            },
+            {
+              "key": "B",
+              "text": "[2]"
+            },
+            {
+              "key": "C",
+              "text": "[3]"
+            },
+            {
+              "key": "D",
+              "text": "[4]"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 162,
+          "questionText": "What is implied about the rental Mr. Ivanski has made?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It would cost more to hold the event on the weekend."
+            },
+            {
+              "key": "B",
+              "text": "The Main Conference Room is the only suitable room."
+            },
+            {
+              "key": "C",
+              "text": "All supplementary charges are already included in the quote."
+            },
+            {
+              "key": "D",
+              "text": "The hotel will provide comprehensive insurance coverage."
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 163,
+          "questionText": "The word \"records\" in paragraph 4, line 3, is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "purposes"
+            },
+            {
+              "key": "B",
+              "text": "files"
+            },
+            {
+              "key": "C",
+              "text": "calculations"
+            },
+            {
+              "key": "D",
+              "text": "signs"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 164,
+          "questionText": "How many documents does Mr. Ivanski need to supply?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Two"
+            },
+            {
+              "key": "B",
+              "text": "Three"
+            },
+            {
+              "key": "C",
+              "text": "Four"
+            },
+            {
+              "key": "D",
+              "text": "Five"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-165-167",
+      "part": "PART 7",
+      "title": "Questions 165-167",
+      "range": [
+        165,
+        167
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "Bài báo \"Hi-Tech Companies Lead Recovery\" (Các công ty công nghệ cao dẫn đầu xu hướng phục hồi sau suy thoái kinh tế)."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 165,
+          "questionText": "What is suggested about hi-tech companies?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Most remain badly affected by the recession."
+            },
+            {
+              "key": "B",
+              "text": "Some are expected to recover in the near future."
+            },
+            {
+              "key": "C",
+              "text": "They have all reported poor results for the last year."
+            },
+            {
+              "key": "D",
+              "text": "Certain sectors are enjoying strong growth."
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 166,
+          "questionText": "In which position marked [1], [2], [3], and [4] does the following sentence best belong? \"However, this grim picture is showing signs of change.\"",
+          "options": [
+            {
+              "key": "A",
+              "text": "[1]"
+            },
+            {
+              "key": "B",
+              "text": "[2]"
+            },
+            {
+              "key": "C",
+              "text": "[3]"
+            },
+            {
+              "key": "D",
+              "text": "[4]"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 167,
+          "questionText": "Which of these is NOT mentioned as a cause for increased demand for microchips?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The popularity of internet gaming"
+            },
+            {
+              "key": "B",
+              "text": "Demand for in-car navigation systems"
+            },
+            {
+              "key": "C",
+              "text": "Increasing numbers of smartphones"
+            },
+            {
+              "key": "D",
+              "text": "Growth in sales of desktop computers"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-168-171",
+      "part": "PART 7",
+      "title": "Questions 168-171",
+      "range": [
+        168,
+        171
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "Bảng thông báo các dịch vụ tại triển lãm thương mại quốc tế (INTERCONTINENTAL TRADE SHOW) tổ chức tại Berlin."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 168,
+          "questionText": "Who would be most interested in this information?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Attendees at the InterContinental Trade Show"
+            },
+            {
+              "key": "B",
+              "text": "Organizers of the annual conference"
+            },
+            {
+              "key": "C",
+              "text": "Managers at the International Exhibition Center"
+            },
+            {
+              "key": "D",
+              "text": "Staff responsible for security at the event"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 169,
+          "questionText": "Where should you go to reclaim any lost property?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hall 1"
+            },
+            {
+              "key": "B",
+              "text": "Hall 2"
+            },
+            {
+              "key": "C",
+              "text": "Hall 3"
+            },
+            {
+              "key": "D",
+              "text": "Hall 4"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 170,
+          "questionText": "Which of the following topics is NOT covered?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Personal safety"
+            },
+            {
+              "key": "B",
+              "text": "Vehicle security"
+            },
+            {
+              "key": "C",
+              "text": "Fire regulations"
+            },
+            {
+              "key": "D",
+              "text": "Recycling waste"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 171,
+          "questionText": "The word \"valuables\" in paragraph 7, line 1, is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "treasure"
+            },
+            {
+              "key": "B",
+              "text": "proceeds"
+            },
+            {
+              "key": "C",
+              "text": "important items"
+            },
+            {
+              "key": "D",
+              "text": "prizes"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-172-175",
+      "part": "PART 7",
+      "title": "Questions 172-175",
+      "range": [
+        172,
+        175
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "Hóa đơn (INVOICE) của công ty bảo trì báo động A1 Alarm Maintenance gửi khách hàng Mr. James về dịch vụ sửa lỗi báo động giả."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 172,
+          "questionText": "Why did Mr. James contact A1 Alarm Maintenance?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The smoke detectors were not working properly."
+            },
+            {
+              "key": "B",
+              "text": "He wanted a new smoke alarm system installed."
+            },
+            {
+              "key": "C",
+              "text": "One of the smoke alarms did not meet international standards."
+            },
+            {
+              "key": "D",
+              "text": "The smoke alarm system needed routine maintenance."
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 173,
+          "questionText": "Who most likely is Tim Edwards?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The owner of A1 Alarm Maintenance"
+            },
+            {
+              "key": "B",
+              "text": "A resident at 67 Alpha Terrace"
+            },
+            {
+              "key": "C",
+              "text": "An alarm maintenance engineer"
+            },
+            {
+              "key": "D",
+              "text": "An invoice clerk for A1 Alarm Maintenance"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 174,
+          "questionText": "By which date should payment in full be made?",
+          "options": [
+            {
+              "key": "A",
+              "text": "May 29"
+            },
+            {
+              "key": "B",
+              "text": "June 4"
+            },
+            {
+              "key": "C",
+              "text": "June 18"
+            },
+            {
+              "key": "D",
+              "text": "June 30"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 175,
+          "questionText": "Which service was NOT carried out at the property?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Both smoke detectors were cleaned."
+            },
+            {
+              "key": "B",
+              "text": "Both smoke detectors were tested."
+            },
+            {
+              "key": "C",
+              "text": "One smoke detector was replaced."
+            },
+            {
+              "key": "D",
+              "text": "One smoke detector was repaired."
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-176-180",
+      "part": "PART 7",
+      "title": "Questions 176-180",
+      "range": [
+        176,
+        180
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "Quảng cáo chuỗi khách sạn Paramount Hotels kèm theo mẫu đơn đặt phòng (Reservation Form) viết tay của Thomas Whitly đặt phòng tại Park Hotel từ ngày 23/7 đến 25/7."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 176,
+          "questionText": "Which city does Mr. Whitly plan to visit?",
+          "options": [
+            {
+              "key": "A",
+              "text": "New York"
+            },
+            {
+              "key": "B",
+              "text": "Chicago"
+            },
+            {
+              "key": "C",
+              "text": "Maine"
+            },
+            {
+              "key": "D",
+              "text": "Los Angeles"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 177,
+          "questionText": "How is Mr. Whitly making this hotel reservation?",
+          "options": [
+            {
+              "key": "A",
+              "text": "By phone"
+            },
+            {
+              "key": "B",
+              "text": "By e-mail"
+            },
+            {
+              "key": "C",
+              "text": "Directly via the website"
+            },
+            {
+              "key": "D",
+              "text": "By mail"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 178,
+          "questionText": "Which of the following will Mr. Whitly qualify to receive?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A 10 percent discount on his bill"
+            },
+            {
+              "key": "B",
+              "text": "Breakfast each morning free of charge"
+            },
+            {
+              "key": "C",
+              "text": "A special room rate of $120 per night"
+            },
+            {
+              "key": "D",
+              "text": "A free fruit basket"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 179,
+          "questionText": "In the advertisement, the word \"unique\" in paragraph 1, line 1 is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "typical"
+            },
+            {
+              "key": "B",
+              "text": "single"
+            },
+            {
+              "key": "C",
+              "text": "rare"
+            },
+            {
+              "key": "D",
+              "text": "distinctive"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 180,
+          "questionText": "Which of the following characteristics of Paramount Hotels does the advertisement NOT mention?",
+          "options": [
+            {
+              "key": "A",
+              "text": "They are well located."
+            },
+            {
+              "key": "B",
+              "text": "They serve excellent food."
+            },
+            {
+              "key": "C",
+              "text": "They are reasonably priced."
+            },
+            {
+              "key": "D",
+              "text": "They have been recently refurbished."
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-181-185",
+      "part": "PART 7",
+      "title": "Questions 181-185",
+      "range": [
+        181,
+        185
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "Bài báo phân tích về sự phát triển của thị trường toàn cầu \"Developing Global Markets\" kết hợp cùng lịch trình chuỗi sự kiện của diễn đàn doanh nghiệp Wellington (Wellington Business Forum - Calendar of Events)."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 181,
+          "questionText": "Where will Professor Lee Kwok's presentation be held?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Auckland"
+            },
+            {
+              "key": "B",
+              "text": "The Wellington Business Forum"
+            },
+            {
+              "key": "C",
+              "text": "West Road Theater"
+            },
+            {
+              "key": "D",
+              "text": "New Zealand Shipping Association"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 182,
+          "questionText": "Which economy is expected to expand by nearly half in the next five years?",
+          "options": [
+            {
+              "key": "A",
+              "text": "BRICS"
+            },
+            {
+              "key": "B",
+              "text": "Asia"
+            },
+            {
+              "key": "C",
+              "text": "China"
+            },
+            {
+              "key": "D",
+              "text": "The United States"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 183,
+          "questionText": "Where does Dr. Sherringham work?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Wellington Business Institute"
+            },
+            {
+              "key": "B",
+              "text": "New Zealand Autos"
+            },
+            {
+              "key": "C",
+              "text": "Green Matters, Inc."
+            },
+            {
+              "key": "D",
+              "text": "New Zealand Times"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 184,
+          "questionText": "In the article, the word \"leading\" in paragraph 1, line 3, is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "innovative"
+            },
+            {
+              "key": "B",
+              "text": "renowned"
+            },
+            {
+              "key": "C",
+              "text": "exclusive"
+            },
+            {
+              "key": "D",
+              "text": "classified"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 185,
+          "questionText": "Which speaker does NOT refer to statistics to support his or her argument?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Dr. Xavier Hernandes"
+            },
+            {
+              "key": "B",
+              "text": "Mr. Ian Sissons"
+            },
+            {
+              "key": "C",
+              "text": "Dr. Carole Sherringham"
+            },
+            {
+              "key": "D",
+              "text": "Prof. Marvin Klysters"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-186-190",
+      "part": "PART 7",
+      "title": "Questions 186-190",
+      "range": [
+        186,
+        190
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "Tin đăng tuyển dụng các vị trí hành chính (Bilingual Call Center Assistant, Customer Service Representative, Administrative Assistant...) và e-mail xin việc của ứng viên Claire Robertson, kèm thư giới thiệu từ quản lý cũ Jefferson Waters."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 186,
+          "questionText": "Which position does NOT require previous experience?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Administrative Assistant"
+            },
+            {
+              "key": "B",
+              "text": "Customer Service Representative"
+            },
+            {
+              "key": "C",
+              "text": "Clerical Assistant"
+            },
+            {
+              "key": "D",
+              "text": "Accounting Assistant"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 187,
+          "questionText": "What is indicated about Claire Robertson?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She excelled at high school."
+            },
+            {
+              "key": "B",
+              "text": "She is working full time."
+            },
+            {
+              "key": "C",
+              "text": "She would like a promotion."
+            },
+            {
+              "key": "D",
+              "text": "She studies in the evenings."
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 188,
+          "questionText": "As well as Total Call Insurance, which organization is Claire Robertson also qualified to apply to?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Campbelltown Medical Center"
+            },
+            {
+              "key": "B",
+              "text": "Mellistone Edwards"
+            },
+            {
+              "key": "C",
+              "text": "Deutsche Werkzeuge GmbH"
+            },
+            {
+              "key": "D",
+              "text": "JV Watson"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 189,
+          "questionText": "How long ago did Mr. Waters first meet Ms. Robertson?",
+          "options": [
+            {
+              "key": "A",
+              "text": "One year"
+            },
+            {
+              "key": "B",
+              "text": "Two years"
+            },
+            {
+              "key": "C",
+              "text": "Three years"
+            },
+            {
+              "key": "D",
+              "text": "Four years"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 190,
+          "questionText": "In the e-mail from Mr. Waters, the word \"wholeheartedly\" in paragraph 1, line 5, is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "personally"
+            },
+            {
+              "key": "B",
+              "text": "frankly"
+            },
+            {
+              "key": "C",
+              "text": "totally"
+            },
+            {
+              "key": "D",
+              "text": "warmly"
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-191-195",
+      "part": "PART 7",
+      "title": "Questions 191-195",
+      "range": [
+        191,
+        195
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "Trang web bán dao \"cleancutknives.com\", bảng tóm tắt đơn hàng số 5755 (Order Summary) và e-mail phản hồi từ bếp trưởng khách sạn Douglas Long về việc bị trừ tiền nhầm lẫn trên thẻ tín dụng."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 191,
+          "questionText": "What is NOT indicated about the knives?",
+          "options": [
+            {
+              "key": "A",
+              "text": "They are guaranteed indefinitely."
+            },
+            {
+              "key": "B",
+              "text": "They should be washed by hand."
+            },
+            {
+              "key": "C",
+              "text": "They are resistant to rust."
+            },
+            {
+              "key": "D",
+              "text": "They are self-sharpening."
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 192,
+          "questionText": "Which size knife did the customer buy?",
+          "options": [
+            {
+              "key": "A",
+              "text": "7 inches"
+            },
+            {
+              "key": "B",
+              "text": "8 inches"
+            },
+            {
+              "key": "C",
+              "text": "9 inches"
+            },
+            {
+              "key": "D",
+              "text": "11 inches"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 193,
+          "questionText": "What will the hotel kitchen most likely use the knife for?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To chop herbs"
+            },
+            {
+              "key": "B",
+              "text": "To slice cake"
+            },
+            {
+              "key": "C",
+              "text": "To carve roast beef"
+            },
+            {
+              "key": "D",
+              "text": "To remove chicken bones"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 194,
+          "questionText": "What does Mr. Long imply in the e-mail?",
+          "options": [
+            {
+              "key": "A",
+              "text": "He received the wrong-sized product."
+            },
+            {
+              "key": "B",
+              "text": "He was charged the price of a bread knife."
+            },
+            {
+              "key": "C",
+              "text": "The package arrived later than agreed."
+            },
+            {
+              "key": "D",
+              "text": "The parcel did not contain a delivery note."
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 195,
+          "questionText": "In the e-mail, the word \"rectify\" in line 3 is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "refund"
+            },
+            {
+              "key": "B",
+              "text": "correct"
+            },
+            {
+              "key": "C",
+              "text": "investigate"
+            },
+            {
+              "key": "D",
+              "text": "acknowledge"
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "q-196-200",
+      "part": "PART 7",
+      "title": "Questions 196-200",
+      "range": [
+        196,
+        200
+      ],
+      "hasGraphic": false,
+      "graphicData": null,
+      "passage": {
+        "type": "reference",
+        "title": "Đoạn văn tham chiếu",
+        "content": [
+          "Tờ rơi quảng cáo khóa huấn luyện thể hình cuối tuần \"WEEKEND FITNESS BOOT CAMP\", phiếu nhận xét của học viên Lisa Liu, và e-mail trao đổi giữa huấn luyện viên trưởng Logan Dexter gửi các trợ lý phân công ca trực thứ Bảy."
+        ]
+      },
+      "questions": [
+        {
+          "questionNumber": 196,
+          "questionText": "What is indicated about the boot camp?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Weight loss is guaranteed."
+            },
+            {
+              "key": "B",
+              "text": "The program is the same each boot camp."
+            },
+            {
+              "key": "C",
+              "text": "The instructors are military personnel."
+            },
+            {
+              "key": "D",
+              "text": "Some activities must be paid for."
+            }
+          ],
+          "correctAnswer": "D",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 197,
+          "questionText": "Who is NOT scheduled to lead a session on Saturday afternoon?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Kris"
+            },
+            {
+              "key": "B",
+              "text": "Logan"
+            },
+            {
+              "key": "C",
+              "text": "Matt"
+            },
+            {
+              "key": "D",
+              "text": "Teri"
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 198,
+          "questionText": "What can be inferred about Charmaine?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She leads the power yoga sessions."
+            },
+            {
+              "key": "B",
+              "text": "She usually works on Sundays only."
+            },
+            {
+              "key": "C",
+              "text": "She is currently away on vacation."
+            },
+            {
+              "key": "D",
+              "text": "She is a recently-qualified instructor."
+            }
+          ],
+          "correctAnswer": "A",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 199,
+          "questionText": "Which advertised activity did NOT take place on Saturday at this boot camp?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Aerobics"
+            },
+            {
+              "key": "B",
+              "text": "Obstacle course"
+            },
+            {
+              "key": "C",
+              "text": "Bodyweight training"
+            },
+            {
+              "key": "D",
+              "text": "Team games"
+            }
+          ],
+          "correctAnswer": "C",
+          "hasGraphic": false,
+          "explanation": ""
+        },
+        {
+          "questionNumber": 200,
+          "questionText": "What is true about Lisa Liu?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She lost weight at the boot camp."
+            },
+            {
+              "key": "B",
+              "text": "She went cycling on the Saturday."
+            },
+            {
+              "key": "C",
+              "text": "She attended the event twice before."
+            },
+            {
+              "key": "D",
+              "text": "She hurt herself while exercising."
+            }
+          ],
+          "correctAnswer": "B",
+          "hasGraphic": false,
           "explanation": ""
         }
       ]

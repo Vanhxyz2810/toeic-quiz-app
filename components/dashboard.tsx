@@ -5,12 +5,15 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   BookOpen,
+  BookOpenText,
   Bookmark,
   CheckCircle2,
+  FileText,
   Image as ImageIcon,
   Layers,
   ListChecks,
   ListOrdered,
+  PenLine,
   RotateCcw,
   Search,
   Shuffle,
@@ -151,10 +154,13 @@ export function Dashboard() {
         </p>
 
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          <QuickStart href="/quiz/all" icon={BookOpen} title="Toàn bộ đề" subtitle="Tất cả câu Part 3 & 4" count={stats.total} mode={mode} query={qs} />
+          <QuickStart href="/quiz/all" icon={BookOpen} title="Toàn bộ đề" subtitle="Tất cả câu Part 3 → 7" count={stats.total} mode={mode} query={qs} />
           <QuickStart href="/quiz/part-3" icon={Layers} title="Part 3" subtitle="Conversations" count={resolveQuestionSet("part-3").length} mode={mode} query={qs} />
           <QuickStart href="/quiz/part-4" icon={Layers} title="Part 4" subtitle="Short talks" count={resolveQuestionSet("part-4").length} mode={mode} query={qs} tone="success" />
-          <QuickStart href="/quiz/graphic" icon={ImageIcon} title="Câu có graphic" subtitle="Bảng biểu & sơ đồ" count={graphicCount} mode={mode} query={qs} tone="amber" />
+          <QuickStart href="/quiz/part-5" icon={PenLine} title="Part 5" subtitle="Incomplete sentences" count={resolveQuestionSet("part-5").length} mode={mode} query={qs} />
+          <QuickStart href="/quiz/part-6" icon={FileText} title="Part 6" subtitle="Text completion" count={resolveQuestionSet("part-6").length} mode={mode} query={qs} tone="success" />
+          <QuickStart href="/quiz/part-7" icon={BookOpenText} title="Part 7" subtitle="Reading comprehension" count={resolveQuestionSet("part-7").length} mode={mode} query={qs} />
+          <QuickStart href="/quiz/graphic" icon={ImageIcon} title="Câu có graphic" subtitle="Bảng biểu & sơ đồ (Part 3–4)" count={graphicCount} mode={mode} query={qs} tone="amber" />
           <QuickStart href="/quiz/wrong" icon={XCircle} title="Ôn câu sai" subtitle="Chỉ những câu đã trả lời sai" count={wrongCount} mode={mode} query={qs} tone="danger" disabled={wrongCount === 0} />
           <QuickStart href="/quiz/bookmarked" icon={Bookmark} title="Câu đã đánh dấu" subtitle="Danh sách bookmark của bạn" count={bookmarkCount} mode={mode} query={qs} tone="primary" disabled={bookmarkCount === 0} />
         </div>
@@ -178,31 +184,65 @@ export function Dashboard() {
         {parts.map((part) => {
           const partGroups = filteredGroups.filter((g) => g.part === part);
           if (!partGroups.length) return null;
+
+          // Part 5 gồm 30 câu độc lập -> gộp hiển thị theo khối 10 câu cho gọn
+          // (khi đang tìm kiếm thì vẫn hiện từng câu khớp).
+          const showChunks = part === "PART 5" && !query.trim();
+          const cards = showChunks
+            ? (() => {
+                const sorted = [...partGroups].sort((a, b) => a.range[0] - b.range[0]);
+                const out: { href: string; title: string; badge: null; questions: typeof sorted[0]["questions"] }[] = [];
+                for (let i = 0; i < sorted.length; i += 10) {
+                  const slice = sorted.slice(i, i + 10);
+                  const from = slice[0].range[0];
+                  const to = slice[slice.length - 1].range[0];
+                  out.push({
+                    href: `/quiz/range-${from}-${to}?${qs}`,
+                    title: `Câu ${from}-${to}`,
+                    badge: null,
+                    questions: slice.flatMap((g) => g.questions),
+                  });
+                }
+                return out;
+              })()
+            : partGroups.map((g) => ({
+                href: `/quiz/${g.id}?${qs}`,
+                title: g.title,
+                badge: (g.hasGraphic ? "graphic" : g.passage ? "reading" : null) as
+                  | "graphic"
+                  | "reading"
+                  | null,
+                questions: g.questions,
+              }));
+
           return (
             <div key={part} className="space-y-3">
               <div className="flex items-center gap-2">
                 <Badge variant="secondary">{part}</Badge>
-                <span className="text-xs text-muted-foreground">{partGroups.length} nhóm</span>
+                <span className="text-xs text-muted-foreground">
+                  {cards.length} {showChunks ? "khối" : "nhóm"}
+                </span>
               </div>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {partGroups.map((g) => {
-                  const total = g.questions.length;
-                  const answered = g.questions.filter((q) => progress.answers[q.questionNumber]).length;
-                  const correct = g.questions.filter(
+                {cards.map((c) => {
+                  const total = c.questions.length;
+                  const answered = c.questions.filter((q) => progress.answers[q.questionNumber]).length;
+                  const correct = c.questions.filter(
                     (q) => progress.answers[q.questionNumber] === q.correctAnswer
                   ).length;
-                  const done = answered === total;
+                  const done = total > 0 && answered === total;
                   return (
-                    <Link key={g.id} href={`/quiz/${g.id}?${qs}`}>
+                    <Link key={c.href} href={c.href}>
                       <motion.div whileHover={{ y: -3 }} className="h-full">
                         <Card className={cn("h-full transition-colors hover:border-primary/40", done && "border-success/40")}>
                           <CardHeader className="pb-3">
                             <div className="flex items-start justify-between gap-2">
-                              <CardTitle className="text-base">{g.title}</CardTitle>
-                              {g.hasGraphic && (
-                                <Badge variant="accent">
-                                  <ImageIcon className="h-3.5 w-3.5" /> Graphic
-                                </Badge>
+                              <CardTitle className="text-base">{c.title}</CardTitle>
+                              {c.badge === "graphic" && (
+                                <Badge variant="accent"><ImageIcon className="h-3.5 w-3.5" /> Graphic</Badge>
+                              )}
+                              {c.badge === "reading" && (
+                                <Badge variant="accent"><BookOpenText className="h-3.5 w-3.5" /> Đoạn văn</Badge>
                               )}
                             </div>
                           </CardHeader>

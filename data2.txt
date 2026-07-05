@@ -1,0 +1,685 @@
+
+Dưới đây là dữ liệu toàn bộ các câu hỏi từ Part 5, Part 6 và Part 7 (câu 101 đến câu 200) đã được chuyển soạn đầy đủ và phân loại cấu trúc phân nhóm (Group/Passage) rõ ràng.
+Để hệ thống AI hoặc mã nguồn Web Quiz của bạn có thể dễ dàng phân tích cú pháp (parse) và tự động nhận diện câu nào thuộc đoạn văn nào, cấu trúc dữ liệu được thiết kế như sau:
+Part 5: Các câu hỏi độc lập (Independent). Mỗi câu hỏi là 1 phần độc lập, không gộp nhóm.
+Part 6: Luôn gộp nhóm 4 câu vào cùng 1 đoạn văn.
+Part 7: Gộp nhóm theo đoạn văn với số lượng câu linh hoạt (từ 2 đến 5 câu tùy đoạn). Mỗi nhóm đều được đánh dấu rõ phạm vi câu (ví dụ: [Mã nhóm: Passage 147-148]).
+Mỗi câu hỏi đều đi kèm Đáp án đúng chính thức dựa trên tài liệu chuẩn của bạn.
+PART 5: INCOMPLETE SENTENCES (CÂU HỎI ĐỘC LẬP - KHÔNG GỘP NHÓM)
+Mỗi câu hỏi dưới đây là một thực thể độc lập (Single Question).
+101. Everyone is welcome to walk around the exhibit hall, but visitors are _________ from eating or drinking.
+(A) discouraged
+(B) disappointed
+(C) dissatisfied
+(D) discounted
+Đáp án đúng: (A)
+102. Unless we fix the gas leak soon, we run the risk of the situation becoming so serious that we _________ have to evacuate the production site.
+(A) can
+(B) will
+(C) must
+(D) should
+Đáp án đúng: (B)
+103. If you have any further questions, please contact our reception staff who will be glad to _________ further assistance.
+(A) donate
+(B) grant
+(C) present
+(D) provide
+Đáp án đúng: (D)
+104. Negotiations between management and workers over the new _________ contract were finally concluded at a meeting with union leaders last night.
+(A) employment
+(B) employer
+(C) employ
+(D) employing
+Đáp án đúng: (A)
+105. The results of the market research survey _________ that the reputation of the company had suffered due to negative press reports earlier in the year.
+(A) designed
+(B) approved
+(C) confirmed
+(D) depended
+Đáp án đúng: (C)
+106. By the time the conference was finally over, everyone was so tired they that they were _________ asleep on their feet.
+(A) presumably
+(B) proportionately
+(C) practically
+(D) passionately
+Đáp án đúng: (C)
+107. Customers who are not satisfied with any of our products may bring them back at any time and _________ them for an alternative of their choice.
+(A) exchange
+(B) transfer
+(C) hand over
+(D) renounce
+Đáp án đúng: (A)
+108. We have never had a single accident in the history of the company, _________ is an industrial safety record we are very proud of.
+(A) that
+(B) which
+(C) what
+(D) whom
+Đáp án đúng: (B)
+109. One thing that was very noticeable about the debate was the great _________ of opinions expressed by the participants.
+(A) mobility
+(B) diversity
+(C) adversity
+(D) capacity
+Đáp án đúng: (B)
+110. Due to the upturn in the global economy, sales have risen _________ over the past two months.
+(A) sincerely
+(B) generously
+(C) heavily
+(D) sharply
+Đáp án đúng: (D)
+111. Increasing wages for the entire staff equally is a very fair and cost-effective way for a company to motivate _________ employees and boost performance.
+(A) it
+(B) its
+(C) them
+(D) they
+Đáp án đúng: (B)
+112. Campers in the National Park are welcome to hike anywhere they want, but fishing in the lakes and rivers is not _________ in order to protect the balance of our wildlife population.
+(A) permit
+(B) permitted
+(C) permissive
+(D) permission
+Đáp án đúng: (B)
+113. I know the negotiations were very difficult, but I would not have agreed to such a big discount, if I _________ you.
+(A) were
+(B) had
+(C) am
+(D) did
+Đáp án đúng: (A)
+114. We believe the secret to the success of every one of our projects comes down to good design and thorough _________ .
+(A) preparation
+(B) legislation
+(C) translation
+(D) declaration
+Đáp án đúng: (A)
+115. After a long delay due to bad weather, our flight _________ London to Vancouver finally took off six hours behind schedule.
+(A) for
+(B) at
+(C) in
+(D) from
+Đáp án đúng: (D)
+116. An electrician was called to check the smoke alarm, which had gone off several times in the office building _________ there was no smoke.
+(A) because
+(B) even though
+(C) despite
+(D) however
+Đáp án đúng: (B)
+117. Mr. Arakawa was chosen to lead the project because he was one of the most hard working and _________ members of the team.
+(A) knowledge
+(B) knowing
+(C) knowledgeable
+(D) knowledgeably
+Đáp án đúng: (C)
+118. When Mike and Claude became business partners they knew that in order for the company to succeed they would have to trust _________ completely.
+(A) another
+(B) other
+(C) each other
+(D) both
+Đáp án đúng: (C)
+119. Following the first night's performance of the new play, all of the reviews were, without _________ , full of praise.
+(A) conception
+(B) deception
+(C) exemption
+(D) exception
+Đáp án đúng: (D)
+120. Please can you pass _________ the blue folder over there on the top shelf?
+(A) I
+(B) me
+(C) myself
+(D) my
+Đáp án đúng: (B)
+121. Although our stand at the exhibition was not very big, the event went very well for us because far more potential customers _________ up than we had expected.
+(A) showed
+(B) enquired
+(C) arrived
+(D) appeared
+Đáp án đúng: (A)
+122. The report concluded that the heavy losses the company sustained over the previous year meant that _________ could have been done to save it from bankruptcy.
+(A) something
+(B) anything
+(C) everything
+(D) nothing
+Đáp án đúng: (D)
+123. After Roberto was promoted to supervisor in the packing department, he _________ given the freedom necessary to change procedures.
+(A) had
+(B) was
+(C) be
+(D) has
+Đáp án đúng: (B)
+124. The furniture store drastically cut its prices across its entire line of luxury sofas _________ an attempt to generate more sales.
+(A) in
+(B) at
+(C) on
+(D) by
+Đáp án đúng: (A)
+125. The coffee maker that Zoe gave us as a wedding present is _________ better than the last one we had, isn't it?
+(A) more
+(B) as
+(C) most
+(D) much
+Đáp án đúng: (D)
+126. The annual 'Best in Business' award ceremony, which is the most prestigious event of the year, _________ take place in the Grosvenor Center on Saturday, June 3rd.
+(A) will
+(B) is
+(C) has
+(D) do
+Đáp án đúng: (A)
+127. I was surprised at all the positive comments I received after my talk, because I never expected it _________ so well.
+(A) go
+(B) going
+(C) to go
+(D) goes
+Đáp án đúng: (C)
+128. Our enjoyment of the fishing expedition was severely _________ by the bad weather, which caused several members of our group to be seasick.
+(A) accepted
+(B) effected
+(C) affected
+(D) infected
+Đáp án đúng: (C)
+129. The meal at the restaurant downtown was so expensive that we decided to share the cost, and so _________ of us paid $25.
+(A) every
+(B) nobody
+(C) none
+(D) each
+Đáp án đúng: (D)
+130. Lindsey Martinez, the Director of Operations at Hope Hospital, said the growing number of patients suffering from tropical disease was _________ alarming.
+(A) remarkably
+(B) strictly
+(C) extremely
+(D) mainly
+Đáp án đúng: (C)
+PART 6: TEXT COMPLETION (MỖI ĐOẠN VĂN GỘP CHUNG 4 CÂU HỎI)
+[Mã nhóm: Passage 131-134] (Đoạn văn 1 - FAX)
+Nội dung đoạn văn:
+FAX
+To: Kirsty Spalding, Reservations Manager – Hotel Grand Chapelle
+From: Rei Matsumoto
+Pages: 1
+Date: May 23
+Subject: Room confirmation
+Dear Ms. Spalding:
+Regarding our recent telephone conversation, I am writing to confirm the following reservation at your hotel: One non-smoking executive double room, for two nights beginning Friday, May 29.
+Can you please confirm that the room will have a balcony with a (131) of the sea, as promised? We would also like a room with a bathtub, rather than a shower, if at all possible.
+We understand that the room rate of 120 per night includes breakfast. Can you also confirm that the hotel provides free internet access, and that the room (132) a safe?
+We understand that no deposit is required, but we need to make payment in full on arrival. (133)
+Thank you for your time, and I look forward to your prompt (134).
+Kind regards,
+Rei Matsumoto
+131.
+(A) sight
+(B) view
+(C) vision
+(D) mirage
+Đáp án đúng: (B)
+132.
+(A) to have
+(B) is having
+(C) will have
+(D) has had
+Đáp án đúng: (C)
+133.
+(A) Your cooperation in this matter is appreciated.
+(B) We are looking forward to our stay in your hotel.
+(C) If you have any questions, please get in touch.
+(D) We accept all major credit cards.
+Đáp án đúng: (B)
+134.
+(A) responsive
+(B) respond
+(C) responding
+(D) response
+Đáp án đúng: (D)
+[Mã nhóm: Passage 135-138] (Đoạn văn 2 - ADVERTISEMENT)
+Nội dung đoạn văn:
+Corporate Vision – The Eye Care Specialists
+For All Your Business Eye Care Needs
+Here at Corporate Vision, we make it our business to help your business. We are Canada's No. 1 supplier of glasses and No. 1 provider of eye tests. We have also been voted the country's most (135) opticians for the past ten years.
+Contact our Account Management team today to discuss your eye care needs. Soon, you could be (136) the peace of mind that comes with knowing you are caring for your company's most important assets... its employees. Research shows that eye care benefits are highly valued by employees, and are an effective way to encourage staff loyalty. (137) If your employees use screens for periods of an hour or more continuously, then you must comply with Display Screen Regulations.
+What's more, corporate client employees can take advantage of our exclusive Executive Club. This allows them, and their family members, to enjoy great savings on glasses from our Supreme range. Employees are entitled to three Executive Club coupons per year, one for themselves and two for family members. Distribute the coupons (138) your staff, and they can be redeemed at any store.
+Call Corporate Vision today and find out about our great deals.
+135.
+(A) vigilant
+(B) precious
+(C) predictable
+(D) trustworthy
+Đáp án đúng: (D)
+136.
+(A) enjoying
+(B) enjoy
+(C) to enjoy
+(D) enjoyed
+Đáp án đúng: (A)
+137.
+(A) Laser eye surgery is also available.
+(B) Tell your staff now about this exciting opportunity.
+(C) On-site eye testing can be arranged.
+(D) Providing eye care is also a legal requirement.
+Đáp án đúng: (D)
+138.
+(A) in
+(B) about
+(C) among
+(D) over
+Đáp án đúng: (C)
+[Mã nhóm: Passage 139-142] (Đoạn văn 3 - ARTICLE)
+Nội dung đoạn văn:
+International Poll Shows Stress Affects Us All
+Work-related stress is an everyday part of most people's lives. That's the result of one recent survey of over 15,000 workers across ten countries. A staggering 70% of workers described their jobs as "very stressful." (139)
+According to the U-Poll International survey, which took over a year to complete, the most stressful of all occupations include police officer, firefighter, and commercial pilot. Workers in these professions are most affected by work-related stress, depression, and anxiety. The statistics suggest that work-related stress affects men and women equally, (140) that older workers suffer more than younger people.
+The poll found that 84% of respondents (141) high levels of stress at some point in their lives. Common causes of stress at work include large workloads, lack of support, weak management, bullying or harassment, and a poor working environment.
+It seems that (142) no one is immune to stress. In Japan, the perceived threat from this "silent killer" is so strong that the Japanese even have a word for sudden death as a result of overwork, "karoushi."
+139.
+(A) The effects of stress in the workplace can be alarming.
+(B) However, the reasons remain largely unknown.
+(C) Reducing stress must be a priority.
+(D) Most respondents felt stressed to some degree.
+Đáp án đúng: (D)
+140.
+(A) so
+(B) but
+(C) even
+(D) for
+Đáp án đúng: (B)
+141.
+(A) experienced
+(B) were experienced
+(C) to experience
+(D) experiencing
+Đáp án đúng: (A)
+142.
+(A) strictly
+(B) definitely
+(C) unanimously
+(D) virtually
+Đáp án đúng: (D)
+[Mã nhóm: Passage 143-146] (Đoạn văn 4 - MEMO)
+Nội dung đoạn văn:
+MEMO
+To: All staff
+From: Shirley Blaine
+Re: Security issues
+Date: September 14th
+In recent weeks there have been a number of thefts from the premises. These include a client's notebook computer taken from Study Center 1, one of our new digital cameras that went (143) from the reception area, and Carol Miller's purse, which apparently was stolen yesterday from her desk while she was at lunch.
+Obviously, this is an important matter and we have asked the police to investigate. In the meantime, I'd like to ask everyone to take particular care of your personal belongings, especially any valuable items (bags, wallets, cell phones, etc.). Always lock your offices when you leave, (144) it's only for a short time. We need to do everything we can to deter opportunistic thieves. Please be vigilant and report anyone (145) in a suspicious manner to Bob or Michael in Security immediately.
+We also have an ultra-violet marker pen at reception, for you to mark items such as notebook computers and cell phones. This is very easy and quick to do, so please take advantage of this security option. (146)
+SB
+143.
+(A) missing
+(B) absent
+(C) misplaced
+(D) lost
+Đáp án đúng: (A)
+144.
+(A) yet
+(B) even if
+(C) ever
+(D) still
+Đáp án đúng: (B)
+145.
+(A) acts
+(B) act
+(C) acting
+(D) acted
+Đáp án đúng: (C)
+146.
+(A) Please be sure to return it after use.
+(B) Therefore, more pens will be purchased.
+(C) Thank you for joining the security team.
+(D) I will let you know when it is available.
+Đáp án đúng: (A)
+PART 7: READING COMPREHENSION (GỘP NHÓM LINH HOẠT THEO TỪNG ĐOẠN VĂN)
+[Mã nhóm: Passage 147-148] (Gộp nhóm 2 câu hỏi)
+Đoạn văn tham chiếu: Online Chat Discussion (Giữa Mandy P và Celine Depardieu liên quan đến việc giao nhầm 250 cuốn sách thay vì 200 cuốn).
+147. At 3:34 P.M., what does Ms. Depardieu mean when she writes, "That's a pain"?
+(A) She has no printer.
+(B) She is feeling unwell.
+(C) She dislikes the trouble.
+(D) The books are very heavy.
+Đáp án đúng: (C)
+148. What will Mandy P most likely do next?
+(A) Revise a bill
+(B) Process a refund
+(C) Check her e-mail
+(D) Renew a policy
+Đáp án đúng: (A)
+[Mã nhóm: Passage 149-151] (Gộp nhóm 3 câu hỏi)
+Đoạn văn tham chiếu: E-mail gửi Mark Jenkins từ Sue Morriss (Accounts Payable tại Hertford Legal) yêu cầu bản sao hóa đơn chưa thanh toán.
+149. What does this e-mail confirm?
+(A) A payment is overdue.
+(B) An account has been changed.
+(C) An invoice has been processed.
+(D) An employee will be disciplined.
+Đáp án đúng: (B)
+150. Who is Dan Denapoli?
+(A) A worker in the Accounts Payable department
+(B) A colleague of Mark Jenkins
+(C) An employee of Hertford Legal
+(D) An accountant at the main office
+Đáp án đúng: (C)
+151. The word "oversight" in paragraph 2, line 1, is closest in meaning to
+(A) delay
+(B) difficulty
+(C) obstacle
+(D) mistake
+Đáp án đúng: (D)
+[Mã nhóm: Passage 152-153] (Gộp nhóm 2 câu hỏi)
+Đoạn văn tham chiếu: Tin nhắn hội thoại (Text Message Chain) giữa Sue Watkins và Zoe Trent về việc đi xem kịch có sự tham gia của diễn viên Jason Pollard.
+152. At 8:38 P.M., what does Ms. Watkins mean when she writes, "Tell me about it"?
+(A) She wants to hear more information.
+(B) She understands the situation completely.
+(C) She was unaware of the problem.
+(D) She expected Ms. Trent to be late.
+Đáp án đúng: (B)
+153. Who most likely is Jason Pollard?
+(A) A coworker
+(B) A friend
+(C) A manager
+(D) An actor
+Đáp án đúng: (D)
+[Mã nhóm: Passage 154-155] (Gộp nhóm 2 câu hỏi)
+Đoạn văn tham chiếu: Agenda cuộc họp của Ban điều hành trường Cao đẳng cộng đồng hạt Chorley (Chorley County Community College - Steering Group Agenda).
+154. How often does the Steering Group most likely meet?
+(A) Once a week
+(B) Once a month
+(C) Twice a month
+(D) Twice a year
+Đáp án đúng: (B)
+155. What was NOT discussed at this meeting?
+(A) Plans to raise money for the college
+(B) Efforts to encourage more students to get involved
+(C) Decisions made at the last meeting
+(D) Ways to promote the college's online courses
+Đáp án đúng: (D)
+[Mã nhóm: Passage 156-158] (Gộp nhóm 3 câu hỏi)
+Đoạn văn tham chiếu: Bản ghi nhớ (Memo) gửi các nhân viên của Viện Hopkins (The Hopkins Institute) từ Cheryl Baker (Marketing Manager) giới thiệu 2 nhân sự mới là Leanne Riggins và Kevin Rose.
+156. What is the purpose of the memo?
+(A) To introduce new staff members
+(B) To notify employees of new work policies
+(C) To announce new marketing projects
+(D) To review company procedures
+Đáp án đúng: (A)
+157. How much time does Brad have to prepare for Kevin's arrival?
+(A) Three days
+(B) Until the end of the week
+(C) Less than two weeks
+(D) One month
+Đáp án đúng: (C)
+158. What can be inferred about The Hopkins Institute?
+(A) It is a Market Research company.
+(B) It is expanding its marketing operations.
+(C) It needs help to develop its marketing projects.
+(D) It relies heavily on marketing technology.
+Đáp án đúng: (B)
+[Mã nhóm: Passage 159-160] (Gộp nhóm 2 câu hỏi)
+Đoạn văn tham chiếu: Biên nhận đặt chỗ đỗ xe (RESERVATION CONFIRMATION) tại bãi xe Perfect Parking Ltd của khách hàng S. Bernstein từ 15/1 đến 28/1.
+159. How long has Mr. Bernstein reserved to park his car at the Perfect Parking lot?
+(A) 7 days
+(B) 10 days
+(C) 14 days
+(D) 17 days
+Đáp án đúng: (C)
+160. How much money will Mr. Bernstein receive if he cancels his booking on the day of departure?
+(A) $0
+(B) $140
+(C) $240
+(D) $280
+Đáp án đúng: (C)
+[Mã nhóm: Passage 161-164] (Gộp nhóm 4 câu hỏi)
+Đoạn văn tham chiếu: E-mail gửi Andrei Ivanski từ Liam O'Toole (Bellevue Hotel) xác nhận đặt phòng tổ chức sự kiện liệu pháp toàn diện (Holistic Therapy event).
+161. In which position marked [1], [2], [3], and [4] does the following sentence best belong?
+"This is also inclusive of all taxes."
+(A) [1]
+(B) [2]
+(C) [3]
+(D) [4]
+Đáp án đúng: (A)
+162. What is implied about the rental Mr. Ivanski has made?
+(A) It would cost more to hold the event on the weekend.
+(B) The Main Conference Room is the only suitable room.
+(C) All supplementary charges are already included in the quote.
+(D) The hotel will provide comprehensive insurance coverage.
+Đáp án đúng: (A)
+163. The word "records" in paragraph 4, line 3, is closest in meaning to
+(A) purposes
+(B) files
+(C) calculations
+(D) signs
+Đáp án đúng: (B)
+164. How many documents does Mr. Ivanski need to supply?
+(A) Two
+(B) Three
+(C) Four
+(D) Five
+Đáp án đúng: (C)
+[Mã nhóm: Passage 165-167] (Gộp nhóm 3 câu hỏi)
+Đoạn văn tham chiếu: Bài báo "Hi-Tech Companies Lead Recovery" (Các công ty công nghệ cao dẫn đầu xu hướng phục hồi sau suy thoái kinh tế).
+165. What is suggested about hi-tech companies?
+(A) Most remain badly affected by the recession.
+(B) Some are expected to recover in the near future.
+(C) They have all reported poor results for the last year.
+(D) Certain sectors are enjoying strong growth.
+Đáp án đúng: (D)
+166. In which position marked [1], [2], [3], and [4] does the following sentence best belong?
+"However, this grim picture is showing signs of change."
+(A) [1]
+(B) [2]
+(C) [3]
+(D) [4]
+Đáp án đúng: (A)
+167. Which of these is NOT mentioned as a cause for increased demand for microchips?
+(A) The popularity of internet gaming
+(B) Demand for in-car navigation systems
+(C) Increasing numbers of smartphones
+(D) Growth in sales of desktop computers
+Đáp án đúng: (D)
+[Mã nhóm: Passage 168-171] (Gộp nhóm 4 câu hỏi)
+Đoạn văn tham chiếu: Bảng thông báo các dịch vụ tại triển lãm thương mại quốc tế (INTERCONTINENTAL TRADE SHOW) tổ chức tại Berlin.
+168. Who would be most interested in this information?
+(A) Attendees at the InterContinental Trade Show
+(B) Organizers of the annual conference
+(C) Managers at the International Exhibition Center
+(D) Staff responsible for security at the event
+Đáp án đúng: (A)
+169. Where should you go to reclaim any lost property?
+(A) Hall 1
+(B) Hall 2
+(C) Hall 3
+(D) Hall 4
+Đáp án đúng: (B)
+170. Which of the following topics is NOT covered?
+(A) Personal safety
+(B) Vehicle security
+(C) Fire regulations
+(D) Recycling waste
+Đáp án đúng: (B)
+171. The word "valuables" in paragraph 7, line 1, is closest in meaning to
+(A) treasure
+(B) proceeds
+(C) important items
+(D) prizes
+Đáp án đúng: (C)
+[Mã nhóm: Passage 172-175] (Gộp nhóm 4 câu hỏi)
+Đoạn văn tham chiếu: Hóa đơn (INVOICE) của công ty bảo trì báo động A1 Alarm Maintenance gửi khách hàng Mr. James về dịch vụ sửa lỗi báo động giả.
+172. Why did Mr. James contact A1 Alarm Maintenance?
+(A) The smoke detectors were not working properly.
+(B) He wanted a new smoke alarm system installed.
+(C) One of the smoke alarms did not meet international standards.
+(D) The smoke alarm system needed routine maintenance.
+Đáp án đúng: (A)
+173. Who most likely is Tim Edwards?
+(A) The owner of A1 Alarm Maintenance
+(B) A resident at 67 Alpha Terrace
+(C) An alarm maintenance engineer
+(D) An invoice clerk for A1 Alarm Maintenance
+Đáp án đúng: (C)
+174. By which date should payment in full be made?
+(A) May 29
+(B) June 4
+(C) June 18
+(D) June 30
+Đáp án đúng: (C)
+175. Which service was NOT carried out at the property?
+(A) Both smoke detectors were cleaned.
+(B) Both smoke detectors were tested.
+(C) One smoke detector was replaced.
+(D) One smoke detector was repaired.
+Đáp án đúng: (C)
+[Mã nhóm: Passage 176-180] (Gộp nhóm 5 câu hỏi)
+Đoạn văn tham chiếu: Quảng cáo chuỗi khách sạn Paramount Hotels kèm theo mẫu đơn đặt phòng (Reservation Form) viết tay của Thomas Whitly đặt phòng tại Park Hotel từ ngày 23/7 đến 25/7.
+176. Which city does Mr. Whitly plan to visit?
+(A) New York
+(B) Chicago
+(C) Maine
+(D) Los Angeles
+Đáp án đúng: (A)
+177. How is Mr. Whitly making this hotel reservation?
+(A) By phone
+(B) By e-mail
+(C) Directly via the website
+(D) By mail
+Đáp án đúng: (D)
+178. Which of the following will Mr. Whitly qualify to receive?
+(A) A 10 percent discount on his bill
+(B) Breakfast each morning free of charge
+(C) A special room rate of $120 per night
+(D) A free fruit basket
+Đáp án đúng: (B)
+179. In the advertisement, the word "unique" in paragraph 1, line 1 is closest in meaning to
+(A) typical
+(B) single
+(C) rare
+(D) distinctive
+Đáp án đúng: (D)
+180. Which of the following characteristics of Paramount Hotels does the advertisement NOT mention?
+(A) They are well located.
+(B) They serve excellent food.
+(C) They are reasonably priced.
+(D) They have been recently refurbished.
+Đáp án đúng: (D)
+[Mã nhóm: Passage 181-185] (Gộp nhóm 5 câu hỏi)
+Đoạn văn tham chiếu: Bài báo phân tích về sự phát triển của thị trường toàn cầu "Developing Global Markets" kết hợp cùng lịch trình chuỗi sự kiện của diễn đàn doanh nghiệp Wellington (Wellington Business Forum - Calendar of Events).
+181. Where will Professor Lee Kwok's presentation be held?
+(A) Auckland
+(B) The Wellington Business Forum
+(C) West Road Theater
+(D) New Zealand Shipping Association
+Đáp án đúng: (C)
+182. Which economy is expected to expand by nearly half in the next five years?
+(A) BRICS
+(B) Asia
+(C) China
+(D) The United States
+Đáp án đúng: (B)
+183. Where does Dr. Sherringham work?
+(A) Wellington Business Institute
+(B) New Zealand Autos
+(C) Green Matters, Inc.
+(D) New Zealand Times
+Đáp án đúng: (A)
+184. In the article, the word "leading" in paragraph 1, line 3, is closest in meaning to
+(A) innovative
+(B) renowned
+(C) exclusive
+(D) classified
+Đáp án đúng: (B)
+185. Which speaker does NOT refer to statistics to support his or her argument?
+(A) Dr. Xavier Hernandes
+(B) Mr. Ian Sissons
+(C) Dr. Carole Sherringham
+(D) Prof. Marvin Klysters
+Đáp án đúng: (B)
+[Mã nhóm: Passage 186-190] (Gộp nhóm 5 câu hỏi)
+Đoạn văn tham chiếu: Tin đăng tuyển dụng các vị trí hành chính (Bilingual Call Center Assistant, Customer Service Representative, Administrative Assistant...) và e-mail xin việc của ứng viên Claire Robertson, kèm thư giới thiệu từ quản lý cũ Jefferson Waters.
+186. Which position does NOT require previous experience?
+(A) Administrative Assistant
+(B) Customer Service Representative
+(C) Clerical Assistant
+(D) Accounting Assistant
+Đáp án đúng: (B)
+187. What is indicated about Claire Robertson?
+(A) She excelled at high school.
+(B) She is working full time.
+(C) She would like a promotion.
+(D) She studies in the evenings.
+Đáp án đúng: (D)
+188. As well as Total Call Insurance, which organization is Claire Robertson also qualified to apply to?
+(A) Campbelltown Medical Center
+(B) Mellistone Edwards
+(C) Deutsche Werkzeuge GmbH
+(D) JV Watson
+Đáp án đúng: (B)
+189. How long ago did Mr. Waters first meet Ms. Robertson?
+(A) One year
+(B) Two years
+(C) Three years
+(D) Four years
+Đáp án đúng: (C)
+190. In the e-mail from Mr. Waters, the word "wholeheartedly" in paragraph 1, line 5, is closest in meaning to
+(A) personally
+(B) frankly
+(C) totally
+(D) warmly
+Đáp án đúng: (D)
+[Mã nhóm: Passage 191-195] (Gộp nhóm 5 câu hỏi)
+Đoạn văn tham chiếu: Trang web bán dao "cleancutknives.com", bảng tóm tắt đơn hàng số 5755 (Order Summary) và e-mail phản hồi từ bếp trưởng khách sạn Douglas Long về việc bị trừ tiền nhầm lẫn trên thẻ tín dụng.
+191. What is NOT indicated about the knives?
+(A) They are guaranteed indefinitely.
+(B) They should be washed by hand.
+(C) They are resistant to rust.
+(D) They are self-sharpening.
+Đáp án đúng: (D)
+192. Which size knife did the customer buy?
+(A) 7 inches
+(B) 8 inches
+(C) 9 inches
+(D) 11 inches
+Đáp án đúng: (A)
+193. What will the hotel kitchen most likely use the knife for?
+(A) To chop herbs
+(B) To slice cake
+(C) To carve roast beef
+(D) To remove chicken bones
+Đáp án đúng: (A)
+194. What does Mr. Long imply in the e-mail?
+(A) He received the wrong-sized product.
+(B) He was charged the price of a bread knife.
+(C) The package arrived later than agreed.
+(D) The parcel did not contain a delivery note.
+Đáp án đúng: (B)
+195. In the e-mail, the word "rectify" in line 3 is closest in meaning to
+(A) refund
+(B) correct
+(C) investigate
+(D) acknowledge
+Đáp án đúng: (B)
+[Mã nhóm: Passage 196-200] (Gộp nhóm 5 câu hỏi)
+Đoạn văn tham chiếu: Tờ rơi quảng cáo khóa huấn luyện thể hình cuối tuần "WEEKEND FITNESS BOOT CAMP", phiếu nhận xét của học viên Lisa Liu, và e-mail trao đổi giữa huấn luyện viên trưởng Logan Dexter gửi các trợ lý phân công ca trực thứ Bảy.
+196. What is indicated about the boot camp?
+(A) Weight loss is guaranteed.
+(B) The program is the same each boot camp.
+(C) The instructors are military personnel.
+(D) Some activities must be paid for.
+Đáp án đúng: (D)
+197. Who is NOT scheduled to lead a session on Saturday afternoon?
+(A) Kris
+(B) Logan
+(C) Matt
+(D) Teri
+Đáp án đúng: (A)
+198. What can be inferred about Charmaine?
+(A) She leads the power yoga sessions.
+(B) She usually works on Sundays only.
+(C) She is currently away on vacation.
+(D) She is a recently-qualified instructor.
+Đáp án đúng: (A)
+199. Which advertised activity did NOT take place on Saturday at this boot camp?
+(A) Aerobics
+(B) Obstacle course
+(C) Bodyweight training
+(D) Team games
+Đáp án đúng: (C)
+200. What is true about Lisa Liu?
+(A) She lost weight at the boot camp.
+(B) She went cycling on the Saturday.
+(C) She attended the event twice before.
+(D) She hurt herself while exercising.
+Đáp án đúng: (B)

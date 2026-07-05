@@ -7,6 +7,7 @@ import {
   ArrowLeft,
   ChevronLeft,
   ChevronRight,
+  BookOpenText,
   CheckCheck,
   FlaskConical,
   GraduationCap,
@@ -22,6 +23,7 @@ import { Progress } from "@/components/ui/progress";
 import { Card } from "@/components/ui/card";
 import { QuestionCard } from "@/components/question-card";
 import { GraphicCard } from "@/components/graphic-card";
+import { PassageCard } from "@/components/passage-card";
 import { ResultScreen } from "@/components/result-screen";
 
 interface QuizRunnerProps {
@@ -127,6 +129,9 @@ export function QuizRunner({ title, blocks: initialBlocks, mode }: QuizRunnerPro
           {current.graphicData && (
             <Badge variant="outline"><ImageIcon className="h-3.5 w-3.5" /> Có graphic</Badge>
           )}
+          {current.passage && (
+            <Badge variant="outline"><BookOpenText className="h-3.5 w-3.5" /> Có đoạn văn</Badge>
+          )}
           {modeBadge}
         </div>
       </div>
@@ -159,16 +164,19 @@ export function QuizRunner({ title, blocks: initialBlocks, mode }: QuizRunnerPro
             transition={{ duration: 0.28, ease: "easeInOut" }}
             className="space-y-4"
           >
-            {/* Nhãn hội thoại */}
+            {/* Nhãn nhóm */}
             <div className="flex items-center gap-2">
               <Badge variant="secondary">{current.part}</Badge>
               <span className="text-sm font-semibold">{current.title}</span>
-              <span className="text-xs text-muted-foreground">
-                · {current.questions.length} câu liên quan
-              </span>
+              {current.questions.length > 1 && (
+                <span className="text-xs text-muted-foreground">
+                  · {current.questions.length} câu liên quan
+                </span>
+              )}
             </div>
 
-            {/* Graphic dùng chung cho cả hội thoại */}
+            {/* Đoạn văn / graphic dùng chung cho cả nhóm */}
+            {current.passage && <PassageCard passage={current.passage} />}
             {current.graphicData && <GraphicCard graphic={current.graphicData} />}
 
             {/* Các câu trong hội thoại */}

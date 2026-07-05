@@ -33,6 +33,16 @@ export interface GraphicData {
   raw: string[];
 }
 
+/**
+ * Đoạn văn cho Part 6 (text: có nội dung đầy đủ, chứa chỗ trống (131)…)
+ * và Part 7 (reference: mô tả tham chiếu về đoạn văn gốc).
+ */
+export interface Passage {
+  type: "text" | "reference";
+  title?: string; // nhãn loại tài liệu: FAX, MEMO, ARTICLE… hoặc "Đoạn văn tham chiếu"
+  content: string[];
+}
+
 export interface Question {
   questionNumber: number;
   questionText: string;
@@ -49,6 +59,7 @@ export interface QuestionGroup {
   range: [number, number];
   hasGraphic: boolean;
   graphicData: GraphicData | null;
+  passage: Passage | null;
   questions: Question[];
 }
 
@@ -70,6 +81,7 @@ export interface EnrichedQuestion extends Question {
   groupTitle: string;
   part: string;
   graphicData: GraphicData | null;
+  passage: Passage | null;
 }
 
 /**
@@ -81,6 +93,7 @@ export interface QuizBlock {
   title: string;
   part: string;
   graphicData: GraphicData | null;
+  passage: Passage | null;
   questions: EnrichedQuestion[];
 }
 
