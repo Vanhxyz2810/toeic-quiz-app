@@ -33,14 +33,24 @@ export interface GraphicData {
   raw: string[];
 }
 
+/** Một tài liệu trong đoạn văn Part 7 (đề có thể ghép nhiều tài liệu). */
+export interface PassageDoc {
+  format: "chat" | "email" | "plain";
+  label?: string; // nhãn loại: E-mail, Online Chat, Advertisement…
+  header?: { label: string; value: string }[]; // email/meta (To, From, Subject…)
+  paragraphs?: string[]; // nội dung dạng đoạn (email body / plain)
+  entries?: { speaker: string; time?: string; text: string }[]; // hội thoại chat
+}
+
 /**
- * Đoạn văn cho Part 6 (text: có nội dung đầy đủ, chứa chỗ trống (131)…)
- * và Part 7 (reference: mô tả tham chiếu về đoạn văn gốc).
+ * Đoạn văn cho Part 6 (text: nội dung đầy đủ, chứa chỗ trống (131)…),
+ * Part 7 (reference: mô tả tham chiếu, hoặc documents: nguyên văn đầy đủ).
  */
 export interface Passage {
-  type: "text" | "reference";
-  title?: string; // nhãn loại tài liệu: FAX, MEMO, ARTICLE… hoặc "Đoạn văn tham chiếu"
-  content: string[];
+  type: "text" | "reference" | "documents";
+  title?: string; // nhãn loại tài liệu: FAX, MEMO… hoặc "Đoạn văn tham chiếu"
+  content: string[]; // nội dung/ tham chiếu (fallback)
+  documents?: PassageDoc[]; // nguyên văn Part 7 khi đã có
 }
 
 export interface Question {

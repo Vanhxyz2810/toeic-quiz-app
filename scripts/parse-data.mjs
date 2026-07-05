@@ -23,6 +23,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 const SRC_34 = resolve(ROOT, "data.txt");
 const SRC_567 = resolve(ROOT, "data2.txt");
+const SRC_P7 = resolve(ROOT, "data", "part7-passages.json"); // nguyên văn Part 7 (nếu có)
 const OUT = resolve(ROOT, "data", "questions.json");
 const GROUP_SIZE_34 = 3;
 
@@ -250,6 +251,27 @@ function parsePart567(raw) {
    ============================================================================ */
 const groups = [...parsePart34(readFileSync(SRC_34, "utf8")), ...parsePart567(readFileSync(SRC_567, "utf8"))];
 
+// Merge nguyên văn Part 7 (nếu file tồn tại): gắn documents vào nhóm theo range.
+let p7Merged = 0;
+try {
+  const p7 = JSON.parse(readFileSync(SRC_P7, "utf8"));
+  for (const g of groups) {
+    if (g.part !== "PART 7") continue;
+    const key = `${g.range[0]}-${g.range[1]}`;
+    const entry = p7[key];
+    if (!entry || !entry.documents) continue;
+    g.passage = {
+      type: "documents",
+      title: entry.title || g.passage?.title || "Đoạn văn",
+      content: g.passage?.content ?? [],
+      documents: entry.documents,
+    };
+    p7Merged++;
+  }
+} catch {
+  /* chưa có file part7-passages.json -> bỏ qua, dùng mô tả tham chiếu */
+}
+
 const allQuestions = groups.flatMap((g) => g.questions);
 const meta = {
   totalQuestions: allQuestions.length,
@@ -272,6 +294,6 @@ writeFileSync(OUT, JSON.stringify({ meta, groups }, null, 2), "utf8");
 const perPart = meta.parts.map((p) => `${p}: ${groups.filter((g) => g.part === p).length} nhóm`).join(" | ");
 console.log(`✓ Parsed ${meta.totalQuestions} câu / ${meta.totalGroups} nhóm -> ${OUT}`);
 console.log(`  ${perPart}`);
-console.log(`  Có graphic: ${groups.filter((g) => g.graphicData).length} | Có đoạn văn: ${groups.filter((g) => g.passage).length}`);
+console.log(`  Có graphic: ${groups.filter((g) => g.graphicData).length} | Có đoạn văn: ${groups.filter((g) => g.passage).length} | Part 7 có nguyên văn: ${p7Merged}`);
 if (warnings.length) console.log("⚠ Cảnh báo:\n  " + warnings.join("\n  "));
 else console.log("  Không có cảnh báo dữ liệu.");

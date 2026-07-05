@@ -1,0 +1,53 @@
+{
+  "_note": "Nguyên văn đoạn đọc Part 7. Key = 'from-to'. Parser (scripts/parse-data.mjs) tự merge vào nhóm tương ứng. Bổ sung dần khi có ảnh.",
+
+  "147-148": {
+    "title": "Online Chat Discussion",
+    "documents": [
+      {
+        "format": "chat",
+        "label": "Online Chat",
+        "entries": [
+          { "speaker": "Assistant Mandy P", "time": "3:19 P.M.", "text": "Hello. Can I help you?" },
+          { "speaker": "Celine Depardieu", "time": "3:21 P.M.", "text": "Yes. I received an order, but you sent too many books. I ordered 200 and you sent 250!" },
+          { "speaker": "Assistant Mandy P", "time": "3:22 P.M.", "text": "Sorry about that. Please accept our apologies. What's your order number?" },
+          { "speaker": "Celine Depardieu", "time": "3:24 P.M.", "text": "GH-35832/TW. We just got delivery this morning." },
+          { "speaker": "Assistant Mandy P", "time": "3:25 P.M.", "text": "Yes, I have your order here. 200 copies of English Student Plus. You say you received 250?" },
+          { "speaker": "Celine Depardieu", "time": "3:26 P.M.", "text": "Yes, and you invoiced for 250. We'd like to return them, or keep them here until we need them, and then pay?" },
+          { "speaker": "Assistant Mandy P", "time": "3:32 P.M.", "text": "You'll have to return them, I'm afraid. I'll send a pre-paid label to your e-mail address. Please just print it out and mail them back." },
+          { "speaker": "Celine Depardieu", "time": "3:34 P.M.", "text": "That's a pain. Really?" },
+          { "speaker": "Assistant Mandy P", "time": "3:35 P.M.", "text": "Sorry. It's our policy. But I can give you a $50 credit note to compensate for the inconvenience. And I'll send out a new invoice right away." },
+          { "speaker": "Celine Depardieu", "time": "3:35 P.M.", "text": "OK, thanks." },
+          { "speaker": "Assistant Mandy P", "time": "3:36 P.M.", "text": "Thank you for your understanding. Is there anything else I can help you with today?" },
+          { "speaker": "Celine Depardieu", "time": "3:36 P.M.", "text": "No, that's it. Thanks a lot. Bye." }
+        ]
+      }
+    ]
+  },
+
+  "149-151": {
+    "title": "E-mail",
+    "documents": [
+      {
+        "format": "email",
+        "label": "E-mail",
+        "header": [
+          { "label": "To", "value": "mark.jenkins@thomsoninc.com" },
+          { "label": "From", "value": "sue.morriss@hertfordlegal.co.us" },
+          { "label": "CC", "value": "Accounts Payable" },
+          { "label": "Subject", "value": "Request for copy of invoice" }
+        ],
+        "paragraphs": [
+          "Dear Mr. Jenkins,",
+          "I work in the Accounts Payable department at Hertford Legal. I was forwarded your e-mail asking about an outstanding invoice, ref #5098. I am very sorry that this has been unpaid. I have checked and we do not seem to have a record of this invoice. Could you please send a hard copy to me personally at our main office address, and I will clear it for payment as soon as possible.",
+          "I do apologize for this oversight. The Accounts Payable department has recently been reorganized, and this issue just came to my attention today. Dan Denapoli, who you were in contact with previously, has transferred to our Investments division, and is no longer part of this department. Since I have taken over Dan's role, I will be your new Relationship Manager. I hope to give you the very highest levels of customer service, and look forward to managing your account with us. Please feel free to contact me directly in the future if you have any further queries.",
+          "Once again, please accept our sincere apologies for this delay.",
+          "Regards,",
+          "Sue Morriss",
+          "Accounts Payable",
+          "Hertford Legal"
+        ]
+      }
+    ]
+  }
+}
