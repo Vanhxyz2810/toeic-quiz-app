@@ -53,7 +53,7 @@ function inferHeaders(rows, title) {
   }
   if (rows.every((r) => /^[A-Z]{2,3}\s?\d{2,4}$/.test(r[0].trim()))) return ["Flight", "Destination"];
   if (rows.every((r) => /\$\s?\d/.test(r[1]))) {
-    return /tạp chí|magazine/i.test(title) ? ["Magazine", "Price"] : ["Item", "Price"];
+    return /tạp chí|magazine/i.test(title) ? ["Magazine title", "Cover price"] : ["Item", "Price"];
   }
   if (rows.every((r) => MONTHS.includes(r[0].trim()))) return ["Month", "Birthstone"];
   return ["Thông tin", "Chi tiết"];

@@ -47,7 +47,7 @@ function detectBoardKind(table: GraphicTable): BoardKind {
   const h = table.headers;
   if (h[0] === "Flight") return "flight";
   if (h[2] === "Platform") return "train";
-  if (h[1] === "Price") return h[0] === "Magazine" ? "magazine" : "menu";
+  if (/price/i.test(h[1] ?? "")) return /magazine/i.test(h[0] ?? "") ? "magazine" : "menu";
   if (h[1] === "Birthstone") return "gem";
 
   // Bảng markdown đề 1 (header gốc trong nguồn).
@@ -78,6 +78,20 @@ function parenthetical(title: string): string {
 /** Tiêu đề tiếng Việt (có dấu) -> dùng heading mặc định theo loại board. */
 function hasVietnamese(s: string): boolean {
   return /[àáảãạăâđèéẻẽẹêìíỉĩịòóỏõọôơùúủũụưỳýỷỹỵ]/i.test(s);
+}
+
+/**
+ * Lấy chuỗi từ tiếng Anh ở cuối tiêu đề tiếng Việt làm tên board,
+ * vd "Bảng bìa tạp chí Helix Media Publishing" -> "Helix Media Publishing".
+ */
+function englishTail(s: string): string {
+  const words = s.split(/\s+/);
+  const tail: string[] = [];
+  for (let i = words.length - 1; i >= 0; i--) {
+    if (hasVietnamese(words[i])) break;
+    tail.unshift(words[i]);
+  }
+  return tail.join(" ");
 }
 
 /** Cột nên dùng font mono: giờ, mã hiệu, giá tiền. */
@@ -117,8 +131,10 @@ function SignTable({
   const cols = table.headers.length;
   const monoCols = table.headers.map((_, c) => isMonoCol(table, c));
 
-  // Tiêu đề: dùng tên trong đề nếu là tiếng Anh, ngược lại heading mặc định.
-  const rawTitle = boardTitle && !hasVietnamese(boardTitle) ? boardTitle : heading;
+  // Tiêu đề: tên tiếng Anh trong đề (nguyên chuỗi hoặc phần đuôi sau các từ
+  // tiếng Việt, vd "Helix Media Publishing"); không có -> heading mặc định.
+  const rawTitle =
+    (boardTitle && !hasVietnamese(boardTitle) ? boardTitle : englishTail(boardTitle)) || heading;
   const [mainTitle, subTitle] = /departures/i.test(rawTitle) && rawTitle.toLowerCase() !== "departures"
     ? [rawTitle.replace(/departures/i, "").trim(), "Departures"]
     : [rawTitle, null];

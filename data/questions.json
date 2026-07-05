@@ -8541,8 +8541,8 @@
         "title": "Bảng bìa tạp chí Helix Media Publishing",
         "table": {
           "headers": [
-            "Magazine",
-            "Price"
+            "Magazine title",
+            "Cover price"
           ],
           "rows": [
             [
