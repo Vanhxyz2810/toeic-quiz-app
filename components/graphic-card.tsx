@@ -262,39 +262,44 @@ function GardenMap() {
 }
 
 /* ============================================================
-   Sơ đồ văn phòng (office map) — đề 2, câu 68-70:
-   Entrance góc trên phải, Reception góc dưới phải,
-   hành lang giữa dẫn vào phòng 1, 2 (bên phải); 3, 4 (bên trái).
+   Sơ đồ văn phòng (office map) — đề 2, câu 68-70, theo ảnh đề gốc:
+   hành lang NGANG ở giữa; phòng 3, 1 hàng trên; phòng 4, 2 hàng dưới;
+   Entrance góc trên phải; Reception desk nằm chéo góc dưới phải.
    ============================================================ */
 function RoomBox({ n }: { n: number }) {
   return (
-    <div className="flex flex-col items-center justify-center rounded-lg border-2 border-indigo-500/50 bg-indigo-50 py-3 dark:bg-indigo-950/40">
+    <div className="flex flex-col items-center justify-center rounded-lg border-2 border-indigo-500/50 bg-indigo-50 py-4 dark:bg-indigo-950/40">
       <DoorOpen className="h-4 w-4 text-indigo-500" />
-      <span className="mt-1 text-sm font-bold text-indigo-800 dark:text-indigo-200">Room {n}</span>
+      <span className="mt-1 text-base font-bold text-indigo-800 dark:text-indigo-200">{n}</span>
     </div>
   );
 }
 
 function OfficeMap() {
   return (
-    <div className="rounded-xl border-2 border-slate-400/60 bg-slate-50 p-3 dark:bg-slate-900/50">
-      <div className="grid grid-cols-[1fr_3.5rem_1fr_1fr] grid-rows-2 gap-2">
-        {/* Hàng trên: Room 3 | hành lang | Room 1 | Entrance */}
+    <div className="rounded-xl border-2 border-slate-400/60 bg-white p-3 dark:bg-slate-900/50">
+      <div className="grid grid-cols-[1fr_1fr_1.1fr] gap-x-2">
+        {/* Hàng trên: Room 3 | Room 1 | Entrance (góc trên phải) */}
         <RoomBox n={3} />
-        <div className="row-span-2 flex items-center justify-center rounded-lg bg-slate-200/70 text-[10px] font-semibold uppercase tracking-widest text-slate-500 [writing-mode:vertical-rl] dark:bg-slate-800/70">
-          Hallway
-        </div>
         <RoomBox n={1} />
-        <div className="flex flex-col items-center justify-center rounded-lg border border-dashed border-slate-400 py-3 text-slate-600 dark:text-slate-300">
-          <DoorOpen className="h-4 w-4" />
-          <span className="mt-1 text-xs font-semibold">Entrance</span>
+        <div className="flex items-start justify-end">
+          <div className="flex items-center gap-1 rounded-md border border-slate-400 bg-slate-100 px-2.5 py-1.5 text-xs font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+            <DoorOpen className="h-3.5 w-3.5" /> Entrance
+          </div>
         </div>
-        {/* Hàng dưới: Room 4 | (hành lang) | Room 2 | Reception */}
+
+        {/* Hành lang ngang xuyên giữa, dẫn từ Entrance vào các phòng */}
+        <div className="col-span-3 my-2 flex h-9 items-center justify-center rounded-md bg-slate-200/80 text-[10px] font-semibold uppercase tracking-[0.35em] text-slate-500 dark:bg-slate-800/80 dark:text-slate-400">
+          Hallway →
+        </div>
+
+        {/* Hàng dưới: Room 4 | Room 2 | Reception desk (nằm chéo) */}
         <RoomBox n={4} />
         <RoomBox n={2} />
-        <div className="flex flex-col items-center justify-center rounded-lg border border-slate-400 bg-white py-3 text-slate-700 shadow-sm dark:bg-slate-800 dark:text-slate-200">
-          <Monitor className="h-4 w-4" />
-          <span className="mt-1 text-xs font-semibold">Reception desk</span>
+        <div className="flex items-end justify-end pb-1 pr-1">
+          <div className="flex -rotate-12 items-center gap-1 rounded-md border border-slate-400 bg-slate-100 px-2.5 py-1.5 text-xs font-semibold text-slate-700 shadow-sm dark:bg-slate-800 dark:text-slate-200">
+            <Monitor className="h-3.5 w-3.5" /> Reception desk
+          </div>
         </div>
       </div>
     </div>
